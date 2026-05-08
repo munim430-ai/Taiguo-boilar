@@ -4,37 +4,21 @@ import { useRegion } from "@/contexts/RegionContext";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Industry, Region } from "@/contexts/RegionContext";
 
-const navItems = [
-  { label: "Partner", href: "#partner" },
-  { label: "Industries", href: "#industries" },
-  { label: "Catalog", href: "#catalog" },
-  { label: "Compare", href: "#compare" },
-  { label: "RFQ", href: "#rfq" },
-];
-
 export function Header() {
   const { region, setRegion, industry, setIndustry } = useRegion();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/75">
+    <header className="sticky top-0 z-50 w-full border-b border-red-900/10 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="container flex min-h-16 items-center justify-between gap-4 px-4 sm:px-8 mx-auto">
         <a href="#" className="flex items-center gap-3">
-          <div className="h-9 w-9 bg-primary rounded-md flex items-center justify-center shadow-sm">
-            <span className="text-primary-foreground font-black text-xl leading-none">T</span>
+          <div className="h-11 w-20 rounded-lg bg-white p-1.5 shadow-sm ring-1 ring-border">
+            <img src="/images/tggl-logo.svg" alt="TGGL logo" className="h-full w-full object-contain" />
           </div>
           <div className="hidden sm:block">
             <span className="font-bold text-lg text-primary leading-none block">Taiguo Bangladesh Gateway</span>
-            <span className="text-xs text-muted-foreground">Industrial boiler sourcing portal</span>
+            <span className="text-xs text-muted-foreground">TGGL industrial boiler sourcing portal</span>
           </div>
         </a>
-
-        <nav className="hidden xl:flex items-center gap-5 text-sm font-medium text-muted-foreground">
-          {navItems.map((item) => (
-            <a key={item.href} href={item.href} className="hover:text-primary transition-colors">
-              {item.label}
-            </a>
-          ))}
-        </nav>
 
         <div className="flex items-center gap-3">
           <Select value={region} onValueChange={(val) => setRegion(val as Region)}>
