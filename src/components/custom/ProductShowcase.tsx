@@ -1,23 +1,70 @@
-import { products } from "@/data/mockCatalog";
+"use client";
+
+import { useMemo, useState } from "react";
+import { products, productApplications, productCategories } from "@/data/mockCatalog";
+import { Button } from "@/components/ui/button";
 
 export function ProductShowcase() {
+  const [category, setCategory] = useState("All");
+  const [application, setApplication] = useState("All");
+
+  const filteredProducts = useMemo(() => {
+    return products.filter((product) => {
+      const categoryMatch = category === "All" || product.category === category;
+      const applicationMatch = application === "All" || product.applications.includes(application);
+      return categoryMatch && applicationMatch;
+    });
+  }, [category, application]);
+
   return (
     <section id="catalog" className="py-16 bg-muted/30 border-y border-border">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mb-10">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-secondary mb-3">
-            Machinery Gallery
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Taiguo boiler product photos and core specifications
-          </h2>
-          <p className="text-muted-foreground text-base md:text-lg">
-            Visual catalog for local buyers to compare boiler type, fuel source, pressure range, capacity, and target applications before requesting a formal specification sheet.
-          </p>
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between mb-10">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-secondary mb-3">
+              Machinery Gallery
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              Boiler photos, specifications, and buyer-fit guidance
+            </h2>
+            <p className="text-muted-foreground text-base md:text-lg">
+              Filter the catalog by fuel system and Bangladesh use-case before generating a deterministic engineering spec sheet.
+            </p>
+          </div>
+
+          <div className="grid gap-3 sm:grid-cols-2 lg:w-[520px]">
+            <label className="text-sm font-medium text-primary">
+              Boiler type
+              <select
+                value={category}
+                onChange={(event) => setCategory(event.target.value)}
+                className="mt-2 h-11 w-full rounded-lg border border-border bg-background px-3 text-sm outline-none focus:ring-2 focus:ring-primary/20"
+              >
+                <option value="All">All boiler types</option>
+                {productCategories.map((item) => (
+                  <option key={item} value={item}>{item}</option>
+                ))}
+              </select>
+            </label>
+
+            <label className="text-sm font-medium text-primary">
+              Application
+              <select
+                value={application}
+                onChange={(event) => setApplication(event.target.value)}
+                className="mt-2 h-11 w-full rounded-lg border border-border bg-background px-3 text-sm outline-none focus:ring-2 focus:ring-primary/20"
+              >
+                <option value="All">All applications</option>
+                {productApplications.map((item) => (
+                  <option key={item} value={item}>{item}</option>
+                ))}
+              </select>
+            </label>
+          </div>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-          {products.map((product) => (
+          {filteredProducts.map((product) => (
             <article
               key={product.id}
               className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm transition hover:-translate-y-1 hover:shadow-md"
@@ -60,19 +107,36 @@ export function ProductShowcase() {
                   </div>
                 </dl>
 
+                <div className="mt-4 rounded-xl bg-primary/5 p-3 text-xs leading-5 text-primary">
+                  <strong>Bangladesh fit:</strong> {product.bangladeshFit}
+                </div>
+
                 <div className="mt-4 flex flex-wrap gap-2">
-                  {product.applications.map((application) => (
-                    <span
-                      key={application}
-                      className="rounded-full bg-primary/5 px-2.5 py-1 text-xs text-primary"
-                    >
-                      {application}
+                  {product.applications.map((item) => (
+                    <span key={item} className="rounded-full bg-muted px-2.5 py-1 text-xs text-muted-foreground">
+                      {item}
                     </span>
                   ))}
                 </div>
               </div>
             </article>
           ))}
+        </div>
+
+        {filteredProducts.length === 0 && (
+          <div className="rounded-2xl border border-dashed border-border bg-background p-8 text-center text-muted-foreground">
+            No catalog item matches this filter. Adjust boiler type or application.
+          </div>
+        )}
+
+        <div className="mt-10 flex flex-col gap-3 rounded-2xl border border-secondary/20 bg-secondary/10 p-5 md:flex-row md:items-center md:justify-between">
+          <div>
+            <p className="font-semibold text-primary">Need factory quotation support for Bangladesh?</p>
+            <p className="text-sm text-muted-foreground">Use the RFQ form below to prepare buyer requirements before contacting Taiguo or a local partner.</p>
+          </div>
+          <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90" onClick={() => document.getElementById("rfq")?.scrollIntoView({ behavior: "smooth" })}>
+            Start RFQ
+          </Button>
         </div>
       </div>
     </section>
