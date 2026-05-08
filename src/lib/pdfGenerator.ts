@@ -2,86 +2,104 @@ import jsPDF from 'jspdf';
 import autoTable from 'jspdf-autotable';
 import { Product } from '@/data/mockCatalog';
 
+function deterministicQuoteRef(product: Product, companyName: string, region: string) {
+  const base = `${product.id}-${companyName}-${region}`.toUpperCase().replace(/[^A-Z0-9]/g, '');
+  let checksum = 0;
+  for (let index = 0; index < base.length; index += 1) {
+    checksum = (checksum + base.charCodeAt(index) * (index + 1)) % 100000;
+  }
+  return `TG-BD-${product.id.toUpperCase()}-${String(checksum).padStart(5, '0')}`;
+}
+
 export function generateDeterministicQuote(product: Product, companyName: string, region: string) {
-  // 1. Initialize jsPDF
+  const preparedFor = companyName.trim() || 'Valued Bangladesh Buyer';
+  const quoteRef = deterministicQuoteRef(product, preparedFor, region);
   const doc = new jsPDF();
 
-  // 2. Set strict, deterministic formatting
-  doc.setFont("helvetica", "bold");
-  doc.setFontSize(22);
-  doc.setTextColor(34, 59, 94); // Deep steel blue
+  doc.setFont('helvetica', 'bold');
+  doc.setFontSize(18);
+  doc.setTextColor(23, 45, 77);
+  doc.text('HENAN TAIGUO BOILER PRODUCTS CO., LTD.', 105, 18, { align: 'center' });
 
-  // Header
-  doc.text("HENAN TAIGUO BOILER PRODUCTS CO., LTD.", 105, 20, { align: "center" });
+  doc.setFont('helvetica', 'normal');
+  doc.setFontSize(10);
+  doc.setTextColor(90, 90, 90);
+  doc.text('Bangladesh Market Technical Specification Sheet', 105, 26, { align: 'center' });
+  doc.text('Deterministic document: exact catalog values only, no AI-generated technical mapping.', 105, 32, { align: 'center' });
 
-  doc.setFont("helvetica", "normal");
-  doc.setFontSize(12);
-  doc.setTextColor(100, 100, 100);
-  doc.text("Technical Specification & Formal Quotation", 105, 30, { align: "center" });
+  doc.setDrawColor(242, 145, 35);
+  doc.setLineWidth(0.8);
+  doc.line(20, 38, 190, 38);
 
-  doc.setLineWidth(0.5);
-  doc.line(20, 35, 190, 35);
-
-  // Client Info
-  doc.setFontSize(11);
+  doc.setFontSize(10);
   doc.setTextColor(0, 0, 0);
-  doc.text(`Prepared For: ${companyName}`, 20, 45);
-  doc.text(`Region: ${region}`, 20, 52);
-  doc.text(`Date: ${new Date().toLocaleDateString()}`, 150, 45);
-  doc.text(`Quote Ref: TG-${Math.floor(Math.random() * 10000)}`, 150, 52);
+  doc.text(`Prepared For: ${preparedFor}`, 20, 48);
+  doc.text(`Region: ${region}`, 20, 55);
+  doc.text(`Quote Reference: ${quoteRef}`, 20, 62);
+  doc.text(`Document Type: Technical pre-quotation spec`, 20, 69);
 
-  // Product Info Block
-  doc.setFont("helvetica", "bold");
-  doc.setFontSize(14);
-  doc.text("1. Selected Equipment Overview", 20, 65);
+  doc.setFont('helvetica', 'bold');
+  doc.setFontSize(13);
+  doc.setTextColor(23, 45, 77);
+  doc.text('1. Selected Equipment Overview', 20, 82);
 
-  doc.setFont("helvetica", "normal");
-  doc.setFontSize(11);
-  doc.text(`Model: ${product.name}`, 20, 75);
-  doc.text(`Category: ${product.category}`, 20, 82);
+  doc.setFont('helvetica', 'normal');
+  doc.setFontSize(10);
+  doc.setTextColor(0, 0, 0);
+  doc.text(`Model: ${product.name}`, 20, 92);
+  doc.text(`Category: ${product.category}`, 20, 99);
 
   const splitDesc = doc.splitTextToSize(`Description: ${product.description}`, 170);
-  doc.text(splitDesc, 20, 89);
-
-  // Exact Technical Parameters Table
-  doc.setFont("helvetica", "bold");
-  doc.setFontSize(14);
-  doc.text("2. Technical Parameters", 20, 115);
+  doc.text(splitDesc, 20, 106);
 
   autoTable(doc, {
-    startY: 120,
-    head: [['Parameter', 'Value', 'Unit']],
+    startY: 122,
+    head: [['Parameter', 'Catalog Value']],
     body: [
-      ['Rated Evaporation Capacity', product.capacity, 't/h'],
-      ['Rated Working Pressure', product.pressure, 'MPa'],
-      ['Thermal Efficiency', product.efficiency, '%'],
-      ['Applicable Fuel', product.fuel, '-'],
+      ['Rated Capacity', product.capacity],
+      ['Rated Working Pressure', product.pressure],
+      ['Applicable Fuel', product.fuel],
+      ['Thermal Efficiency', product.efficiency],
+      ['Applications', product.applications.join(', ')],
+      ['Bangladesh Fit', product.bangladeshFit],
+      ['Buyer Note', product.buyerNote],
     ],
     theme: 'grid',
-    headStyles: { fillColor: [34, 59, 94], textColor: 255 },
-    styles: { font: 'helvetica', fontSize: 10 },
+    headStyles: { fillColor: [23, 45, 77], textColor: 255 },
+    styles: { font: 'helvetica', fontSize: 9, cellPadding: 3 },
+    columnStyles: {
+      0: { fontStyle: 'bold', cellWidth: 55 },
+      1: { cellWidth: 115 },
+    },
   });
 
-  // Footer/Legal
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const finalY = (doc as any).lastAutoTable?.finalY || 160;
+  const finalY = (doc as any).lastAutoTable?.finalY || 170;
 
-  doc.setFont("helvetica", "bold");
+  doc.setFont('helvetica', 'bold');
   doc.setFontSize(12);
-  doc.text("3. Commercial Terms", 20, finalY + 15);
+  doc.setTextColor(23, 45, 77);
+  doc.text('2. Bangladesh Procurement Notes', 20, finalY + 14);
 
-  doc.setFont("helvetica", "normal");
+  doc.setFont('helvetica', 'normal');
   doc.setFontSize(9);
-  const terms = [
-    "1. Validity: This quotation is valid for 30 days.",
-    "2. Warranty: 12 months from commissioning or 18 months from delivery.",
-    "3. This document is system-generated and the technical parameters are strictly mapped from Henan Taiguo Engineering databases."
+  doc.setTextColor(0, 0, 0);
+  const procurementNotes = [
+    'Buyer should confirm actual steam demand, working pressure, fuel availability, water treatment, installation site conditions, and import documentation requirements before final quotation.',
+    'This document is an initial technical specification sheet. Final quotation, commercial terms, warranty, shipping, installation, and commissioning terms must be confirmed by authorized factory sales or local partner.',
+    'All values in this document are mapped directly from the product catalog object used by the web application. No AI inference is used to calculate or modify technical values.',
   ];
 
-  terms.forEach((term, index) => {
-    doc.text(term, 20, finalY + 25 + (index * 6));
+  let y = finalY + 23;
+  procurementNotes.forEach((note, index) => {
+    const lines = doc.splitTextToSize(`${index + 1}. ${note}`, 170);
+    doc.text(lines, 20, y);
+    y += lines.length * 5 + 3;
   });
 
-  // Save PDF
-  doc.save(`Taiguo_Quote_${product.id}.pdf`);
+  doc.setFontSize(8);
+  doc.setTextColor(120, 120, 120);
+  doc.text('Generated by Taiguo Bangladesh Digital Sourcing Gateway', 105, 286, { align: 'center' });
+
+  doc.save(`Taiguo_Spec_${product.id}_${quoteRef}.pdf`);
 }
