@@ -1,0 +1,17 @@
+<svg width="420" height="240" viewBox="0 0 420 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="TGGL logo">
+  <rect width="420" height="240" fill="white"/>
+  <defs>
+    <linearGradient id="redFlame" x1="85" y1="138" x2="225" y2="36" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D71920"/>
+      <stop offset="1" stop-color="#EF3B32"/>
+    </linearGradient>
+    <linearGradient id="yellowFlame" x1="185" y1="123" x2="327" y2="45" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7E21D"/>
+      <stop offset="1" stop-color="#FFF45B"/>
+    </linearGradient>
+  </defs>
+  <path d="M222 34C174 48 128 91 108 135C94 166 99 188 123 193C157 201 203 171 234 125C218 140 194 149 176 143C153 135 153 111 176 81C188 65 204 49 222 34Z" fill="url(#redFlame)"/>
+  <path d="M236 41C278 36 309 52 322 78C341 116 318 167 268 196C292 160 300 126 286 101C274 79 246 75 215 92C201 100 188 112 177 126C185 83 207 51 236 41Z" fill="url(#yellowFlame)"/>
+  <path d="M132 178C168 188 222 154 258 103" stroke="white" stroke-width="22" stroke-linecap="round"/>
+  <text x="210" y="224" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700" letter-spacing="16" fill="#111111">TGGL</text>
+</svg>
