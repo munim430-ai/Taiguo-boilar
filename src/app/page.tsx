@@ -1,5 +1,6 @@
 import { Header } from "@/components/custom/Header";
 import { Hero } from "@/components/custom/Hero";
+import { ProductShowcase } from "@/components/custom/ProductShowcase";
 import { ROICalculator } from "@/components/custom/ROICalculator";
 import { QuoteGenerator } from "@/components/custom/QuoteGenerator";
 
@@ -9,8 +10,9 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
+        <ProductShowcase />
 
-        <section className="py-16 container mx-auto px-4">
+        <section id="tools" className="py-16 container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-primary mb-4">Interactive Digital Gateway</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
