@@ -9,10 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ai-sdk/openai": "^0.0.12",
-    "@ai-sdk/react": "^1.0.0",
     "@base-ui/react": "^1.4.1",
-    "ai": "^3.1.37",
     "cheerio": "^1.2.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
