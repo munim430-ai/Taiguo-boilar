@@ -123,3 +123,13 @@
 2026-06-24 22:49:25,796 [INFO] Scrape finished. found=100  empty=400  errors=0  total=500
 2026-06-24 22:49:25,796 [INFO] CSV output : /home/user/Taiguo-boilar/scraper/database_export.csv
 2026-06-24 22:49:25,796 [INFO] JSON output: /home/user/Taiguo-boilar/scraper/records.json
+2026-06-24 23:11:04,771 [INFO] Starting scrape: 1 series × 5 numbers = 5 combinations  workers=3  time-limit=5.25h
+2026-06-24 23:11:04,771 [INFO] Series 'EBL:' already complete, skipping.
+2026-06-24 23:11:04,771 [INFO] Scrape finished.  found=0  empty=0  errors=0  total=0
+2026-06-24 23:11:04,771 [INFO] CSV output : /home/user/Taiguo-boilar/scraper/database_export.csv
+2026-06-24 23:11:04,771 [INFO] JSON output: /home/user/Taiguo-boilar/scraper/records.json
+2026-06-24 23:11:16,592 [INFO] Starting scrape: 1 series × 15000 numbers = 15000 combinations  workers=3  time-limit=0.001h
+2026-06-24 23:11:16,592 [INFO] Time limit approaching — stopping before series 'Ba: Bo:'.
+2026-06-24 23:11:16,592 [INFO] Stopped early (time limit). Resume with --resume.  found=0  empty=0  errors=0  total=0
+2026-06-24 23:11:16,592 [INFO] CSV output : /home/user/Taiguo-boilar/scraper/database_export.csv
+2026-06-24 23:11:16,592 [INFO] JSON output: /home/user/Taiguo-boilar/scraper/records.json

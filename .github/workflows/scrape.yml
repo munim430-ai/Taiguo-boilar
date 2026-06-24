@@ -1,0 +1,47 @@
+name: Boiler Registry Scrape
+
+# Trigger manually from the GitHub Actions tab.
+# Each run scrapes for up to 5.25 hours, commits progress back to the branch,
+# and exits cleanly. Trigger again the next day to continue from the checkpoint.
+# The full scrape (~150,000 requests) typically completes in 2–3 triggered runs.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330   # Hard 5.5-hour ceiling from GitHub Actions
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 lxml
+
+      - name: Run scraper
+        # --resume  : picks up from progress.json committed by the previous run
+        # --time-limit 5.25 : stops gracefully 15 min before the 6-hour job limit
+        run: python scraper/boiler_scraper.py --resume --time-limit 5.25
+
+      - name: Commit and push results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add scraper/database_export.csv \
+                  scraper/records.json \
+                  scraper/progress.json \
+                  scraper/scraper.log
+          git diff --staged --quiet \
+            && echo "No new data — nothing to commit." \
+            || git commit -m "scraper: checkpoint $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push

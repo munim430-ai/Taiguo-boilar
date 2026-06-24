@@ -5,10 +5,11 @@ Extracts public boiler registration records from the Bangladesh Boiler Inspectio
 Source: http://www.boilerdata.boiler.gov.bd/info/bs/boilerinforeportdue12.php
 
 Usage:
-    python boiler_scraper.py                  # Full run (all series, 1-15000)
-    python boiler_scraper.py --resume         # Resume from last saved checkpoint
-    python boiler_scraper.py --series "EP:"   # Single series only
-    python boiler_scraper.py --max-num 1000   # Limit range per series
+    python boiler_scraper.py                        # Full run (all series, 1-15000)
+    python boiler_scraper.py --resume               # Resume from last saved checkpoint
+    python boiler_scraper.py --series "EP:"         # Single series only
+    python boiler_scraper.py --max-num 1000         # Limit range per series
+    python boiler_scraper.py --resume --time-limit 5.25  # Stop after 5.25 hours (for CI)
 """
 
 import argparse
@@ -253,21 +254,41 @@ def _process_one(session: requests.Session, series: str, number: int) -> dict | 
 # Orchestration
 # ---------------------------------------------------------------------------
 
-def run(series_list: list[str], max_num: int, resume: bool) -> None:
+# How many numbers to submit per batch — also the checkpoint granularity.
+_CHUNK_SIZE = 100
+# Stop this many seconds before the hard time limit so git can still commit.
+_STOP_BUFFER_SECS = 300
+
+
+def run(series_list: list[str], max_num: int, resume: bool, time_limit_hours: float = 0.0) -> None:
     progress = _load_progress() if resume else {}
-    total_combos = len(series_list) * max_num
+    start_time = time.monotonic()
+
+    def _time_ok() -> bool:
+        if not time_limit_hours:
+            return True
+        elapsed = time.monotonic() - start_time
+        return elapsed < (time_limit_hours * 3600 - _STOP_BUFFER_SECS)
+
     log.info(
-        "Starting scrape: %d series × %d numbers = %d combinations  workers=%d",
+        "Starting scrape: %d series × %d numbers = %d combinations  workers=%d%s",
         len(series_list),
         max_num,
-        total_combos,
+        len(series_list) * max_num,
         MAX_WORKERS,
+        f"  time-limit={time_limit_hours}h" if time_limit_hours else "",
     )
 
     session = requests.Session()
     session.headers.update(REQUEST_HEADERS)
+    stopped_early = False
 
     for series in series_list:
+        if not _time_ok():
+            log.info("Time limit approaching — stopping before series %r.", series)
+            stopped_early = True
+            break
+
         start_num = progress.get(series, 0) + 1
         if start_num > max_num:
             log.info("Series %r already complete, skipping.", series)
@@ -276,43 +297,58 @@ def run(series_list: list[str], max_num: int, resume: bool) -> None:
         log.info("Processing series %r  starting from #%d", series, start_num)
 
         with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
-            futures = {
-                pool.submit(_process_one, session, series, num): num
-                for num in range(start_num, max_num + 1)
-            }
-            completed_in_series = start_num - 1
-            checkpoint_every = 100
-
-            for future in as_completed(futures):
-                num = futures[future]
-                try:
-                    future.result()
-                except Exception as exc:
-                    log.error("Unhandled error series=%r num=%d: %s", series, num, exc)
-                    with _counters_lock:
-                        _stats["errors"] += 1
-
-                completed_in_series = max(completed_in_series, num)
-                if completed_in_series % checkpoint_every == 0:
-                    progress[series] = completed_in_series
+            for chunk_start in range(start_num, max_num + 1, _CHUNK_SIZE):
+                if not _time_ok():
+                    # Save progress at the last fully-completed number.
+                    progress[series] = chunk_start - 1
                     _save_progress(progress)
                     log.info(
-                        "Progress: series=%r  num=%d/%d  found=%d  empty=%d  errors=%d",
+                        "Time limit reached — checkpoint saved at series=%r #%d.",
                         series,
-                        completed_in_series,
-                        max_num,
-                        _stats["found"],
-                        _stats["empty"],
-                        _stats["errors"],
+                        chunk_start - 1,
                     )
+                    stopped_early = True
+                    break
 
-        # Mark series fully done
+                chunk_end = min(chunk_start + _CHUNK_SIZE, max_num + 1)
+                chunk_futures = {
+                    pool.submit(_process_one, session, series, num): num
+                    for num in range(chunk_start, chunk_end)
+                }
+
+                for future in as_completed(chunk_futures):
+                    num = chunk_futures[future]
+                    try:
+                        future.result()
+                    except Exception as exc:
+                        log.error("Unhandled error series=%r num=%d: %s", series, num, exc)
+                        with _counters_lock:
+                            _stats["errors"] += 1
+
+                # Checkpoint after every completed chunk.
+                progress[series] = chunk_end - 1
+                _save_progress(progress)
+                log.info(
+                    "Progress: series=%r  num=%d/%d  found=%d  empty=%d  errors=%d",
+                    series,
+                    chunk_end - 1,
+                    max_num,
+                    _stats["found"],
+                    _stats["empty"],
+                    _stats["errors"],
+                )
+
+        if stopped_early:
+            break
+
         progress[series] = max_num
         _save_progress(progress)
         log.info("Series %r complete.", series)
 
+    status = "Stopped early (time limit). Resume with --resume." if stopped_early else "Scrape finished."
     log.info(
-        "Scrape finished. found=%d  empty=%d  errors=%d  total=%d",
+        "%s  found=%d  empty=%d  errors=%d  total=%d",
+        status,
         _stats["found"],
         _stats["empty"],
         _stats["errors"],
@@ -350,6 +386,16 @@ def _parse_args() -> argparse.Namespace:
         default=BOILER_MAX,
         help=f"Upper bound for the boiler number range (default: {BOILER_MAX}).",
     )
+    parser.add_argument(
+        "--time-limit",
+        type=float,
+        default=0.0,
+        metavar="HOURS",
+        help=(
+            "Stop gracefully after this many hours, saving a checkpoint so the next "
+            "run can resume. Use 5.25 in GitHub Actions (6-hour job limit)."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -368,7 +414,12 @@ def main() -> None:
     else:
         series_list = SERIES_OPTIONS
 
-    run(series_list=series_list, max_num=args.max_num, resume=args.resume)
+    run(
+        series_list=series_list,
+        max_num=args.max_num,
+        resume=args.resume,
+        time_limit_hours=args.time_limit,
+    )
 
 
 if __name__ == "__main__":
