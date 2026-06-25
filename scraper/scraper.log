@@ -1,0 +1,135 @@
+2026-06-24 22:45:32,700 [INFO] Starting scrape: 10 series × 50 numbers = 500 combinations  workers=3
+2026-06-24 22:45:32,700 [INFO] Processing series 'Ba: Bo:'  starting from #1
+2026-06-24 22:45:34,780 [INFO] FOUND  Ba: Bo:      #1       S.K.F Bangladesh Ltd.  (expires 19-12-2011)
+2026-06-24 22:45:36,018 [INFO] FOUND  Ba: Bo:      #4       Medical College Hospital  (expires 13-10-2004)
+2026-06-24 22:45:37,488 [INFO] FOUND  Ba: Bo:      #5       Bengal Steel Works Ltd.  (expires 06-12-1998)
+2026-06-24 22:45:38,515 [INFO] FOUND  Ba: Bo:      #6       Janata Jute Mills Ltd.  (expires 20-12-1902)
+2026-06-24 22:45:39,658 [INFO] FOUND  Ba: Bo:      #3       S.K.M. Jute Mills Ltd.  (expires 17-08-2011)
+2026-06-24 22:45:39,823 [INFO] FOUND  Ba: Bo:      #7       Rajshahi Medical college hospital  (expires 03-06-2007)
+2026-06-24 22:45:40,871 [INFO] FOUND  Ba: Bo:      #9       Enginecring Collage.  (expires 06-02-1974)
+2026-06-24 22:45:41,336 [INFO] FOUND  Ba: Bo:      #8       M/S Syeda Elmish Chawdhory Auto Rice Mills  (expires 21-12-2022)
+2026-06-24 22:45:42,103 [INFO] FOUND  Ba: Bo:      #10      Ahmed Specialised Textile Mill.  (expires 22-04-1987)
+2026-06-24 22:45:42,670 [INFO] FOUND  Ba: Bo:      #11      Abdul Hye & Bro's.  (expires 01-10-1984)
+2026-06-24 22:45:43,427 [INFO] FOUND  Ba: Bo:      #12      Modern Rice Milling.  (expires 08-07-2012)
+2026-06-24 22:45:43,609 [INFO] FOUND  Ba: Bo:      #13      Mokbul Vuia Kalander & Kleanars Mills.  (expires 20-08-2008)
+2026-06-24 22:45:44,583 [INFO] FOUND  Ba: Bo:      #14      M/S Yusuf Textile Mills.  (expires 19-08-1989)
+2026-06-24 22:45:45,253 [INFO] FOUND  Ba: Bo:      #15      J.J.Rehbach(bd)Ltd.  (expires 20-01-1979)
+2026-06-24 22:45:46,107 [INFO] FOUND  Ba: Bo:      #16      The Dhaka Dying & Manuf: Co. Ltd.  (expires 08-04-2010)
+2026-06-24 22:45:46,752 [INFO] FOUND  Ba: Bo:      #17      A huabahan textile  & penting  (expires 25-09-2021)
+2026-06-24 22:45:47,706 [INFO] FOUND  Ba: Bo:      #18      Cholera Research Lab.  (expires 01-02-1999)
+2026-06-24 22:45:48,188 [INFO] FOUND  Ba: Bo:      #19      IvanMilutinovic-Pim  (expires 27-04-1978)
+2026-06-24 22:45:48,547 [INFO] FOUND  Ba: Bo:      #20      Ehorasal Thermal Power Stati.  (expires 18-04-2021)
+2026-06-24 22:45:48,919 [WARNING] Request failed (attempt 1/4) series='Ba: Bo:' num=2: 503 Server Error: Service Unavailable for url: http://www.boilerdata.boiler.gov.bd/info/bs/boileroutputdue2.php
+2026-06-24 22:45:49,600 [INFO] FOUND  Ba: Bo:      #22      Rajshahi Jute Mills  (expires 07-12-2022)
+2026-06-24 22:45:49,807 [INFO] FOUND  Ba: Bo:      #21      Adamjce Jute Mills Ltd.  (expires 03-07-2002)
+2026-06-24 22:45:50,765 [INFO] FOUND  Ba: Bo:      #24      Mymensingh Jute Mills  (expires 02-12-1993)
+2026-06-24 22:45:51,062 [INFO] FOUND  Ba: Bo:      #23      Ashuganj Power Station  (expires 28-11-2004)
+2026-06-24 22:45:51,230 [INFO] FOUND  Ba: Bo:      #2       Moonlight Silk Mills Ltd.  (expires 09-07-2022)
+2026-06-24 22:45:52,119 [INFO] FOUND  Ba: Bo:      #27      Sylhet Pulp &Paper Mills  (expires 22-06-2003)
+2026-06-24 22:45:52,212 [INFO] FOUND  Ba: Bo:      #26      Sylhet Pulp &Paper Mills  (expires 22-07-2003)
+2026-06-24 22:45:52,913 [INFO] FOUND  Ba: Bo:      #25      Rahim Specialijed Textile  (expires 09-02-1977)
+2026-06-24 22:45:53,312 [INFO] FOUND  Ba: Bo:      #29      K.D.H.Laboratories Ltd  (expires 19-05-2001)
+2026-06-24 22:45:53,379 [INFO] FOUND  Ba: Bo:      #28      Polytechnic Institute  (expires 15-05-1977)
+2026-06-24 22:45:53,985 [INFO] FOUND  Ba: Bo:      #30      Masars Ruma Dain & Painting Works  (expires 21-07-2010)
+2026-06-24 22:45:54,545 [INFO] FOUND  Ba: Bo:      #31      Ehorasal Power Station  (expires 18-04-2021)
+2026-06-24 22:45:54,662 [INFO] FOUND  Ba: Bo:      #32      Bogras Cotton Mills  (expires 05-12-1992)
+2026-06-24 22:45:55,426 [INFO] FOUND  Ba: Bo:      #34      Mymensingh Medical college Hospital  (expires 08-12-2022)
+2026-06-24 22:45:55,477 [INFO] FOUND  Ba: Bo:      #35      Dhaka Jute Mills  (expires 15-04-1998)
+2026-06-24 22:45:55,598 [INFO] FOUND  Ba: Bo:      #33      Mymensingh Medical college Hospital  (expires 08-12-2022)
+2026-06-24 22:45:56,451 [INFO] FOUND  Ba: Bo:      #36      Sinha Textiles Ltd  (expires 26-01-2000)
+2026-06-24 22:45:57,174 [INFO] FOUND  Ba: Bo:      #37      Bangladesh Milk Producers Co-Op. Union Ltd.  (expires 18-05-2003)
+2026-06-24 22:45:57,236 [INFO] FOUND  Ba: Bo:      #38      Bangladesh Milk Producers Company  (expires 07-09-2000)
+2026-06-24 22:45:57,525 [INFO] FOUND  Ba: Bo:      #39      Chandpur Textile Mills Ltd.  (expires 02-06-2003)
+2026-06-24 22:45:58,499 [INFO] FOUND  Ba: Bo:      #40      Karnafuly Paper Mills.  (expires 07-09-2021)
+2026-06-24 22:45:58,632 [INFO] FOUND  Ba: Bo:      #41      The Dhaka Cotton Mills Ltd.  (expires 01-09-2002)
+2026-06-24 22:45:59,312 [INFO] FOUND  Ba: Bo:      #42      Silver Soop Ltd  (expires 17-03-2000)
+2026-06-24 22:45:59,358 [INFO] FOUND  Ba: Bo:      #43      Afsar Food Industrics  (expires 30-11--0001)
+2026-06-24 22:45:59,566 [INFO] FOUND  Ba: Bo:      #44      Karnaphully Paper Mills Ltd.  (expires 07-09-2021)
+2026-06-24 22:46:00,194 [INFO] FOUND  Ba: Bo:      #45      Kamal Scap & Chemical Co.  (expires 17-03-1999)
+2026-06-24 22:46:00,758 [INFO] FOUND  Ba: Bo:      #46      M/S Mokka Auto Rice Mills  (expires 21-11-2022)
+2026-06-24 22:46:01,357 [INFO] FOUND  Ba: Bo:      #47      Chalna Ancherage  (expires 27-01-1978)
+2026-06-24 22:46:01,474 [INFO] FOUND  Ba: Bo:      #48      Faridpur Sugar Mills  (expires 16-09-2022)
+2026-06-24 22:46:01,750 [INFO] FOUND  Ba: Bo:      #49      Faridpur Sugar Mills  (expires 16-09-2022)
+2026-06-24 22:46:02,742 [INFO] FOUND  Ba: Bo:      #50      Quasem Teiaber Complex.  (expires 02-01-2004)
+2026-06-24 22:46:02,743 [INFO] Series 'Ba: Bo:' complete.
+2026-06-24 22:46:02,743 [INFO] Processing series 'EP:'  starting from #1
+2026-06-24 22:46:06,341 [INFO] FOUND  EP:          #8       New M.H. Auto Rice Mill Ltd.  (expires 30-11--0001)
+2026-06-24 22:46:09,185 [INFO] FOUND  EP:          #13      Ahmed Bawani Textile Mills Ltd.  (expires 30-11--0001)
+2026-06-24 22:46:11,745 [INFO] FOUND  EP:          #22      Jatio Jute Mills Ltd.  (expires 18-12-2022)
+2026-06-24 22:46:12,625 [INFO] FOUND  EP:          #23      Greenland Grments Ltd.  (expires 30-11--0001)
+2026-06-24 22:46:24,248 [INFO] Series 'EP:' complete.
+2026-06-24 22:46:24,248 [INFO] Processing series 'BL:'  starting from #1
+2026-06-24 22:46:46,909 [INFO] Series 'BL:' complete.
+2026-06-24 22:46:46,909 [INFO] Processing series 'EBL:'  starting from #1
+2026-06-24 22:46:50,767 [INFO] FOUND  EBL:         #7       Sarwar Industries  (expires 30-11--0001)
+2026-06-24 22:46:50,932 [INFO] FOUND  EBL:         #8       M/S Syeda Elmish Chawdhory Auto Rice Mills  (expires 21-12-2022)
+2026-06-24 22:46:52,419 [INFO] FOUND  EBL:         #11      Chhatak Ceud Factory  (expires 15-12-2010)
+2026-06-24 22:46:52,861 [INFO] FOUND  EBL:         #13      Eastern Timberl Playwood Ind: Co. Ltd.  (expires 19-08-1992)
+2026-06-24 22:46:52,896 [INFO] FOUND  EBL:         #12      Sub-Divisional England (R& H)  (expires 21-09-1970)
+2026-06-24 22:46:53,327 [INFO] FOUND  EBL:         #14      Tawaklly Rice & Flour Mills  (expires 28-10-2005)
+2026-06-24 22:46:53,712 [INFO] FOUND  EBL:         #15      Ramgopalpur Rice & Flour Mills  (expires 29-03-2005)
+2026-06-24 22:46:53,984 [INFO] FOUND  EBL:         #16      M/S: S. Daula & Sons Ltd.  (expires 12-12-1999)
+2026-06-24 22:46:54,577 [INFO] FOUND  EBL:         #17      A Shubhan Textile.  (expires 27-09-2022)
+2026-06-24 22:46:55,387 [INFO] FOUND  EBL:         #18      Bux Rubber Co.  (expires 01-07-1957)
+2026-06-24 22:46:55,690 [INFO] FOUND  EBL:         #20      Biramchar Rice Mills  (expires 09-09-2004)
+2026-06-24 22:46:55,703 [INFO] FOUND  EBL:         #19      Dhanmondi Power Station  (expires 04-10-1972)
+2026-06-24 22:46:56,234 [INFO] FOUND  EBL:         #21      Provati Dying  (expires 26-07-2008)
+2026-06-24 22:46:56,541 [INFO] FOUND  EBL:         #22      Pahartali Textile & Hosiery Mills Ltd.  (expires 28-06-1998)
+2026-06-24 22:46:56,925 [INFO] FOUND  EBL:         #23      Xmrailchera Tea Estate  (expires 11-02-1980)
+2026-06-24 22:46:57,360 [INFO] FOUND  EBL:         #24      National Cotton Mills Ltd.  (expires 23-06-1982)
+2026-06-24 22:46:58,178 [INFO] FOUND  EBL:         #25      Chittaranjar Cotton Mills  (expires 23-11-1997)
+2026-06-24 22:46:58,461 [INFO] FOUND  EBL:         #26      Chittaranjar Cotton Mills  (expires 27-06-1997)
+2026-06-24 22:46:58,565 [INFO] FOUND  EBL:         #27      Luxminarayan Cotton Mills  (expires 23-12-1998)
+2026-06-24 22:46:59,207 [INFO] FOUND  EBL:         #28      Monno Textile Mills Ltd.  (expires 30-11--0001)
+2026-06-24 22:46:59,710 [INFO] FOUND  EBL:         #30      The Port Health Officer  (expires 10-10-1986)
+2026-06-24 22:47:00,158 [INFO] FOUND  EBL:         #29      Ralli Brothers Ltd.  (expires 27-02-1974)
+2026-06-24 22:47:00,488 [INFO] FOUND  EBL:         #31      Steel Tech Ind: Ltd.  (expires 05-06-2006)
+2026-06-24 22:47:00,778 [INFO] FOUND  EBL:         #32      Adamjee Jute Mills Ltd.  (expires 16-09-2002)
+2026-06-24 22:47:00,992 [INFO] FOUND  EBL:         #33      Adamjee Jute Mills Ltd.  (expires 19-03-2003)
+2026-06-24 22:47:01,322 [INFO] FOUND  EBL:         #34      Pylon Industries Ltd.  (expires 28-01-1998)
+2026-06-24 22:47:02,026 [INFO] FOUND  EBL:         #35      Luxmi Jute Agency  (expires 16-05-1956)
+2026-06-24 22:47:02,728 [INFO] FOUND  EBL:         #37      Dacca Electric Supply  (expires 30-11--0001)
+2026-06-24 22:47:02,737 [INFO] FOUND  EBL:         #36      Khulna Rice Mills  (expires 25-02-1993)
+2026-06-24 22:47:03,653 [INFO] FOUND  EBL:         #39      Sonar Bangla Saabay Cotton Mills Ltd.  (expires 29-09-1988)
+2026-06-24 22:47:03,803 [INFO] FOUND  EBL:         #38      Eastern Milk Producers Ltd.  (expires 30-11--0001)
+2026-06-24 22:47:04,472 [INFO] FOUND  EBL:         #40      Kornophuly Paper Mills Ltd  (expires 05-09-2022)
+2026-06-24 22:47:05,087 [INFO] FOUND  EBL:         #42      East Pakistan Co-Op. Cotton Mills Ltd.  (expires 07-10-2008)
+2026-06-24 22:47:05,267 [INFO] FOUND  EBL:         #41      C & B City Division  (expires 15-11-1956)
+2026-06-24 22:47:05,643 [INFO] FOUND  EBL:         #43      Kornophuly Paper Mills Ltd  (expires 22-10-2022)
+2026-06-24 22:47:05,905 [INFO] FOUND  EBL:         #44      Kornophuly Paper Mills Ltd  (expires 05-09-2022)
+2026-06-24 22:47:06,104 [INFO] FOUND  EBL:         #45      Pakistan Hotels Ltd.  (expires 30-11--0001)
+2026-06-24 22:47:06,508 [INFO] FOUND  EBL:         #46      M/S Mokka Auto Rice Mill  (expires 13-01-2020)
+2026-06-24 22:47:07,088 [INFO] FOUND  EBL:         #47      Momotaz Auto Rice Mill  (expires 21-09-2022)
+2026-06-24 22:47:07,463 [INFO] FOUND  EBL:         #49      Chhatak Cement Factory  (expires 15-12-2010)
+2026-06-24 22:47:07,765 [INFO] FOUND  EBL:         #48      Eastern Chemical Ind: Ltd.  (expires 22-08-2018)
+2026-06-24 22:47:08,689 [INFO] FOUND  EBL:         #50      Kornophuly Paper Mills Ltd  (expires 22-10-2022)
+2026-06-24 22:47:08,691 [INFO] Series 'EBL:' complete.
+2026-06-24 22:47:08,691 [INFO] Processing series 'CP:'  starting from #1
+2026-06-24 22:47:32,429 [INFO] Series 'CP:' complete.
+2026-06-24 22:47:32,429 [INFO] Processing series 'UP:'  starting from #1
+2026-06-24 22:47:53,690 [INFO] Series 'UP:' complete.
+2026-06-24 22:47:53,690 [INFO] Processing series 'K:'  starting from #1
+2026-06-24 22:47:56,719 [INFO] FOUND  K:           #5       Farrakh Chemical Ind: Ltd.  (expires 30-11--0001)
+2026-06-24 22:48:02,268 [INFO] FOUND  K:           #17      Haque & Co.  (expires 14-01-2005)
+2026-06-24 22:48:05,379 [INFO] FOUND  K:           #24      Saiurapt EL. Brick  (expires 30-11--0001)
+2026-06-24 22:48:17,888 [INFO] Series 'K:' complete.
+2026-06-24 22:48:17,888 [INFO] Processing series 'NL:'  starting from #1
+2026-06-24 22:48:39,794 [INFO] Series 'NL:' complete.
+2026-06-24 22:48:39,794 [INFO] Processing series 'A:'  starting from #1
+2026-06-24 22:48:43,879 [INFO] FOUND  A:           #8       Khan Auto Rice Mill  (expires 21-05-2005)
+2026-06-24 22:49:02,215 [INFO] Series 'A:' complete.
+2026-06-24 22:49:02,216 [INFO] Processing series 'PB:'  starting from #1
+2026-06-24 22:49:25,796 [INFO] Series 'PB:' complete.
+2026-06-24 22:49:25,796 [INFO] Scrape finished. found=100  empty=400  errors=0  total=500
+2026-06-24 22:49:25,796 [INFO] CSV output : /home/user/Taiguo-boilar/scraper/database_export.csv
+2026-06-24 22:49:25,796 [INFO] JSON output: /home/user/Taiguo-boilar/scraper/records.json
+2026-06-24 23:11:04,771 [INFO] Starting scrape: 1 series × 5 numbers = 5 combinations  workers=3  time-limit=5.25h
+2026-06-24 23:11:04,771 [INFO] Series 'EBL:' already complete, skipping.
+2026-06-24 23:11:04,771 [INFO] Scrape finished.  found=0  empty=0  errors=0  total=0
+2026-06-24 23:11:04,771 [INFO] CSV output : /home/user/Taiguo-boilar/scraper/database_export.csv
+2026-06-24 23:11:04,771 [INFO] JSON output: /home/user/Taiguo-boilar/scraper/records.json
+2026-06-24 23:11:16,592 [INFO] Starting scrape: 1 series × 15000 numbers = 15000 combinations  workers=3  time-limit=0.001h
+2026-06-24 23:11:16,592 [INFO] Time limit approaching — stopping before series 'Ba: Bo:'.
+2026-06-24 23:11:16,592 [INFO] Stopped early (time limit). Resume with --resume.  found=0  empty=0  errors=0  total=0
+2026-06-24 23:11:16,592 [INFO] CSV output : /home/user/Taiguo-boilar/scraper/database_export.csv
+2026-06-24 23:11:16,592 [INFO] JSON output: /home/user/Taiguo-boilar/scraper/records.json
