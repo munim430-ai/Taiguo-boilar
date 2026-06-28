@@ -1,11 +1,13 @@
 name: Boiler Registry Scrape
 
-# Trigger manually from the GitHub Actions tab.
-# Each run scrapes for up to 5.25 hours, commits progress back to the branch,
-# and exits cleanly. Trigger again the next day to continue from the checkpoint.
-# The full scrape (~150,000 requests) typically completes in 2–3 triggered runs.
+# Runs automatically every night at 22:00 UTC (04:00 Bangladesh time).
+# Each run scrapes for up to 5.25 hours, commits progress back to main,
+# and exits cleanly. The full scrape (~150,000 requests) completes in
+# approximately 3–4 runs. Can also be triggered manually at any time.
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 22 * * *'   # 22:00 UTC = 04:00 Bangladesh time, daily
 
 permissions:
   contents: write
