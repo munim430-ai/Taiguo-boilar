@@ -9,6 +9,13 @@ on:
   schedule:
     - cron: '0 22 * * *'   # 22:00 UTC = 04:00 Bangladesh time, daily
 
+# Only one scraper run at a time. If a manual trigger fires while the
+# scheduled run is already in progress, the new run waits (queues) rather
+# than running in parallel — preventing duplicate data and git push conflicts.
+concurrency:
+  group: boiler-scraper
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -47,4 +54,5 @@ jobs:
           git diff --staged --quiet \
             && echo "No new data — nothing to commit." \
             || git commit -m "scraper: checkpoint $(date -u '+%Y-%m-%d %H:%M UTC')"
-          git push
+          git pull --rebase origin main
+          git push origin main
