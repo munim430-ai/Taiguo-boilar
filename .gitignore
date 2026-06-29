@@ -1,0 +1,12 @@
+# EPB export data — binary files re-downloadable via scraper/epb_downloader.py
+scraper/epb_data/FY_*/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Scraper state
+scraper/rmg_progress.json
