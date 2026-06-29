@@ -14990,3 +14990,667 @@
 2026-06-29 02:34:33,960 [INFO] Stopped early (time limit). Resume with --resume.  found=114  empty=42936  errors=0  total=43050
 2026-06-29 02:34:33,960 [INFO] CSV output : /home/runner/work/Taiguo-boilar/Taiguo-boilar/scraper/database_export.csv
 2026-06-29 02:34:33,960 [INFO] JSON output: /home/runner/work/Taiguo-boilar/Taiguo-boilar/scraper/records.json
+2026-06-29 15:54:12,461 [INFO] Starting scrape: 10 series × 15000 numbers = 150000 combinations  workers=3  time-limit=5.25h
+2026-06-29 15:54:12,461 [INFO] Series 'Ba: Bo:' already complete, skipping.
+2026-06-29 15:54:12,461 [INFO] Series 'EP:' already complete, skipping.
+2026-06-29 15:54:12,461 [INFO] Series 'BL:' already complete, skipping.
+2026-06-29 15:54:12,461 [INFO] Series 'EBL:' already complete, skipping.
+2026-06-29 15:54:12,461 [INFO] Series 'CP:' already complete, skipping.
+2026-06-29 15:54:12,461 [INFO] Processing series 'UP:'  starting from #8851
+2026-06-29 15:55:02,021 [INFO] Progress: series='UP:'  num=8950/15000  found=0  empty=100  errors=0
+2026-06-29 15:55:43,894 [INFO] Progress: series='UP:'  num=9050/15000  found=0  empty=200  errors=0
+2026-06-29 15:56:26,727 [INFO] Progress: series='UP:'  num=9150/15000  found=0  empty=300  errors=0
+2026-06-29 15:57:08,879 [INFO] Progress: series='UP:'  num=9250/15000  found=0  empty=400  errors=0
+2026-06-29 15:57:53,747 [INFO] Progress: series='UP:'  num=9350/15000  found=0  empty=500  errors=0
+2026-06-29 15:58:34,986 [INFO] Progress: series='UP:'  num=9450/15000  found=0  empty=600  errors=0
+2026-06-29 15:59:20,097 [INFO] Progress: series='UP:'  num=9550/15000  found=0  empty=700  errors=0
+2026-06-29 16:00:04,547 [INFO] Progress: series='UP:'  num=9650/15000  found=0  empty=800  errors=0
+2026-06-29 16:00:49,604 [INFO] Progress: series='UP:'  num=9750/15000  found=0  empty=900  errors=0
+2026-06-29 16:01:10,643 [WARNING] Request failed (attempt 1/4) series='UP:' num=9797: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 16:01:32,095 [WARNING] Request failed (attempt 1/4) series='UP:' num=9845: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 16:01:35,493 [INFO] Progress: series='UP:'  num=9850/15000  found=0  empty=1000  errors=0
+2026-06-29 16:02:20,775 [INFO] Progress: series='UP:'  num=9950/15000  found=0  empty=1100  errors=0
+2026-06-29 16:03:04,862 [INFO] Progress: series='UP:'  num=10050/15000  found=0  empty=1200  errors=0
+2026-06-29 16:03:51,285 [INFO] Progress: series='UP:'  num=10150/15000  found=0  empty=1300  errors=0
+2026-06-29 16:04:36,344 [INFO] Progress: series='UP:'  num=10250/15000  found=0  empty=1400  errors=0
+2026-06-29 16:05:19,642 [INFO] Progress: series='UP:'  num=10350/15000  found=0  empty=1500  errors=0
+2026-06-29 16:05:31,129 [WARNING] Request failed (attempt 1/4) series='UP:' num=10377: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 16:06:05,819 [INFO] Progress: series='UP:'  num=10450/15000  found=0  empty=1600  errors=0
+2026-06-29 16:06:49,845 [INFO] Progress: series='UP:'  num=10550/15000  found=0  empty=1700  errors=0
+2026-06-29 16:06:57,751 [WARNING] Request failed (attempt 1/4) series='UP:' num=10568: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 16:07:33,122 [INFO] Progress: series='UP:'  num=10650/15000  found=0  empty=1800  errors=0
+2026-06-29 16:08:18,621 [INFO] Progress: series='UP:'  num=10750/15000  found=0  empty=1900  errors=0
+2026-06-29 16:08:57,810 [WARNING] Request failed (attempt 1/4) series='UP:' num=10839: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 16:09:03,833 [INFO] Progress: series='UP:'  num=10850/15000  found=0  empty=2000  errors=0
+2026-06-29 16:09:47,952 [INFO] Progress: series='UP:'  num=10950/15000  found=0  empty=2100  errors=0
+2026-06-29 16:09:49,007 [WARNING] Request failed (attempt 1/4) series='UP:' num=10952: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 16:10:35,000 [INFO] Progress: series='UP:'  num=11050/15000  found=0  empty=2200  errors=0
+2026-06-29 16:11:20,189 [INFO] Progress: series='UP:'  num=11150/15000  found=0  empty=2300  errors=0
+2026-06-29 16:12:04,240 [INFO] Progress: series='UP:'  num=11250/15000  found=0  empty=2400  errors=0
+2026-06-29 16:12:06,758 [WARNING] Request failed (attempt 1/4) series='UP:' num=11256: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 16:12:11,736 [WARNING] Request failed (attempt 1/4) series='UP:' num=11265: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 16:12:19,445 [WARNING] Request failed (attempt 1/4) series='UP:' num=11279: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 16:12:51,610 [INFO] Progress: series='UP:'  num=11350/15000  found=0  empty=2500  errors=0
+2026-06-29 16:13:38,603 [INFO] Progress: series='UP:'  num=11450/15000  found=0  empty=2600  errors=0
+2026-06-29 16:14:22,496 [INFO] Progress: series='UP:'  num=11550/15000  found=0  empty=2700  errors=0
+2026-06-29 16:15:07,700 [INFO] Progress: series='UP:'  num=11650/15000  found=0  empty=2800  errors=0
+2026-06-29 16:15:51,921 [INFO] Progress: series='UP:'  num=11750/15000  found=0  empty=2900  errors=0
+2026-06-29 16:16:36,863 [INFO] Progress: series='UP:'  num=11850/15000  found=0  empty=3000  errors=0
+2026-06-29 16:17:20,907 [INFO] Progress: series='UP:'  num=11950/15000  found=0  empty=3100  errors=0
+2026-06-29 16:18:04,483 [INFO] Progress: series='UP:'  num=12050/15000  found=0  empty=3200  errors=0
+2026-06-29 16:18:47,667 [INFO] Progress: series='UP:'  num=12150/15000  found=0  empty=3300  errors=0
+2026-06-29 16:19:32,398 [INFO] Progress: series='UP:'  num=12250/15000  found=0  empty=3400  errors=0
+2026-06-29 16:20:16,781 [INFO] Progress: series='UP:'  num=12350/15000  found=0  empty=3500  errors=0
+2026-06-29 16:21:02,288 [INFO] Progress: series='UP:'  num=12450/15000  found=0  empty=3600  errors=0
+2026-06-29 16:21:47,048 [INFO] Progress: series='UP:'  num=12550/15000  found=0  empty=3700  errors=0
+2026-06-29 16:22:30,541 [INFO] Progress: series='UP:'  num=12650/15000  found=0  empty=3800  errors=0
+2026-06-29 16:23:14,731 [INFO] Progress: series='UP:'  num=12750/15000  found=0  empty=3900  errors=0
+2026-06-29 16:24:00,010 [INFO] Progress: series='UP:'  num=12850/15000  found=0  empty=4000  errors=0
+2026-06-29 16:24:44,668 [INFO] Progress: series='UP:'  num=12950/15000  found=0  empty=4100  errors=0
+2026-06-29 16:25:28,219 [INFO] Progress: series='UP:'  num=13050/15000  found=0  empty=4200  errors=0
+2026-06-29 16:26:14,855 [INFO] Progress: series='UP:'  num=13150/15000  found=0  empty=4300  errors=0
+2026-06-29 16:26:58,776 [INFO] Progress: series='UP:'  num=13250/15000  found=0  empty=4400  errors=0
+2026-06-29 16:27:44,810 [INFO] Progress: series='UP:'  num=13350/15000  found=0  empty=4500  errors=0
+2026-06-29 16:28:29,327 [INFO] Progress: series='UP:'  num=13450/15000  found=0  empty=4600  errors=0
+2026-06-29 16:29:13,843 [INFO] Progress: series='UP:'  num=13550/15000  found=0  empty=4700  errors=0
+2026-06-29 16:29:19,965 [WARNING] Request failed (attempt 1/4) series='UP:' num=13565: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 16:30:00,286 [INFO] Progress: series='UP:'  num=13650/15000  found=0  empty=4800  errors=0
+2026-06-29 16:30:44,451 [INFO] Progress: series='UP:'  num=13750/15000  found=0  empty=4900  errors=0
+2026-06-29 16:31:29,011 [INFO] Progress: series='UP:'  num=13850/15000  found=0  empty=5000  errors=0
+2026-06-29 16:32:13,598 [INFO] Progress: series='UP:'  num=13950/15000  found=0  empty=5100  errors=0
+2026-06-29 16:32:58,772 [INFO] Progress: series='UP:'  num=14050/15000  found=0  empty=5200  errors=0
+2026-06-29 16:33:41,438 [INFO] Progress: series='UP:'  num=14150/15000  found=0  empty=5300  errors=0
+2026-06-29 16:34:25,855 [INFO] Progress: series='UP:'  num=14250/15000  found=0  empty=5400  errors=0
+2026-06-29 16:35:11,475 [INFO] Progress: series='UP:'  num=14350/15000  found=0  empty=5500  errors=0
+2026-06-29 16:35:56,912 [INFO] Progress: series='UP:'  num=14450/15000  found=0  empty=5600  errors=0
+2026-06-29 16:36:01,059 [WARNING] Request failed (attempt 1/4) series='UP:' num=14459: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 16:36:18,092 [WARNING] Request failed (attempt 1/4) series='UP:' num=14493: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 16:36:42,640 [INFO] Progress: series='UP:'  num=14550/15000  found=0  empty=5700  errors=0
+2026-06-29 16:37:27,089 [INFO] Progress: series='UP:'  num=14650/15000  found=0  empty=5800  errors=0
+2026-06-29 16:38:11,947 [INFO] Progress: series='UP:'  num=14750/15000  found=0  empty=5900  errors=0
+2026-06-29 16:38:58,288 [INFO] Progress: series='UP:'  num=14850/15000  found=0  empty=6000  errors=0
+2026-06-29 16:39:42,094 [INFO] Progress: series='UP:'  num=14950/15000  found=0  empty=6100  errors=0
+2026-06-29 16:40:03,670 [INFO] Progress: series='UP:'  num=15000/15000  found=0  empty=6150  errors=0
+2026-06-29 16:40:03,671 [INFO] Series 'UP:' complete.
+2026-06-29 16:40:03,671 [INFO] Processing series 'K:'  starting from #51
+2026-06-29 16:40:20,952 [INFO] FOUND  K:           #88      National Thread Works  (expires 19-01-1982)
+2026-06-29 16:40:30,378 [INFO] FOUND  K:           #111     Khulna Textile Mills Ltd.  (expires 30-11--0001)
+2026-06-29 16:40:34,616 [INFO] FOUND  K:           #120     Sarrapt EI. Brick Khulna  (expires 30-11--0001)
+2026-06-29 16:40:46,517 [INFO] Progress: series='K:'  num=150/15000  found=3  empty=6247  errors=0
+2026-06-29 16:40:48,243 [INFO] FOUND  K:           #152     Sterling Plywood Industries Ltd.  (expires 27-08-1986)
+2026-06-29 16:41:05,072 [INFO] FOUND  K:           #189     M/S: Sattar Match Works  (expires 29-01-2000)
+2026-06-29 16:41:32,699 [INFO] Progress: series='K:'  num=250/15000  found=5  empty=6345  errors=0
+2026-06-29 16:42:17,722 [INFO] Progress: series='K:'  num=350/15000  found=5  empty=6445  errors=0
+2026-06-29 16:43:02,192 [INFO] Progress: series='K:'  num=450/15000  found=5  empty=6545  errors=0
+2026-06-29 16:43:47,906 [INFO] Progress: series='K:'  num=550/15000  found=5  empty=6645  errors=0
+2026-06-29 16:44:33,257 [INFO] Progress: series='K:'  num=650/15000  found=5  empty=6745  errors=0
+2026-06-29 16:45:17,544 [INFO] Progress: series='K:'  num=750/15000  found=5  empty=6845  errors=0
+2026-06-29 16:46:00,559 [INFO] Progress: series='K:'  num=850/15000  found=5  empty=6945  errors=0
+2026-06-29 16:46:46,067 [INFO] Progress: series='K:'  num=950/15000  found=5  empty=7045  errors=0
+2026-06-29 16:47:31,835 [INFO] Progress: series='K:'  num=1050/15000  found=5  empty=7145  errors=0
+2026-06-29 16:48:16,615 [INFO] Progress: series='K:'  num=1150/15000  found=5  empty=7245  errors=0
+2026-06-29 16:49:01,377 [INFO] Progress: series='K:'  num=1250/15000  found=5  empty=7345  errors=0
+2026-06-29 16:49:45,388 [INFO] Progress: series='K:'  num=1350/15000  found=5  empty=7445  errors=0
+2026-06-29 16:50:29,818 [INFO] Progress: series='K:'  num=1450/15000  found=5  empty=7545  errors=0
+2026-06-29 16:51:16,024 [INFO] Progress: series='K:'  num=1550/15000  found=5  empty=7645  errors=0
+2026-06-29 16:51:58,579 [INFO] Progress: series='K:'  num=1650/15000  found=5  empty=7745  errors=0
+2026-06-29 16:52:11,264 [WARNING] Request failed (attempt 1/4) series='K:' num=1682: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 16:52:43,570 [INFO] Progress: series='K:'  num=1750/15000  found=5  empty=7845  errors=0
+2026-06-29 16:53:28,834 [INFO] Progress: series='K:'  num=1850/15000  found=5  empty=7945  errors=0
+2026-06-29 16:54:12,503 [INFO] Progress: series='K:'  num=1950/15000  found=5  empty=8045  errors=0
+2026-06-29 16:54:58,985 [INFO] Progress: series='K:'  num=2050/15000  found=5  empty=8145  errors=0
+2026-06-29 16:55:42,892 [INFO] Progress: series='K:'  num=2150/15000  found=5  empty=8245  errors=0
+2026-06-29 16:56:29,810 [INFO] Progress: series='K:'  num=2250/15000  found=5  empty=8345  errors=0
+2026-06-29 16:57:13,604 [INFO] Progress: series='K:'  num=2350/15000  found=5  empty=8445  errors=0
+2026-06-29 16:57:57,920 [INFO] Progress: series='K:'  num=2450/15000  found=5  empty=8545  errors=0
+2026-06-29 16:58:43,723 [INFO] Progress: series='K:'  num=2550/15000  found=5  empty=8645  errors=0
+2026-06-29 16:59:29,600 [INFO] Progress: series='K:'  num=2650/15000  found=5  empty=8745  errors=0
+2026-06-29 17:00:15,515 [INFO] Progress: series='K:'  num=2750/15000  found=5  empty=8845  errors=0
+2026-06-29 17:01:01,768 [INFO] Progress: series='K:'  num=2850/15000  found=5  empty=8945  errors=0
+2026-06-29 17:01:46,433 [INFO] Progress: series='K:'  num=2950/15000  found=5  empty=9045  errors=0
+2026-06-29 17:01:57,956 [WARNING] Request failed (attempt 1/4) series='K:' num=2970: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:02:38,058 [INFO] Progress: series='K:'  num=3050/15000  found=5  empty=9145  errors=0
+2026-06-29 17:03:24,643 [INFO] Progress: series='K:'  num=3150/15000  found=5  empty=9245  errors=0
+2026-06-29 17:04:13,727 [INFO] Progress: series='K:'  num=3250/15000  found=5  empty=9345  errors=0
+2026-06-29 17:05:03,248 [INFO] Progress: series='K:'  num=3350/15000  found=5  empty=9445  errors=0
+2026-06-29 17:05:51,452 [INFO] Progress: series='K:'  num=3450/15000  found=5  empty=9545  errors=0
+2026-06-29 17:06:30,544 [WARNING] Request failed (attempt 1/4) series='K:' num=3488: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 17:06:50,176 [INFO] Progress: series='K:'  num=3550/15000  found=5  empty=9645  errors=0
+2026-06-29 17:07:38,598 [INFO] Progress: series='K:'  num=3650/15000  found=5  empty=9745  errors=0
+2026-06-29 17:08:30,232 [INFO] Progress: series='K:'  num=3750/15000  found=5  empty=9845  errors=0
+2026-06-29 17:09:10,520 [WARNING] Request failed (attempt 1/4) series='K:' num=3837: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:09:19,156 [INFO] Progress: series='K:'  num=3850/15000  found=5  empty=9945  errors=0
+2026-06-29 17:10:06,835 [INFO] Progress: series='K:'  num=3950/15000  found=5  empty=10045  errors=0
+2026-06-29 17:10:56,301 [INFO] Progress: series='K:'  num=4050/15000  found=5  empty=10145  errors=0
+2026-06-29 17:11:46,667 [INFO] Progress: series='K:'  num=4150/15000  found=5  empty=10245  errors=0
+2026-06-29 17:12:03,844 [WARNING] Request failed (attempt 1/4) series='K:' num=4184: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:12:42,004 [INFO] Progress: series='K:'  num=4250/15000  found=5  empty=10345  errors=0
+2026-06-29 17:13:32,871 [INFO] Progress: series='K:'  num=4350/15000  found=5  empty=10445  errors=0
+2026-06-29 17:13:43,358 [WARNING] Request failed (attempt 1/4) series='K:' num=4368: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:14:03,522 [WARNING] Request failed (attempt 1/4) series='K:' num=4403: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:14:29,037 [INFO] Progress: series='K:'  num=4450/15000  found=5  empty=10545  errors=0
+2026-06-29 17:15:20,449 [INFO] Progress: series='K:'  num=4550/15000  found=5  empty=10645  errors=0
+2026-06-29 17:15:24,730 [WARNING] Request failed (attempt 1/4) series='K:' num=4556: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:15:27,869 [WARNING] Request failed (attempt 1/4) series='K:' num=4558: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:15:45,465 [WARNING] Request failed (attempt 1/4) series='K:' num=4559: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 17:16:24,049 [INFO] Progress: series='K:'  num=4650/15000  found=5  empty=10745  errors=0
+2026-06-29 17:16:26,449 [WARNING] Request failed (attempt 1/4) series='K:' num=4652: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:17:18,863 [WARNING] Request failed (attempt 1/4) series='K:' num=4740: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:17:22,268 [INFO] Progress: series='K:'  num=4750/15000  found=5  empty=10845  errors=0
+2026-06-29 17:17:53,161 [WARNING] Request failed (attempt 1/4) series='K:' num=4798: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:17:57,863 [WARNING] Request failed (attempt 1/4) series='K:' num=4780: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 17:18:27,516 [INFO] Progress: series='K:'  num=4850/15000  found=5  empty=10945  errors=0
+2026-06-29 17:19:20,380 [WARNING] Request failed (attempt 1/4) series='K:' num=4949: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:19:22,685 [INFO] Progress: series='K:'  num=4950/15000  found=5  empty=11045  errors=0
+2026-06-29 17:19:25,377 [WARNING] Request failed (attempt 1/4) series='K:' num=4955: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:19:46,139 [WARNING] Request failed (attempt 1/4) series='K:' num=4956: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 17:20:23,202 [INFO] Progress: series='K:'  num=5050/15000  found=5  empty=11145  errors=0
+2026-06-29 17:20:44,292 [WARNING] Request failed (attempt 1/4) series='K:' num=5090: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:21:16,197 [INFO] Progress: series='K:'  num=5150/15000  found=5  empty=11245  errors=0
+2026-06-29 17:22:05,209 [INFO] Progress: series='K:'  num=5250/15000  found=5  empty=11345  errors=0
+2026-06-29 17:22:20,988 [WARNING] Request failed (attempt 1/4) series='K:' num=5279: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:23:17,580 [WARNING] Request failed (attempt 1/4) series='K:' num=5340: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 17:23:22,883 [INFO] Progress: series='K:'  num=5350/15000  found=5  empty=11445  errors=0
+2026-06-29 17:23:45,476 [WARNING] Request failed (attempt 1/4) series='K:' num=5351: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 17:24:03,834 [WARNING] Request failed (attempt 1/4) series='K:' num=5398: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:24:24,151 [WARNING] Request failed (attempt 1/4) series='K:' num=5404: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 17:24:36,955 [INFO] Progress: series='K:'  num=5450/15000  found=5  empty=11545  errors=0
+2026-06-29 17:25:42,724 [WARNING] Request failed (attempt 1/4) series='K:' num=5529: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 17:25:47,144 [INFO] Progress: series='K:'  num=5550/15000  found=5  empty=11645  errors=0
+2026-06-29 17:26:43,762 [INFO] Progress: series='K:'  num=5650/15000  found=5  empty=11745  errors=0
+2026-06-29 17:27:34,400 [INFO] Progress: series='K:'  num=5750/15000  found=5  empty=11845  errors=0
+2026-06-29 17:27:57,757 [WARNING] Request failed (attempt 1/4) series='K:' num=5796: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:28:28,352 [WARNING] Request failed (attempt 1/4) series='K:' num=5848: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:28:32,180 [INFO] Progress: series='K:'  num=5850/15000  found=5  empty=11945  errors=0
+2026-06-29 17:29:18,617 [WARNING] Request failed (attempt 1/4) series='K:' num=5931: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2026-06-29 17:29:25,840 [INFO] Progress: series='K:'  num=5950/15000  found=5  empty=12045  errors=0
+2026-06-29 17:30:29,135 [INFO] Progress: series='K:'  num=6050/15000  found=5  empty=12145  errors=0
+2026-06-29 17:31:22,184 [INFO] Progress: series='K:'  num=6150/15000  found=5  empty=12245  errors=0
+2026-06-29 17:31:49,733 [WARNING] Request failed (attempt 1/4) series='K:' num=6165: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 17:32:22,731 [INFO] Progress: series='K:'  num=6250/15000  found=5  empty=12345  errors=0
+2026-06-29 17:32:59,275 [WARNING] Request failed (attempt 1/4) series='K:' num=6316: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:33:20,213 [INFO] Progress: series='K:'  num=6350/15000  found=5  empty=12445  errors=0
+2026-06-29 17:33:52,813 [WARNING] Request failed (attempt 1/4) series='K:' num=6410: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:33:57,585 [WARNING] Request failed (attempt 1/4) series='K:' num=6418: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:34:03,804 [WARNING] Request failed (attempt 2/4) series='K:' num=6418: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:34:14,545 [WARNING] Request failed (attempt 1/4) series='K:' num=6437: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:34:35,444 [WARNING] Request failed (attempt 1/4) series='K:' num=6439: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 17:34:57,777 [WARNING] Request failed (attempt 2/4) series='K:' num=6439: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 17:35:05,748 [INFO] Progress: series='K:'  num=6450/15000  found=5  empty=12545  errors=0
+2026-06-29 17:35:29,390 [WARNING] Request failed (attempt 1/4) series='K:' num=6454: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 17:36:04,108 [WARNING] Request failed (attempt 1/4) series='K:' num=6540: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:36:08,175 [INFO] Progress: series='K:'  num=6550/15000  found=5  empty=12645  errors=0
+2026-06-29 17:37:17,792 [WARNING] Request failed (attempt 1/4) series='K:' num=6649: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 17:37:21,716 [INFO] Progress: series='K:'  num=6650/15000  found=5  empty=12745  errors=0
+2026-06-29 17:37:43,035 [WARNING] Request failed (attempt 1/4) series='K:' num=6653: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 17:37:46,352 [WARNING] Request failed (attempt 1/4) series='K:' num=6657: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 17:38:05,656 [WARNING] Request failed (attempt 2/4) series='K:' num=6653: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 17:38:38,562 [INFO] Progress: series='K:'  num=6750/15000  found=5  empty=12845  errors=0
+2026-06-29 17:39:14,093 [WARNING] Request failed (attempt 1/4) series='K:' num=6817: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:39:34,262 [INFO] Progress: series='K:'  num=6850/15000  found=5  empty=12945  errors=0
+2026-06-29 17:40:29,571 [INFO] Progress: series='K:'  num=6950/15000  found=5  empty=13045  errors=0
+2026-06-29 17:41:29,359 [WARNING] Request failed (attempt 1/4) series='K:' num=7029: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 17:41:32,552 [INFO] Progress: series='K:'  num=7050/15000  found=5  empty=13145  errors=0
+2026-06-29 17:42:22,071 [INFO] Progress: series='K:'  num=7150/15000  found=5  empty=13245  errors=0
+2026-06-29 17:43:18,181 [INFO] Progress: series='K:'  num=7250/15000  found=5  empty=13345  errors=0
+2026-06-29 17:43:54,133 [WARNING] Request failed (attempt 1/4) series='K:' num=7319: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:44:11,196 [WARNING] Request failed (attempt 1/4) series='K:' num=7347: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2026-06-29 17:44:15,718 [INFO] Progress: series='K:'  num=7350/15000  found=5  empty=13445  errors=0
+2026-06-29 17:44:25,011 [WARNING] Request failed (attempt 1/4) series='K:' num=7365: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:44:29,628 [WARNING] Request failed (attempt 1/4) series='K:' num=7367: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:44:54,414 [WARNING] Request failed (attempt 1/4) series='K:' num=7374: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 17:45:23,060 [INFO] Progress: series='K:'  num=7450/15000  found=5  empty=13545  errors=0
+2026-06-29 17:45:43,584 [WARNING] Request failed (attempt 1/4) series='K:' num=7493: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:45:57,826 [WARNING] Request failed (attempt 1/4) series='K:' num=7518: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:46:13,763 [INFO] Progress: series='K:'  num=7550/15000  found=5  empty=13645  errors=0
+2026-06-29 17:47:06,393 [INFO] Progress: series='K:'  num=7650/15000  found=5  empty=13745  errors=0
+2026-06-29 17:47:11,163 [WARNING] Request failed (attempt 1/4) series='K:' num=7652: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:47:54,725 [WARNING] Request failed (attempt 1/4) series='K:' num=7700: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 17:48:05,499 [WARNING] Request failed (attempt 1/4) series='K:' num=7748: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:48:08,308 [INFO] Progress: series='K:'  num=7750/15000  found=5  empty=13845  errors=0
+2026-06-29 17:48:55,204 [WARNING] Request failed (attempt 1/4) series='K:' num=7844: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:49:00,773 [INFO] Progress: series='K:'  num=7850/15000  found=5  empty=13945  errors=0
+2026-06-29 17:49:51,602 [INFO] Progress: series='K:'  num=7950/15000  found=5  empty=14045  errors=0
+2026-06-29 17:50:40,715 [INFO] Progress: series='K:'  num=8050/15000  found=5  empty=14145  errors=0
+2026-06-29 17:51:30,709 [INFO] Progress: series='K:'  num=8150/15000  found=5  empty=14245  errors=0
+2026-06-29 17:52:04,487 [WARNING] Request failed (attempt 1/4) series='K:' num=8177: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 17:52:29,388 [INFO] Progress: series='K:'  num=8250/15000  found=5  empty=14345  errors=0
+2026-06-29 17:53:02,677 [WARNING] Request failed (attempt 1/4) series='K:' num=8321: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:53:16,469 [INFO] Progress: series='K:'  num=8350/15000  found=5  empty=14445  errors=0
+2026-06-29 17:53:45,451 [WARNING] Request failed (attempt 1/4) series='K:' num=8411: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:54:05,997 [INFO] Progress: series='K:'  num=8450/15000  found=5  empty=14545  errors=0
+2026-06-29 17:54:13,466 [WARNING] Request failed (attempt 1/4) series='K:' num=8457: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2026-06-29 17:54:33,856 [WARNING] Request failed (attempt 1/4) series='K:' num=8496: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:55:03,075 [INFO] Progress: series='K:'  num=8550/15000  found=5  empty=14645  errors=0
+2026-06-29 17:55:52,946 [INFO] Progress: series='K:'  num=8650/15000  found=5  empty=14745  errors=0
+2026-06-29 17:56:41,381 [INFO] Progress: series='K:'  num=8750/15000  found=5  empty=14845  errors=0
+2026-06-29 17:57:18,680 [WARNING] Request failed (attempt 1/4) series='K:' num=8821: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:57:32,899 [INFO] Progress: series='K:'  num=8850/15000  found=5  empty=14945  errors=0
+2026-06-29 17:58:25,548 [WARNING] Request failed (attempt 1/4) series='K:' num=8919: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 17:58:37,335 [WARNING] Request failed (attempt 1/4) series='K:' num=8937: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 17:58:40,538 [INFO] Progress: series='K:'  num=8950/15000  found=5  empty=15045  errors=0
+2026-06-29 17:58:55,033 [WARNING] Request failed (attempt 1/4) series='K:' num=8978: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 17:59:30,187 [INFO] Progress: series='K:'  num=9050/15000  found=5  empty=15145  errors=0
+2026-06-29 17:59:55,560 [WARNING] Request failed (attempt 1/4) series='K:' num=9062: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 18:00:25,137 [INFO] Progress: series='K:'  num=9150/15000  found=5  empty=15245  errors=0
+2026-06-29 18:01:16,088 [INFO] Progress: series='K:'  num=9250/15000  found=5  empty=15345  errors=0
+2026-06-29 18:02:06,301 [INFO] Progress: series='K:'  num=9350/15000  found=5  empty=15445  errors=0
+2026-06-29 18:02:55,730 [INFO] Progress: series='K:'  num=9450/15000  found=5  empty=15545  errors=0
+2026-06-29 18:03:27,552 [WARNING] Request failed (attempt 1/4) series='K:' num=9514: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:03:46,706 [INFO] Progress: series='K:'  num=9550/15000  found=5  empty=15645  errors=0
+2026-06-29 18:04:35,287 [INFO] Progress: series='K:'  num=9650/15000  found=5  empty=15745  errors=0
+2026-06-29 18:04:52,000 [WARNING] Request failed (attempt 1/4) series='K:' num=9680: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:05:05,692 [WARNING] Request failed (attempt 1/4) series='K:' num=9702: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:05:31,004 [INFO] Progress: series='K:'  num=9750/15000  found=5  empty=15845  errors=0
+2026-06-29 18:06:02,251 [WARNING] Request failed (attempt 1/4) series='K:' num=9774: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 18:06:22,018 [WARNING] Request failed (attempt 1/4) series='K:' num=9831: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:06:32,672 [WARNING] Request failed (attempt 1/4) series='K:' num=9822: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 18:06:36,760 [INFO] Progress: series='K:'  num=9850/15000  found=5  empty=15945  errors=0
+2026-06-29 18:07:31,280 [INFO] Progress: series='K:'  num=9950/15000  found=5  empty=16045  errors=0
+2026-06-29 18:07:53,379 [WARNING] Request failed (attempt 1/4) series='K:' num=9984: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:08:16,412 [WARNING] Request failed (attempt 1/4) series='K:' num=9995: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 18:08:32,122 [INFO] Progress: series='K:'  num=10050/15000  found=5  empty=16145  errors=0
+2026-06-29 18:09:23,830 [INFO] Progress: series='K:'  num=10150/15000  found=5  empty=16245  errors=0
+2026-06-29 18:10:14,171 [INFO] Progress: series='K:'  num=10250/15000  found=5  empty=16345  errors=0
+2026-06-29 18:10:58,798 [WARNING] Request failed (attempt 1/4) series='K:' num=10328: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:11:06,208 [WARNING] Request failed (attempt 1/4) series='K:' num=10311: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 18:11:15,297 [INFO] Progress: series='K:'  num=10350/15000  found=5  empty=16445  errors=0
+2026-06-29 18:12:01,343 [INFO] Progress: series='K:'  num=10450/15000  found=5  empty=16545  errors=0
+2026-06-29 18:12:52,095 [INFO] Progress: series='K:'  num=10550/15000  found=5  empty=16645  errors=0
+2026-06-29 18:13:39,235 [INFO] Progress: series='K:'  num=10650/15000  found=5  empty=16745  errors=0
+2026-06-29 18:14:27,837 [INFO] Progress: series='K:'  num=10750/15000  found=5  empty=16845  errors=0
+2026-06-29 18:15:19,079 [INFO] Progress: series='K:'  num=10850/15000  found=5  empty=16945  errors=0
+2026-06-29 18:16:14,202 [INFO] Progress: series='K:'  num=10950/15000  found=5  empty=17045  errors=0
+2026-06-29 18:17:05,406 [INFO] Progress: series='K:'  num=11050/15000  found=5  empty=17145  errors=0
+2026-06-29 18:17:33,484 [WARNING] Request failed (attempt 1/4) series='K:' num=11065: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 18:18:04,774 [INFO] Progress: series='K:'  num=11150/15000  found=5  empty=17245  errors=0
+2026-06-29 18:18:54,316 [INFO] Progress: series='K:'  num=11250/15000  found=5  empty=17345  errors=0
+2026-06-29 18:19:36,142 [WARNING] Request failed (attempt 1/4) series='K:' num=11335: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:19:43,439 [INFO] Progress: series='K:'  num=11350/15000  found=5  empty=17445  errors=0
+2026-06-29 18:20:34,820 [INFO] Progress: series='K:'  num=11450/15000  found=5  empty=17545  errors=0
+2026-06-29 18:21:06,618 [WARNING] Request failed (attempt 1/4) series='K:' num=11473: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 18:21:36,135 [WARNING] Request failed (attempt 1/4) series='K:' num=11549: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:21:48,294 [WARNING] Request failed (attempt 1/4) series='K:' num=11538: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 18:21:51,499 [INFO] Progress: series='K:'  num=11550/15000  found=5  empty=17645  errors=0
+2026-06-29 18:21:59,307 [WARNING] Request failed (attempt 1/4) series='K:' num=11565: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:22:40,277 [INFO] Progress: series='K:'  num=11650/15000  found=5  empty=17745  errors=0
+2026-06-29 18:23:25,192 [INFO] Progress: series='K:'  num=11750/15000  found=5  empty=17845  errors=0
+2026-06-29 18:24:11,616 [INFO] Progress: series='K:'  num=11850/15000  found=5  empty=17945  errors=0
+2026-06-29 18:24:57,010 [INFO] Progress: series='K:'  num=11950/15000  found=5  empty=18045  errors=0
+2026-06-29 18:25:39,208 [WARNING] Request failed (attempt 1/4) series='K:' num=12040: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:25:45,849 [INFO] Progress: series='K:'  num=12050/15000  found=5  empty=18145  errors=0
+2026-06-29 18:26:32,959 [WARNING] Request failed (attempt 1/4) series='K:' num=12138: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:26:37,720 [WARNING] Request failed (attempt 1/4) series='K:' num=12150: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:26:40,601 [INFO] Progress: series='K:'  num=12150/15000  found=5  empty=18245  errors=0
+2026-06-29 18:26:52,491 [WARNING] Request failed (attempt 1/4) series='K:' num=12166: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2026-06-29 18:27:34,603 [INFO] Progress: series='K:'  num=12250/15000  found=5  empty=18345  errors=0
+2026-06-29 18:28:21,300 [INFO] Progress: series='K:'  num=12350/15000  found=5  empty=18445  errors=0
+2026-06-29 18:29:09,380 [INFO] Progress: series='K:'  num=12450/15000  found=5  empty=18545  errors=0
+2026-06-29 18:29:55,471 [INFO] Progress: series='K:'  num=12550/15000  found=5  empty=18645  errors=0
+2026-06-29 18:30:44,231 [INFO] Progress: series='K:'  num=12650/15000  found=5  empty=18745  errors=0
+2026-06-29 18:31:50,538 [WARNING] Request failed (attempt 1/4) series='K:' num=12740: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 18:31:53,999 [INFO] Progress: series='K:'  num=12750/15000  found=5  empty=18845  errors=0
+2026-06-29 18:32:07,939 [WARNING] Request failed (attempt 1/4) series='K:' num=12772: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:32:24,644 [WARNING] Request failed (attempt 1/4) series='K:' num=12803: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:32:49,225 [INFO] Progress: series='K:'  num=12850/15000  found=5  empty=18945  errors=0
+2026-06-29 18:33:37,559 [WARNING] Request failed (attempt 1/4) series='K:' num=12941: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:33:45,426 [INFO] Progress: series='K:'  num=12950/15000  found=5  empty=19045  errors=0
+2026-06-29 18:34:38,483 [WARNING] Request failed (attempt 1/4) series='K:' num=13013: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 18:34:42,668 [INFO] Progress: series='K:'  num=13050/15000  found=5  empty=19145  errors=0
+2026-06-29 18:35:33,030 [INFO] Progress: series='K:'  num=13150/15000  found=5  empty=19245  errors=0
+2026-06-29 18:35:39,352 [WARNING] Request failed (attempt 1/4) series='K:' num=13162: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:36:02,780 [WARNING] Request failed (attempt 1/4) series='K:' num=13196: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:36:31,220 [INFO] Progress: series='K:'  num=13250/15000  found=5  empty=19345  errors=0
+2026-06-29 18:37:25,918 [INFO] Progress: series='K:'  num=13350/15000  found=5  empty=19445  errors=0
+2026-06-29 18:37:56,426 [WARNING] Request failed (attempt 1/4) series='K:' num=13396: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:38:26,548 [INFO] Progress: series='K:'  num=13450/15000  found=5  empty=19545  errors=0
+2026-06-29 18:39:04,302 [WARNING] Request failed (attempt 1/4) series='K:' num=13484: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 18:39:31,833 [WARNING] Request failed (attempt 1/4) series='K:' num=13525: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 18:39:35,272 [INFO] Progress: series='K:'  num=13550/15000  found=5  empty=19645  errors=0
+2026-06-29 18:39:50,670 [WARNING] Request failed (attempt 1/4) series='K:' num=13564: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:40:01,775 [WARNING] Request failed (attempt 1/4) series='K:' num=13554: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 18:40:37,042 [INFO] Progress: series='K:'  num=13650/15000  found=5  empty=19745  errors=0
+2026-06-29 18:40:38,727 [WARNING] Request failed (attempt 1/4) series='K:' num=13651: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:40:55,988 [WARNING] Request failed (attempt 1/4) series='K:' num=13679: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:41:09,395 [WARNING] Request failed (attempt 1/4) series='K:' num=13702: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:41:24,405 [WARNING] Request failed (attempt 1/4) series='K:' num=13694: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 18:41:41,116 [INFO] Progress: series='K:'  num=13750/15000  found=5  empty=19845  errors=0
+2026-06-29 18:42:28,508 [INFO] Progress: series='K:'  num=13850/15000  found=5  empty=19945  errors=0
+2026-06-29 18:43:17,580 [INFO] Progress: series='K:'  num=13950/15000  found=5  empty=20045  errors=0
+2026-06-29 18:44:08,704 [INFO] Progress: series='K:'  num=14050/15000  found=5  empty=20145  errors=0
+2026-06-29 18:44:36,516 [WARNING] Request failed (attempt 1/4) series='K:' num=14104: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:44:52,631 [WARNING] Request failed (attempt 1/4) series='K:' num=14132: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:45:01,771 [INFO] Progress: series='K:'  num=14150/15000  found=5  empty=20245  errors=0
+2026-06-29 18:45:52,200 [INFO] Progress: series='K:'  num=14250/15000  found=5  empty=20345  errors=0
+2026-06-29 18:46:44,694 [INFO] Progress: series='K:'  num=14350/15000  found=5  empty=20445  errors=0
+2026-06-29 18:47:15,310 [WARNING] Request failed (attempt 1/4) series='K:' num=14370: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 18:47:45,523 [INFO] Progress: series='K:'  num=14450/15000  found=5  empty=20545  errors=0
+2026-06-29 18:48:34,827 [INFO] Progress: series='K:'  num=14550/15000  found=5  empty=20645  errors=0
+2026-06-29 18:49:29,172 [INFO] Progress: series='K:'  num=14650/15000  found=5  empty=20745  errors=0
+2026-06-29 18:50:17,619 [INFO] Progress: series='K:'  num=14750/15000  found=5  empty=20845  errors=0
+2026-06-29 18:51:09,986 [WARNING] Request failed (attempt 1/4) series='K:' num=14819: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 18:51:13,204 [INFO] Progress: series='K:'  num=14850/15000  found=5  empty=20945  errors=0
+2026-06-29 18:52:03,005 [INFO] Progress: series='K:'  num=14950/15000  found=5  empty=21045  errors=0
+2026-06-29 18:52:28,218 [INFO] Progress: series='K:'  num=15000/15000  found=5  empty=21095  errors=0
+2026-06-29 18:52:28,219 [INFO] Series 'K:' complete.
+2026-06-29 18:52:28,219 [INFO] Processing series 'NL:'  starting from #51
+2026-06-29 18:53:19,257 [INFO] Progress: series='NL:'  num=150/15000  found=5  empty=21195  errors=0
+2026-06-29 18:53:40,809 [WARNING] Request failed (attempt 1/4) series='NL:' num=151: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 18:54:14,645 [INFO] Progress: series='NL:'  num=250/15000  found=5  empty=21295  errors=0
+2026-06-29 18:55:02,207 [INFO] Progress: series='NL:'  num=350/15000  found=5  empty=21395  errors=0
+2026-06-29 18:55:51,098 [INFO] Progress: series='NL:'  num=450/15000  found=5  empty=21495  errors=0
+2026-06-29 18:56:47,880 [WARNING] Request failed (attempt 1/4) series='NL:' num=522: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 18:56:51,050 [INFO] Progress: series='NL:'  num=550/15000  found=5  empty=21595  errors=0
+2026-06-29 18:56:52,497 [WARNING] Request failed (attempt 1/4) series='NL:' num=552: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:57:39,951 [INFO] Progress: series='NL:'  num=650/15000  found=5  empty=21695  errors=0
+2026-06-29 18:58:26,938 [WARNING] Request failed (attempt 1/4) series='NL:' num=747: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:58:30,448 [INFO] Progress: series='NL:'  num=750/15000  found=5  empty=21795  errors=0
+2026-06-29 18:58:54,923 [WARNING] Request failed (attempt 1/4) series='NL:' num=800: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 18:59:20,567 [INFO] Progress: series='NL:'  num=850/15000  found=5  empty=21895  errors=0
+2026-06-29 19:00:10,007 [INFO] Progress: series='NL:'  num=950/15000  found=5  empty=21995  errors=0
+2026-06-29 19:00:58,594 [INFO] Progress: series='NL:'  num=1050/15000  found=5  empty=22095  errors=0
+2026-06-29 19:01:45,075 [INFO] Progress: series='NL:'  num=1150/15000  found=5  empty=22195  errors=0
+2026-06-29 19:02:19,871 [WARNING] Request failed (attempt 1/4) series='NL:' num=1224: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 19:02:32,741 [INFO] Progress: series='NL:'  num=1250/15000  found=5  empty=22295  errors=0
+2026-06-29 19:03:23,073 [INFO] Progress: series='NL:'  num=1350/15000  found=5  empty=22395  errors=0
+2026-06-29 19:03:24,194 [WARNING] Request failed (attempt 1/4) series='NL:' num=1353: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 19:04:08,303 [INFO] Progress: series='NL:'  num=1450/15000  found=5  empty=22495  errors=0
+2026-06-29 19:04:52,845 [INFO] Progress: series='NL:'  num=1550/15000  found=5  empty=22595  errors=0
+2026-06-29 19:05:38,685 [INFO] Progress: series='NL:'  num=1650/15000  found=5  empty=22695  errors=0
+2026-06-29 19:06:24,119 [INFO] Progress: series='NL:'  num=1750/15000  found=5  empty=22795  errors=0
+2026-06-29 19:07:09,911 [INFO] Progress: series='NL:'  num=1850/15000  found=5  empty=22895  errors=0
+2026-06-29 19:07:54,257 [INFO] Progress: series='NL:'  num=1950/15000  found=5  empty=22995  errors=0
+2026-06-29 19:08:38,115 [INFO] Progress: series='NL:'  num=2050/15000  found=5  empty=23095  errors=0
+2026-06-29 19:09:22,759 [INFO] Progress: series='NL:'  num=2150/15000  found=5  empty=23195  errors=0
+2026-06-29 19:10:07,924 [INFO] Progress: series='NL:'  num=2250/15000  found=5  empty=23295  errors=0
+2026-06-29 19:10:52,734 [INFO] Progress: series='NL:'  num=2350/15000  found=5  empty=23395  errors=0
+2026-06-29 19:11:36,420 [INFO] Progress: series='NL:'  num=2450/15000  found=5  empty=23495  errors=0
+2026-06-29 19:12:20,149 [INFO] Progress: series='NL:'  num=2550/15000  found=5  empty=23595  errors=0
+2026-06-29 19:12:31,790 [WARNING] Request failed (attempt 1/4) series='NL:' num=2569: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 19:12:41,585 [WARNING] Request failed (attempt 1/4) series='NL:' num=2552: HTTPConnectionPool(host='www.boilerdata.boiler.gov.bd', port=80): Read timed out. (read timeout=20)
+2026-06-29 19:13:14,219 [INFO] Progress: series='NL:'  num=2650/15000  found=5  empty=23695  errors=0
+2026-06-29 19:13:56,737 [INFO] Progress: series='NL:'  num=2750/15000  found=5  empty=23795  errors=0
+2026-06-29 19:14:42,469 [INFO] Progress: series='NL:'  num=2850/15000  found=5  empty=23895  errors=0
+2026-06-29 19:15:27,257 [INFO] Progress: series='NL:'  num=2950/15000  found=5  empty=23995  errors=0
+2026-06-29 19:16:10,154 [INFO] Progress: series='NL:'  num=3050/15000  found=5  empty=24095  errors=0
+2026-06-29 19:16:56,190 [INFO] Progress: series='NL:'  num=3150/15000  found=5  empty=24195  errors=0
+2026-06-29 19:17:40,414 [INFO] Progress: series='NL:'  num=3250/15000  found=5  empty=24295  errors=0
+2026-06-29 19:18:23,800 [INFO] Progress: series='NL:'  num=3350/15000  found=5  empty=24395  errors=0
+2026-06-29 19:19:06,246 [INFO] Progress: series='NL:'  num=3450/15000  found=5  empty=24495  errors=0
+2026-06-29 19:19:51,183 [INFO] Progress: series='NL:'  num=3550/15000  found=5  empty=24595  errors=0
+2026-06-29 19:20:37,615 [INFO] Progress: series='NL:'  num=3650/15000  found=5  empty=24695  errors=0
+2026-06-29 19:21:23,005 [INFO] Progress: series='NL:'  num=3750/15000  found=5  empty=24795  errors=0
+2026-06-29 19:22:09,255 [INFO] Progress: series='NL:'  num=3850/15000  found=5  empty=24895  errors=0
+2026-06-29 19:22:53,105 [INFO] Progress: series='NL:'  num=3950/15000  found=5  empty=24995  errors=0
+2026-06-29 19:23:37,708 [INFO] Progress: series='NL:'  num=4050/15000  found=5  empty=25095  errors=0
+2026-06-29 19:24:23,208 [INFO] Progress: series='NL:'  num=4150/15000  found=5  empty=25195  errors=0
+2026-06-29 19:25:07,484 [INFO] Progress: series='NL:'  num=4250/15000  found=5  empty=25295  errors=0
+2026-06-29 19:25:54,143 [INFO] Progress: series='NL:'  num=4350/15000  found=5  empty=25395  errors=0
+2026-06-29 19:26:38,163 [INFO] Progress: series='NL:'  num=4450/15000  found=5  empty=25495  errors=0
+2026-06-29 19:27:22,789 [INFO] Progress: series='NL:'  num=4550/15000  found=5  empty=25595  errors=0
+2026-06-29 19:28:05,276 [INFO] Progress: series='NL:'  num=4650/15000  found=5  empty=25695  errors=0
+2026-06-29 19:28:49,377 [INFO] Progress: series='NL:'  num=4750/15000  found=5  empty=25795  errors=0
+2026-06-29 19:29:34,260 [INFO] Progress: series='NL:'  num=4850/15000  found=5  empty=25895  errors=0
+2026-06-29 19:30:20,028 [INFO] Progress: series='NL:'  num=4950/15000  found=5  empty=25995  errors=0
+2026-06-29 19:31:03,904 [INFO] Progress: series='NL:'  num=5050/15000  found=5  empty=26095  errors=0
+2026-06-29 19:31:45,827 [INFO] Progress: series='NL:'  num=5150/15000  found=5  empty=26195  errors=0
+2026-06-29 19:32:29,602 [INFO] Progress: series='NL:'  num=5250/15000  found=5  empty=26295  errors=0
+2026-06-29 19:33:13,875 [INFO] Progress: series='NL:'  num=5350/15000  found=5  empty=26395  errors=0
+2026-06-29 19:33:58,112 [INFO] Progress: series='NL:'  num=5450/15000  found=5  empty=26495  errors=0
+2026-06-29 19:34:43,497 [INFO] Progress: series='NL:'  num=5550/15000  found=5  empty=26595  errors=0
+2026-06-29 19:35:27,233 [INFO] Progress: series='NL:'  num=5650/15000  found=5  empty=26695  errors=0
+2026-06-29 19:36:10,502 [INFO] Progress: series='NL:'  num=5750/15000  found=5  empty=26795  errors=0
+2026-06-29 19:36:57,395 [INFO] Progress: series='NL:'  num=5850/15000  found=5  empty=26895  errors=0
+2026-06-29 19:37:03,770 [WARNING] Request failed (attempt 1/4) series='NL:' num=5862: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 19:37:42,480 [INFO] Progress: series='NL:'  num=5950/15000  found=5  empty=26995  errors=0
+2026-06-29 19:38:27,277 [INFO] Progress: series='NL:'  num=6050/15000  found=5  empty=27095  errors=0
+2026-06-29 19:39:11,870 [INFO] Progress: series='NL:'  num=6150/15000  found=5  empty=27195  errors=0
+2026-06-29 19:39:53,416 [INFO] Progress: series='NL:'  num=6250/15000  found=5  empty=27295  errors=0
+2026-06-29 19:40:38,996 [INFO] Progress: series='NL:'  num=6350/15000  found=5  empty=27395  errors=0
+2026-06-29 19:41:22,792 [INFO] Progress: series='NL:'  num=6450/15000  found=5  empty=27495  errors=0
+2026-06-29 19:42:09,537 [INFO] Progress: series='NL:'  num=6550/15000  found=5  empty=27595  errors=0
+2026-06-29 19:42:12,625 [WARNING] Request failed (attempt 1/4) series='NL:' num=6556: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 19:42:25,892 [WARNING] Request failed (attempt 1/4) series='NL:' num=6585: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 19:42:56,807 [INFO] Progress: series='NL:'  num=6650/15000  found=5  empty=27695  errors=0
+2026-06-29 19:43:14,042 [WARNING] Request failed (attempt 1/4) series='NL:' num=6691: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 19:43:40,501 [INFO] Progress: series='NL:'  num=6750/15000  found=5  empty=27795  errors=0
+2026-06-29 19:44:22,356 [INFO] Progress: series='NL:'  num=6850/15000  found=5  empty=27895  errors=0
+2026-06-29 19:45:07,666 [INFO] Progress: series='NL:'  num=6950/15000  found=5  empty=27995  errors=0
+2026-06-29 19:45:52,327 [INFO] Progress: series='NL:'  num=7050/15000  found=5  empty=28095  errors=0
+2026-06-29 19:46:35,688 [INFO] Progress: series='NL:'  num=7150/15000  found=5  empty=28195  errors=0
+2026-06-29 19:47:04,457 [WARNING] Request failed (attempt 1/4) series='NL:' num=7216: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 19:47:20,221 [INFO] Progress: series='NL:'  num=7250/15000  found=5  empty=28295  errors=0
+2026-06-29 19:48:04,424 [INFO] Progress: series='NL:'  num=7350/15000  found=5  empty=28395  errors=0
+2026-06-29 19:48:48,150 [INFO] Progress: series='NL:'  num=7450/15000  found=5  empty=28495  errors=0
+2026-06-29 19:49:32,232 [INFO] Progress: series='NL:'  num=7550/15000  found=5  empty=28595  errors=0
+2026-06-29 19:50:16,396 [INFO] Progress: series='NL:'  num=7650/15000  found=5  empty=28695  errors=0
+2026-06-29 19:51:01,049 [INFO] Progress: series='NL:'  num=7750/15000  found=5  empty=28795  errors=0
+2026-06-29 19:51:45,213 [INFO] Progress: series='NL:'  num=7850/15000  found=5  empty=28895  errors=0
+2026-06-29 19:52:29,244 [INFO] Progress: series='NL:'  num=7950/15000  found=5  empty=28995  errors=0
+2026-06-29 19:52:31,670 [WARNING] Request failed (attempt 1/4) series='NL:' num=7955: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 19:53:13,276 [INFO] Progress: series='NL:'  num=8050/15000  found=5  empty=29095  errors=0
+2026-06-29 19:53:55,463 [INFO] Progress: series='NL:'  num=8150/15000  found=5  empty=29195  errors=0
+2026-06-29 19:54:39,498 [INFO] Progress: series='NL:'  num=8250/15000  found=5  empty=29295  errors=0
+2026-06-29 19:55:07,798 [WARNING] Request failed (attempt 1/4) series='NL:' num=8314: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 19:55:25,092 [INFO] Progress: series='NL:'  num=8350/15000  found=5  empty=29395  errors=0
+2026-06-29 19:56:09,878 [INFO] Progress: series='NL:'  num=8450/15000  found=5  empty=29495  errors=0
+2026-06-29 19:56:52,080 [INFO] Progress: series='NL:'  num=8550/15000  found=5  empty=29595  errors=0
+2026-06-29 19:57:36,954 [INFO] Progress: series='NL:'  num=8650/15000  found=5  empty=29695  errors=0
+2026-06-29 19:58:22,798 [INFO] Progress: series='NL:'  num=8750/15000  found=5  empty=29795  errors=0
+2026-06-29 19:59:06,539 [INFO] Progress: series='NL:'  num=8850/15000  found=5  empty=29895  errors=0
+2026-06-29 19:59:49,832 [INFO] Progress: series='NL:'  num=8950/15000  found=5  empty=29995  errors=0
+2026-06-29 20:00:34,019 [INFO] Progress: series='NL:'  num=9050/15000  found=5  empty=30095  errors=0
+2026-06-29 20:01:22,197 [INFO] Progress: series='NL:'  num=9150/15000  found=5  empty=30195  errors=0
+2026-06-29 20:02:06,445 [INFO] Progress: series='NL:'  num=9250/15000  found=5  empty=30295  errors=0
+2026-06-29 20:02:48,963 [INFO] Progress: series='NL:'  num=9350/15000  found=5  empty=30395  errors=0
+2026-06-29 20:03:32,878 [INFO] Progress: series='NL:'  num=9450/15000  found=5  empty=30495  errors=0
+2026-06-29 20:04:16,934 [INFO] Progress: series='NL:'  num=9550/15000  found=5  empty=30595  errors=0
+2026-06-29 20:04:23,312 [WARNING] Request failed (attempt 1/4) series='NL:' num=9565: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 20:05:00,946 [INFO] Progress: series='NL:'  num=9650/15000  found=5  empty=30695  errors=0
+2026-06-29 20:05:48,635 [INFO] Progress: series='NL:'  num=9750/15000  found=5  empty=30795  errors=0
+2026-06-29 20:06:34,517 [INFO] Progress: series='NL:'  num=9850/15000  found=5  empty=30895  errors=0
+2026-06-29 20:07:19,050 [INFO] Progress: series='NL:'  num=9950/15000  found=5  empty=30995  errors=0
+2026-06-29 20:07:47,383 [WARNING] Request failed (attempt 1/4) series='NL:' num=10011: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 20:08:03,277 [WARNING] Request failed (attempt 1/4) series='NL:' num=10034: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2026-06-29 20:08:08,876 [INFO] Progress: series='NL:'  num=10050/15000  found=5  empty=31095  errors=0
+2026-06-29 20:08:52,793 [INFO] Progress: series='NL:'  num=10150/15000  found=5  empty=31195  errors=0
+2026-06-29 20:09:36,470 [INFO] Progress: series='NL:'  num=10250/15000  found=5  empty=31295  errors=0
+2026-06-29 20:10:21,770 [INFO] Progress: series='NL:'  num=10350/15000  found=5  empty=31395  errors=0
+2026-06-29 20:11:06,864 [INFO] Progress: series='NL:'  num=10450/15000  found=5  empty=31495  errors=0
+2026-06-29 20:11:53,098 [INFO] Progress: series='NL:'  num=10550/15000  found=5  empty=31595  errors=0
+2026-06-29 20:12:38,726 [INFO] Progress: series='NL:'  num=10650/15000  found=5  empty=31695  errors=0
+2026-06-29 20:13:21,883 [INFO] Progress: series='NL:'  num=10750/15000  found=5  empty=31795  errors=0
+2026-06-29 20:14:05,653 [INFO] Progress: series='NL:'  num=10850/15000  found=5  empty=31895  errors=0
+2026-06-29 20:14:49,742 [INFO] Progress: series='NL:'  num=10950/15000  found=5  empty=31995  errors=0
+2026-06-29 20:15:32,114 [INFO] Progress: series='NL:'  num=11050/15000  found=5  empty=32095  errors=0
+2026-06-29 20:16:16,871 [INFO] Progress: series='NL:'  num=11150/15000  found=5  empty=32195  errors=0
+2026-06-29 20:17:00,378 [INFO] Progress: series='NL:'  num=11250/15000  found=5  empty=32295  errors=0
+2026-06-29 20:17:44,436 [INFO] Progress: series='NL:'  num=11350/15000  found=5  empty=32395  errors=0
+2026-06-29 20:18:29,362 [INFO] Progress: series='NL:'  num=11450/15000  found=5  empty=32495  errors=0
+2026-06-29 20:19:12,717 [INFO] Progress: series='NL:'  num=11550/15000  found=5  empty=32595  errors=0
+2026-06-29 20:19:56,823 [INFO] Progress: series='NL:'  num=11650/15000  found=5  empty=32695  errors=0
+2026-06-29 20:20:41,398 [INFO] Progress: series='NL:'  num=11750/15000  found=5  empty=32795  errors=0
+2026-06-29 20:21:26,110 [INFO] Progress: series='NL:'  num=11850/15000  found=5  empty=32895  errors=0
+2026-06-29 20:22:09,030 [INFO] Progress: series='NL:'  num=11950/15000  found=5  empty=32995  errors=0
+2026-06-29 20:22:53,953 [INFO] Progress: series='NL:'  num=12050/15000  found=5  empty=33095  errors=0
+2026-06-29 20:23:36,862 [INFO] Progress: series='NL:'  num=12150/15000  found=5  empty=33195  errors=0
+2026-06-29 20:24:22,228 [INFO] Progress: series='NL:'  num=12250/15000  found=5  empty=33295  errors=0
+2026-06-29 20:25:03,107 [WARNING] Request failed (attempt 1/4) series='NL:' num=12345: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 20:25:06,235 [INFO] Progress: series='NL:'  num=12350/15000  found=5  empty=33395  errors=0
+2026-06-29 20:25:48,093 [INFO] Progress: series='NL:'  num=12450/15000  found=5  empty=33495  errors=0
+2026-06-29 20:26:32,842 [INFO] Progress: series='NL:'  num=12550/15000  found=5  empty=33595  errors=0
+2026-06-29 20:27:16,593 [INFO] Progress: series='NL:'  num=12650/15000  found=5  empty=33695  errors=0
+2026-06-29 20:27:18,040 [WARNING] Request failed (attempt 1/4) series='NL:' num=12653: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 20:27:42,132 [WARNING] Request failed (attempt 1/4) series='NL:' num=12705: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 20:27:56,292 [WARNING] Request failed (attempt 1/4) series='NL:' num=12724: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2026-06-29 20:28:04,850 [INFO] Progress: series='NL:'  num=12750/15000  found=5  empty=33795  errors=0
+2026-06-29 20:28:49,082 [INFO] Progress: series='NL:'  num=12850/15000  found=5  empty=33895  errors=0
+2026-06-29 20:29:23,837 [WARNING] Request failed (attempt 1/4) series='NL:' num=12922: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 20:29:38,034 [INFO] Progress: series='NL:'  num=12950/15000  found=5  empty=33995  errors=0
+2026-06-29 20:30:20,775 [INFO] Progress: series='NL:'  num=13050/15000  found=5  empty=34095  errors=0
+2026-06-29 20:31:04,656 [INFO] Progress: series='NL:'  num=13150/15000  found=5  empty=34195  errors=0
+2026-06-29 20:31:49,232 [INFO] Progress: series='NL:'  num=13250/15000  found=5  empty=34295  errors=0
+2026-06-29 20:32:36,181 [INFO] Progress: series='NL:'  num=13350/15000  found=5  empty=34395  errors=0
+2026-06-29 20:33:20,713 [INFO] Progress: series='NL:'  num=13450/15000  found=5  empty=34495  errors=0
+2026-06-29 20:34:03,660 [INFO] Progress: series='NL:'  num=13550/15000  found=5  empty=34595  errors=0
+2026-06-29 20:34:46,408 [INFO] Progress: series='NL:'  num=13650/15000  found=5  empty=34695  errors=0
+2026-06-29 20:35:30,954 [INFO] Progress: series='NL:'  num=13750/15000  found=5  empty=34795  errors=0
+2026-06-29 20:36:15,817 [INFO] Progress: series='NL:'  num=13850/15000  found=5  empty=34895  errors=0
+2026-06-29 20:37:00,046 [INFO] Progress: series='NL:'  num=13950/15000  found=5  empty=34995  errors=0
+2026-06-29 20:37:42,898 [INFO] Progress: series='NL:'  num=14050/15000  found=5  empty=35095  errors=0
+2026-06-29 20:38:28,373 [INFO] Progress: series='NL:'  num=14150/15000  found=5  empty=35195  errors=0
+2026-06-29 20:39:13,251 [INFO] Progress: series='NL:'  num=14250/15000  found=5  empty=35295  errors=0
+2026-06-29 20:39:57,296 [INFO] Progress: series='NL:'  num=14350/15000  found=5  empty=35395  errors=0
+2026-06-29 20:40:39,062 [INFO] Progress: series='NL:'  num=14450/15000  found=5  empty=35495  errors=0
+2026-06-29 20:41:23,989 [INFO] Progress: series='NL:'  num=14550/15000  found=5  empty=35595  errors=0
+2026-06-29 20:42:07,959 [INFO] Progress: series='NL:'  num=14650/15000  found=5  empty=35695  errors=0
+2026-06-29 20:42:53,728 [INFO] Progress: series='NL:'  num=14750/15000  found=5  empty=35795  errors=0
+2026-06-29 20:43:38,505 [INFO] Progress: series='NL:'  num=14850/15000  found=5  empty=35895  errors=0
+2026-06-29 20:44:22,067 [INFO] Progress: series='NL:'  num=14950/15000  found=5  empty=35995  errors=0
+2026-06-29 20:44:44,613 [INFO] Progress: series='NL:'  num=15000/15000  found=5  empty=36045  errors=0
+2026-06-29 20:44:44,614 [INFO] Series 'NL:' complete.
+2026-06-29 20:44:44,614 [INFO] Processing series 'A:'  starting from #51
+2026-06-29 20:45:19,457 [INFO] FOUND  A:           #130     Ali Bhai Rice & Flour Mills  (expires 14-12-1976)
+2026-06-29 20:45:20,676 [INFO] FOUND  A:           #131     Fefoj Chowdhury & Sons  (expires 25-09-1976)
+2026-06-29 20:45:28,433 [INFO] Progress: series='A:'  num=150/15000  found=7  empty=36143  errors=0
+2026-06-29 20:46:06,582 [INFO] FOUND  A:           #236     Crescent Rice Mills  (expires 11-04-2005)
+2026-06-29 20:46:13,216 [INFO] Progress: series='A:'  num=250/15000  found=8  empty=36242  errors=0
+2026-06-29 20:46:17,034 [INFO] FOUND  A:           #258     M/S Mahbub Automatic Rice Mill  (expires 25-09-2021)
+2026-06-29 20:46:52,168 [INFO] FOUND  A:           #336     Sans Packaging & accessories Ltd.  (expires 30-11--0001)
+2026-06-29 20:46:53,439 [INFO] FOUND  A:           #338     Nags Agency  (expires 12-04-1947)
+2026-06-29 20:46:56,741 [INFO] FOUND  A:           #345     Sreepur Tea State  (expires 02-04-1948)
+2026-06-29 20:46:58,600 [INFO] Progress: series='A:'  num=350/15000  found=12  empty=36338  errors=0
+2026-06-29 20:47:03,554 [INFO] FOUND  A:           #361     Baraora Tea Co. Ltd.  (expires 20-01-1937)
+2026-06-29 20:47:04,095 [INFO] FOUND  A:           #362     Baraora Tea Co. Ltd.  (expires 19-01-1959)
+2026-06-29 20:47:04,232 [INFO] FOUND  A:           #363     Lalchand Tea Estate  (expires 18-03-1958)
+2026-06-29 20:47:05,636 [INFO] FOUND  A:           #365     Paragaon Rice, Oil & Flour Mills  (expires 18-04-1981)
+2026-06-29 20:47:05,796 [INFO] FOUND  A:           #366     Baraora Tea Co. Ltd.  (expires 30-11--0001)
+2026-06-29 20:47:05,999 [INFO] FOUND  A:           #367     Chowdhury Rice Mills  (expires 10-10-1995)
+2026-06-29 20:47:06,665 [INFO] FOUND  A:           #368     Al-Momin Auto Rice & Boiler Mills  (expires 13-03-2011)
+2026-06-29 20:47:07,066 [INFO] FOUND  A:           #369     M/S Rahmania Industries  (expires 07-12-2022)
+2026-06-29 20:47:07,125 [INFO] FOUND  A:           #370     M/S Koysar Automatic Rice & Ata Mill  (expires 12-03-2023)
+2026-06-29 20:47:08,458 [INFO] FOUND  A:           #371     Sazzadur Textile (B:) Ltd.  (expires 17-04-2000)
+2026-06-29 20:47:12,300 [INFO] FOUND  A:           #380     M. R. Rice Mills  (expires 25-09-2006)
+2026-06-29 20:47:13,427 [INFO] FOUND  A:           #381     Mvi Abdus Subhan  (expires 15-03-1956)
+2026-06-29 20:47:14,167 [INFO] FOUND  A:           #383     Assaun Consolited Tea & Co. Ltd.  (expires 09-02-1950)
+2026-06-29 20:47:15,168 [INFO] FOUND  A:           #385     Sre Jaleswan Rice Mills  (expires 07-10-1979)
+2026-06-29 20:47:15,544 [INFO] FOUND  A:           #386     Deundi Tea Co. Ltd.  (expires 07-05-1956)
+2026-06-29 20:47:15,641 [INFO] FOUND  A:           #387     Gafur Auto Rice Mill  (expires 10-12-2007)
+2026-06-29 20:47:16,275 [INFO] FOUND  A:           #388     Patrakhola Tea Co. Ltd.  (expires 29-01-1941)
+2026-06-29 20:47:16,414 [INFO] FOUND  A:           #389     Safina Rice & Flour Mills  (expires 15-09-1992)
+2026-06-29 20:47:17,173 [INFO] FOUND  A:           #390     Amrai Tea Estate  (expires 07-02-1948)
+2026-06-29 20:47:18,005 [INFO] FOUND  A:           #391     Satgaon Tea Estate  (expires 14-03-1949)
+2026-06-29 20:47:24,146 [INFO] FOUND  A:           #404     M/S Khaza Auto Rice Mill  (expires 29-12-2016)
+2026-06-29 20:47:26,511 [INFO] FOUND  A:           #411     Hingajea Plywood Factory  (expires 13-07-2019)
+2026-06-29 20:47:32,227 [INFO] FOUND  A:           #422     M/S: Ustar Miah Rice Mills  (expires 23-04-2001)
+2026-06-29 20:47:32,311 [INFO] FOUND  A:           #423     Sayeeeduddin Rice Mill  (expires 26-01-2007)
+2026-06-29 20:47:33,267 [INFO] FOUND  A:           #424     Kuruah Tea Estate  (expires 12-02-1981)
+2026-06-29 20:47:34,104 [INFO] FOUND  A:           #426     Dolai Tea Co. Ltd.  (expires 30-11--0001)
+2026-06-29 20:47:34,175 [INFO] FOUND  A:           #425     Popular Food & Allied Ind: Ltd.  (expires 24-01-1995)
+2026-06-29 20:47:38,494 [INFO] FOUND  A:           #436     N Jaman Auto Rice Mill  (expires 15-01-2024)
+2026-06-29 20:47:39,384 [INFO] FOUND  A:           #438     Bajla Rice Mills  (expires 29-08-2000)
+2026-06-29 20:47:40,080 [INFO] FOUND  A:           #439     Jauses Finley & Co. Ltd.  (expires 30-11--0001)
+2026-06-29 20:47:41,623 [INFO] FOUND  A:           #442     Jauses Finley & Co. Ltd.  (expires 26-01-1937)
+2026-06-29 20:47:42,410 [INFO] FOUND  A:           #444     Amrai Tea Estate  (expires 07-02-1948)
+2026-06-29 20:47:42,547 [INFO] FOUND  A:           #443     Jauses Finley & Co. Ltd.  (expires 03-02-1945)
+2026-06-29 20:47:43,441 [INFO] FOUND  A:           #445     Ma Manasha Auto Rice Mills  (expires 24-01-2002)
+2026-06-29 20:47:43,606 [INFO] FOUND  A:           #446     Jauses Finley & Co. Ltd.  (expires 30-11--0001)
+2026-06-29 20:47:43,989 [INFO] FOUND  A:           #447     Deundi Tea Estate  (expires 27-02-1969)
+2026-06-29 20:47:44,588 [INFO] FOUND  A:           #448     Munshi Rice Mills  (expires 19-12-2003)
+2026-06-29 20:47:45,069 [INFO] FOUND  A:           #450     Messers Morsed Auto Rice Mill  (expires 12-04-2022)
+2026-06-29 20:47:45,132 [INFO] FOUND  A:           #449     Allynagar Tea Estate  (expires 20-03-1952)
+2026-06-29 20:47:45,249 [INFO] Progress: series='A:'  num=450/15000  found=51  empty=36399  errors=0
+2026-06-29 20:47:46,440 [INFO] FOUND  A:           #452     Azad Rice Mills  (expires 30-11--0001)
+2026-06-29 20:47:47,859 [INFO] FOUND  A:           #454     M/S Sonali Auto Rice Mill  (expires 22-10-2023)
+2026-06-29 20:47:48,324 [INFO] FOUND  A:           #455     Jauses Finley & Co. Ltd.  (expires 30-11--0001)
+2026-06-29 20:47:48,410 [INFO] FOUND  A:           #456     Lackatoorah Tea Co. Ltd.  (expires 10-03-1958)
+2026-06-29 20:47:49,628 [INFO] FOUND  A:           #458     Chandbagh Tea Estate  (expires 24-04-1953)
+2026-06-29 20:47:50,618 [INFO] FOUND  A:           #460     Nilufa Auto Rice Mill  (expires 21-02-2023)
+2026-06-29 20:47:58,853 [INFO] FOUND  A:           #480     Square Pharmaceuticals Ltd.  (expires 30-11--0001)
+2026-06-29 20:48:03,274 [INFO] FOUND  A:           #489     Sohan Filament Yearn & Fishing Net Ind: (P:) Ltd.  (expires 25-04-2006)
+2026-06-29 20:48:03,971 [INFO] FOUND  A:           #490       (expires 19-10-2005)
+2026-06-29 20:48:04,633 [INFO] FOUND  A:           #492     Jafflong Tea Estate  (expires 30-11--0001)
+2026-06-29 20:48:04,940 [INFO] FOUND  A:           #491     M/S Dorodi Auto Rice Mill  (expires 17-04-2023)
+2026-06-29 20:48:04,974 [INFO] FOUND  A:           #493     Jafflong Tea Estate  (expires 11-06-1973)
+2026-06-29 20:48:19,205 [INFO] FOUND  A:           #522     New Sylhet Tea Co. Ltd.  (expires 30-11--0001)
+2026-06-29 20:48:21,419 [INFO] FOUND  A:           #526     Ruthna Tea Estate  (expires 30-11--0001)
+2026-06-29 20:48:25,580 [INFO] FOUND  A:           #536     M/S: Rhein Tex  (expires 28-11-1997)
+2026-06-29 20:48:31,462 [INFO] Progress: series='A:'  num=550/15000  found=66  empty=36484  errors=0
+2026-06-29 20:48:37,607 [INFO] FOUND  A:           #563     Al-Amin Dying & Printing Factory  (expires 13-07-2001)
+2026-06-29 20:49:00,532 [INFO] FOUND  A:           #615     Laugla Tea Estate  (expires 11-04-1953)
+2026-06-29 20:49:01,485 [INFO] FOUND  A:           #617     Moulvi Mir Ahmed Chowdhury  (expires 30-11--0001)
+2026-06-29 20:49:04,650 [INFO] FOUND  A:           #623     Dhaurai Tea Estate  (expires 11-07-1970)
+2026-06-29 20:49:06,001 [INFO] FOUND  A:           #627     Jamuna Fishing Net ind: Ltd.  (expires 24-07-2008)
+2026-06-29 20:49:07,512 [INFO] FOUND  A:           #629     Ajmeer Sharif Rice & Flour Mills  (expires 24-12-1992)
+2026-06-29 20:49:07,641 [INFO] FOUND  A:           #630     Sridharpur Tea Estate  (expires 08-04-1952)
+2026-06-29 20:49:12,572 [INFO] FOUND  A:           #641     Jawaqqur Rice Mills  (expires 27-03-1996)
+2026-06-29 20:49:16,208 [INFO] Progress: series='A:'  num=650/15000  found=74  empty=36576  errors=0
+2026-06-29 20:49:18,875 [INFO] FOUND  A:           #652     Bikrampur Rice & Flour Mills  (expires 20-05-1979)
+2026-06-29 20:49:19,716 [INFO] FOUND  A:           #656     Bangladesh Rice & Atta Mills  (expires 23-06-1991)
+2026-06-29 20:49:19,927 [INFO] FOUND  A:           #657     Satchuria Tea Estate  (expires 30-11--0001)
+2026-06-29 20:49:21,901 [INFO] FOUND  A:           #663     Kaulaghat Oil & Flour Mills  (expires 08-07-1996)
+2026-06-29 20:49:21,923 [INFO] FOUND  A:           #662     National Cotton Mills Ltd.  (expires 30-11--0001)
+2026-06-29 20:49:25,000 [INFO] FOUND  A:           #669     Hafiz Momleuddin Ashraf Uddin Grainding Rice, Oil & Flour Mills  (expires 29-11-2000)
+2026-06-29 20:49:50,604 [INFO] FOUND  A:           #730     Kuruah Tea Estate  (expires 05-03-1934)
+2026-06-29 20:49:54,329 [INFO] FOUND  A:           #738     Prithimpara Estate  (expires 30-11--0001)
+2026-06-29 20:50:00,125 [INFO] Progress: series='A:'  num=750/15000  found=82  empty=36668  errors=0
+2026-06-29 20:50:01,833 [INFO] FOUND  A:           #752     Kanchon Auto Rice Mill  (expires 20-03-2023)
+2026-06-29 20:50:03,250 [INFO] FOUND  A:           #756     Chanduchara Tea Estate  (expires 11-06-1977)
+2026-06-29 20:50:19,851 [INFO] FOUND  A:           #793     Bangladesh River Steavers Ltd.  (expires 14-06-1978)
+2026-06-29 20:50:25,564 [INFO] FOUND  A:           #806     Bengal Assau Rice & Oil Mills  (expires 21-09-1974)
+2026-06-29 20:50:26,357 [INFO] FOUND  A:           #808     M/S Khaja Auto Rice Mill  (expires 15-01-2021)
+2026-06-29 20:50:26,384 [INFO] FOUND  A:           #807     Molla Fabrics Ind:  (expires 07-03-2008)
+2026-06-29 20:50:28,245 [INFO] FOUND  A:           #811     Hingagia Plywood  (expires 14-07-2018)
+2026-06-29 20:50:28,549 [INFO] FOUND  A:           #813     Bengal Food Grain Industries  (expires 04-01-2006)
+2026-06-29 20:50:28,818 [INFO] FOUND  A:           #812     Rajkie Tea Estate  (expires 08-02-1937)
+2026-06-29 20:50:37,245 [INFO] FOUND  A:           #830     C & B City Division  (expires 30-11--0001)
+2026-06-29 20:50:46,368 [INFO] Progress: series='A:'  num=850/15000  found=92  empty=36758  errors=0
+2026-06-29 20:50:55,912 [INFO] FOUND  A:           #873     Ellal Textile Mills  (expires 25-05-1963)
+2026-06-29 20:51:18,599 [INFO] FOUND  A:           #925     Kuruah Tea Estate  (expires 30-11--0001)
+2026-06-29 20:51:26,441 [INFO] FOUND  A:           #942     Busmah Oil Co. Ltd.  (expires 30-11--0001)
+2026-06-29 20:51:28,463 [INFO] FOUND  A:           #948     Easteru Tea Corp: Ltd.  (expires 21-05-1957)
+2026-06-29 20:51:29,599 [INFO] Progress: series='A:'  num=950/15000  found=96  empty=36854  errors=0
+2026-06-29 20:51:31,208 [INFO] FOUND  A:           #951     Surauah Tea Co. Ltd.  (expires 21-04-1953)
+2026-06-29 20:51:53,320 [INFO] FOUND  A:           #1002    Sub Divisional Officers  (expires 18-08-1962)
+2026-06-29 20:51:53,504 [INFO] FOUND  A:           #1003    Patrakhola Tea Co. Ltd.  (expires 30-01-1937)
+2026-06-29 20:52:03,641 [INFO] FOUND  A:           #1027    Ananta Rice Mills  (expires 23-04-2001)
+2026-06-29 20:52:08,641 [WARNING] Request failed (attempt 1/4) series='A:' num=1038: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 20:52:10,996 [INFO] FOUND  A:           #1041    Lenim Rice Mills  (expires 28-06-1994)
+2026-06-29 20:52:13,038 [INFO] FOUND  A:           #1047    Moominchara Tea Estate  (expires 12-02-1950)
+2026-06-29 20:52:14,038 [INFO] Progress: series='A:'  num=1050/15000  found=102  empty=36948  errors=0
+2026-06-29 20:52:50,958 [INFO] FOUND  A:           #1132    Deauston Tea Estate  (expires 30-11--0001)
+2026-06-29 20:52:51,344 [INFO] FOUND  A:           #1133    Deanston Tea Estate  (expires 30-11--0001)
+2026-06-29 20:52:58,130 [INFO] FOUND  A:           #1149    Burmah Oil Co. Ltd.  (expires 17-03-1995)
+2026-06-29 20:52:58,273 [INFO] Progress: series='A:'  num=1150/15000  found=105  empty=37045  errors=0
+2026-06-29 20:53:09,836 [INFO] FOUND  A:           #1174    Ahmed Rice Mills  (expires 23-10-1994)
+2026-06-29 20:53:15,629 [INFO] FOUND  A:           #1187    Buruah Oil Co. Ltd.  (expires 24-01-1977)
+2026-06-29 20:53:19,646 [INFO] FOUND  A:           #1195    Radiance Knitware Ltd.  (expires 29-09-2008)
+2026-06-29 20:53:32,505 [INFO] FOUND  A:           #1224      (expires 04-01-2006)
+2026-06-29 20:53:43,946 [INFO] Progress: series='A:'  num=1250/15000  found=109  empty=37141  errors=0
+2026-06-29 20:53:50,205 [INFO] FOUND  A:           #1264    Rony Textile & Processing Mills  (expires 21-05-2001)
+2026-06-29 20:53:50,954 [INFO] FOUND  A:           #1266    Sunny Auto Rice Mill  (expires 14-05-2021)
+2026-06-29 20:53:51,262 [INFO] FOUND  A:           #1267    C & B Comilla Div:  (expires 30-11--0001)
+2026-06-29 20:54:07,749 [INFO] FOUND  A:           #1307    Nayapara Tea Co. Ltd.  (expires 18-03-1997)
+2026-06-29 20:54:08,723 [INFO] FOUND  A:           #1308    Talukdar Rice Mill  (expires 22-02-2005)
+2026-06-29 20:54:27,197 [INFO] Progress: series='A:'  num=1350/15000  found=114  empty=37236  errors=0
+2026-06-29 20:54:30,997 [WARNING] Request failed (attempt 1/4) series='A:' num=1358: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 20:55:12,674 [WARNING] Request failed (attempt 1/4) series='A:' num=1436: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2026-06-29 20:55:16,359 [INFO] Progress: series='A:'  num=1450/15000  found=114  empty=37336  errors=0
+2026-06-29 20:56:00,675 [INFO] Progress: series='A:'  num=1550/15000  found=114  empty=37436  errors=0
+2026-06-29 20:56:44,898 [INFO] Progress: series='A:'  num=1650/15000  found=114  empty=37536  errors=0
+2026-06-29 20:57:29,698 [INFO] Progress: series='A:'  num=1750/15000  found=114  empty=37636  errors=0
+2026-06-29 20:58:15,302 [INFO] Progress: series='A:'  num=1850/15000  found=114  empty=37736  errors=0
+2026-06-29 20:59:01,699 [INFO] Progress: series='A:'  num=1950/15000  found=114  empty=37836  errors=0
+2026-06-29 20:59:02,841 [WARNING] Request failed (attempt 1/4) series='A:' num=1951: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 20:59:47,638 [INFO] Progress: series='A:'  num=2050/15000  found=114  empty=37936  errors=0
+2026-06-29 21:00:34,461 [INFO] Progress: series='A:'  num=2150/15000  found=114  empty=38036  errors=0
+2026-06-29 21:01:19,561 [INFO] Progress: series='A:'  num=2250/15000  found=114  empty=38136  errors=0
+2026-06-29 21:02:02,899 [INFO] Progress: series='A:'  num=2350/15000  found=114  empty=38236  errors=0
+2026-06-29 21:02:46,715 [INFO] Progress: series='A:'  num=2450/15000  found=114  empty=38336  errors=0
+2026-06-29 21:03:31,192 [INFO] Progress: series='A:'  num=2550/15000  found=114  empty=38436  errors=0
+2026-06-29 21:03:50,751 [INFO] FOUND  A:           #2594    Panther Textiles Ltd.  (expires 30-11--0001)
+2026-06-29 21:04:12,651 [INFO] Progress: series='A:'  num=2650/15000  found=115  empty=38535  errors=0
+2026-06-29 21:04:12,652 [INFO] Time limit reached — checkpoint saved at series='A:' #2650.
+2026-06-29 21:04:12,652 [INFO] Stopped early (time limit). Resume with --resume.  found=115  empty=38535  errors=0  total=38650
+2026-06-29 21:04:12,652 [INFO] CSV output : /home/runner/work/Taiguo-boilar/Taiguo-boilar/scraper/database_export.csv
+2026-06-29 21:04:12,652 [INFO] JSON output: /home/runner/work/Taiguo-boilar/Taiguo-boilar/scraper/records.json
