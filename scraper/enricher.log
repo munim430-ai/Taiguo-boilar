@@ -85,3 +85,288 @@
 2026-06-29 22:16:08,732 [INFO] Progress: 6000/6175
 2026-06-29 22:16:08,733 [INFO] Progress: 6100/6175
 2026-06-29 22:16:08,733 [INFO] Enrichment complete. Output: /home/runner/work/Taiguo-boilar/Taiguo-boilar/scraper/rmg_enriched.csv
+2026-06-29 22:23:59,154 [INFO] Loaded 6175 RMG companies to enrich.
+2026-06-29 22:23:59,154 [INFO] Fetching BGMEA member directory: https://bgmea.com.bd/page/member-list
+2026-06-29 22:24:00,572 [INFO] BGMEA page 1: +20 records (20 total)
+2026-06-29 22:24:02,023 [INFO] BGMEA page 2: +20 records (40 total)
+2026-06-29 22:24:03,390 [INFO] BGMEA page 3: +20 records (60 total)
+2026-06-29 22:24:04,554 [INFO] BGMEA page 4: +20 records (80 total)
+2026-06-29 22:24:05,811 [INFO] BGMEA page 5: +20 records (100 total)
+2026-06-29 22:24:07,324 [INFO] BGMEA page 6: +20 records (120 total)
+2026-06-29 22:24:08,570 [INFO] BGMEA page 7: +20 records (140 total)
+2026-06-29 22:24:09,838 [INFO] BGMEA page 8: +20 records (160 total)
+2026-06-29 22:24:11,611 [INFO] BGMEA page 9: +20 records (180 total)
+2026-06-29 22:24:13,255 [INFO] BGMEA page 10: +20 records (200 total)
+2026-06-29 22:24:14,630 [INFO] BGMEA page 11: +20 records (220 total)
+2026-06-29 22:24:16,056 [INFO] BGMEA page 12: +20 records (240 total)
+2026-06-29 22:24:17,590 [INFO] BGMEA page 13: +20 records (260 total)
+2026-06-29 22:24:18,926 [INFO] BGMEA page 14: +20 records (280 total)
+2026-06-29 22:24:20,519 [INFO] BGMEA page 15: +20 records (300 total)
+2026-06-29 22:24:21,809 [INFO] BGMEA page 16: +20 records (320 total)
+2026-06-29 22:24:23,072 [INFO] BGMEA page 17: +20 records (340 total)
+2026-06-29 22:24:24,376 [INFO] BGMEA page 18: +20 records (360 total)
+2026-06-29 22:24:25,813 [INFO] BGMEA page 19: +20 records (380 total)
+2026-06-29 22:24:27,288 [INFO] BGMEA page 20: +20 records (400 total)
+2026-06-29 22:24:28,915 [INFO] BGMEA page 21: +20 records (420 total)
+2026-06-29 22:24:30,404 [INFO] BGMEA page 22: +20 records (440 total)
+2026-06-29 22:24:31,686 [INFO] BGMEA page 23: +20 records (460 total)
+2026-06-29 22:24:33,037 [INFO] BGMEA page 24: +20 records (480 total)
+2026-06-29 22:24:34,158 [INFO] BGMEA page 25: +20 records (500 total)
+2026-06-29 22:24:35,788 [INFO] BGMEA page 26: +20 records (520 total)
+2026-06-29 22:24:37,565 [INFO] BGMEA page 27: +20 records (540 total)
+2026-06-29 22:24:39,342 [INFO] BGMEA page 28: +20 records (560 total)
+2026-06-29 22:24:40,686 [INFO] BGMEA page 29: +20 records (580 total)
+2026-06-29 22:24:41,940 [INFO] BGMEA page 30: +20 records (600 total)
+2026-06-29 22:24:43,351 [INFO] BGMEA page 31: +20 records (620 total)
+2026-06-29 22:24:45,030 [INFO] BGMEA page 32: +20 records (640 total)
+2026-06-29 22:24:46,742 [INFO] BGMEA page 33: +20 records (660 total)
+2026-06-29 22:24:48,006 [INFO] BGMEA page 34: +20 records (680 total)
+2026-06-29 22:24:49,251 [INFO] BGMEA page 35: +20 records (700 total)
+2026-06-29 22:24:50,680 [INFO] BGMEA page 36: +20 records (720 total)
+2026-06-29 22:24:52,271 [INFO] BGMEA page 37: +20 records (740 total)
+2026-06-29 22:24:53,955 [INFO] BGMEA page 38: +20 records (760 total)
+2026-06-29 22:24:55,295 [INFO] BGMEA page 39: +20 records (780 total)
+2026-06-29 22:24:57,043 [INFO] BGMEA page 40: +20 records (800 total)
+2026-06-29 22:24:58,330 [INFO] BGMEA page 41: +20 records (820 total)
+2026-06-29 22:25:00,021 [INFO] BGMEA page 42: +20 records (840 total)
+2026-06-29 22:25:01,239 [INFO] BGMEA page 43: +20 records (860 total)
+2026-06-29 22:25:02,973 [INFO] BGMEA page 44: +20 records (880 total)
+2026-06-29 22:25:04,334 [INFO] BGMEA page 45: +20 records (900 total)
+2026-06-29 22:25:06,083 [INFO] BGMEA page 46: +20 records (920 total)
+2026-06-29 22:25:07,292 [INFO] BGMEA page 47: +20 records (940 total)
+2026-06-29 22:25:08,588 [INFO] BGMEA page 48: +20 records (960 total)
+2026-06-29 22:25:09,684 [INFO] BGMEA page 49: +20 records (980 total)
+2026-06-29 22:25:11,390 [INFO] BGMEA page 50: +20 records (1000 total)
+2026-06-29 22:25:12,726 [INFO] BGMEA page 51: +20 records (1020 total)
+2026-06-29 22:25:14,501 [INFO] BGMEA page 52: +20 records (1040 total)
+2026-06-29 22:25:16,282 [INFO] BGMEA page 53: +20 records (1060 total)
+2026-06-29 22:25:17,705 [INFO] BGMEA page 54: +20 records (1080 total)
+2026-06-29 22:25:18,890 [INFO] BGMEA page 55: +20 records (1100 total)
+2026-06-29 22:25:20,370 [INFO] BGMEA page 56: +20 records (1120 total)
+2026-06-29 22:25:22,085 [INFO] BGMEA page 57: +20 records (1140 total)
+2026-06-29 22:25:23,738 [INFO] BGMEA page 58: +20 records (1160 total)
+2026-06-29 22:25:25,488 [INFO] BGMEA page 59: +20 records (1180 total)
+2026-06-29 22:25:26,667 [INFO] BGMEA page 60: +20 records (1200 total)
+2026-06-29 22:25:27,892 [INFO] BGMEA page 61: +20 records (1220 total)
+2026-06-29 22:25:29,647 [INFO] BGMEA page 62: +20 records (1240 total)
+2026-06-29 22:25:30,980 [INFO] BGMEA page 63: +20 records (1260 total)
+2026-06-29 22:25:32,610 [INFO] BGMEA page 64: +20 records (1280 total)
+2026-06-29 22:25:34,200 [INFO] BGMEA page 65: +20 records (1300 total)
+2026-06-29 22:25:35,668 [INFO] BGMEA page 66: +20 records (1320 total)
+2026-06-29 22:25:37,154 [INFO] BGMEA page 67: +20 records (1340 total)
+2026-06-29 22:25:38,585 [INFO] BGMEA page 68: +20 records (1360 total)
+2026-06-29 22:25:40,246 [INFO] BGMEA page 69: +20 records (1380 total)
+2026-06-29 22:25:41,349 [INFO] BGMEA page 70: +20 records (1400 total)
+2026-06-29 22:25:43,030 [INFO] BGMEA page 71: +20 records (1420 total)
+2026-06-29 22:25:44,183 [INFO] BGMEA page 72: +20 records (1440 total)
+2026-06-29 22:25:45,964 [INFO] BGMEA page 73: +20 records (1460 total)
+2026-06-29 22:25:47,376 [INFO] BGMEA page 74: +20 records (1480 total)
+2026-06-29 22:25:49,044 [INFO] BGMEA page 75: +20 records (1500 total)
+2026-06-29 22:25:50,792 [INFO] BGMEA page 76: +20 records (1520 total)
+2026-06-29 22:25:52,049 [INFO] BGMEA page 77: +20 records (1540 total)
+2026-06-29 22:25:53,652 [INFO] BGMEA page 78: +20 records (1560 total)
+2026-06-29 22:25:55,183 [INFO] BGMEA page 79: +20 records (1580 total)
+2026-06-29 22:25:56,805 [INFO] BGMEA page 80: +20 records (1600 total)
+2026-06-29 22:25:58,589 [INFO] BGMEA page 81: +20 records (1620 total)
+2026-06-29 22:26:00,265 [INFO] BGMEA page 82: +20 records (1640 total)
+2026-06-29 22:26:01,912 [INFO] BGMEA page 83: +20 records (1660 total)
+2026-06-29 22:26:03,066 [INFO] BGMEA page 84: +20 records (1680 total)
+2026-06-29 22:26:04,775 [INFO] BGMEA page 85: +20 records (1700 total)
+2026-06-29 22:26:06,006 [INFO] BGMEA page 86: +20 records (1720 total)
+2026-06-29 22:26:07,803 [INFO] BGMEA page 87: +20 records (1740 total)
+2026-06-29 22:26:08,930 [INFO] BGMEA page 88: +20 records (1760 total)
+2026-06-29 22:26:10,208 [INFO] BGMEA page 89: +20 records (1780 total)
+2026-06-29 22:26:11,573 [INFO] BGMEA page 90: +20 records (1800 total)
+2026-06-29 22:26:13,365 [INFO] BGMEA page 91: +20 records (1820 total)
+2026-06-29 22:26:14,610 [INFO] BGMEA page 92: +20 records (1840 total)
+2026-06-29 22:26:16,390 [INFO] BGMEA page 93: +20 records (1860 total)
+2026-06-29 22:26:17,861 [INFO] BGMEA page 94: +20 records (1880 total)
+2026-06-29 22:26:19,002 [INFO] BGMEA page 95: +20 records (1900 total)
+2026-06-29 22:26:20,340 [INFO] BGMEA page 96: +20 records (1920 total)
+2026-06-29 22:26:21,830 [INFO] BGMEA page 97: +20 records (1940 total)
+2026-06-29 22:26:23,517 [INFO] BGMEA page 98: +20 records (1960 total)
+2026-06-29 22:26:25,230 [INFO] BGMEA page 99: +20 records (1980 total)
+2026-06-29 22:26:26,936 [INFO] BGMEA page 100: +20 records (2000 total)
+2026-06-29 22:26:28,242 [INFO] BGMEA page 101: +20 records (2020 total)
+2026-06-29 22:26:30,232 [INFO] BGMEA page 102: +20 records (2040 total)
+2026-06-29 22:26:31,626 [INFO] BGMEA page 103: +20 records (2060 total)
+2026-06-29 22:26:32,880 [INFO] BGMEA page 104: +20 records (2080 total)
+2026-06-29 22:26:34,412 [INFO] BGMEA page 105: +20 records (2100 total)
+2026-06-29 22:26:35,638 [INFO] BGMEA page 106: +20 records (2120 total)
+2026-06-29 22:26:36,747 [INFO] BGMEA page 107: +20 records (2140 total)
+2026-06-29 22:26:38,240 [INFO] BGMEA page 108: +20 records (2160 total)
+2026-06-29 22:26:39,540 [INFO] BGMEA page 109: +20 records (2180 total)
+2026-06-29 22:26:41,131 [INFO] BGMEA page 110: +20 records (2200 total)
+2026-06-29 22:26:42,877 [INFO] BGMEA page 111: +20 records (2220 total)
+2026-06-29 22:26:44,389 [INFO] BGMEA page 112: +20 records (2240 total)
+2026-06-29 22:26:45,756 [INFO] BGMEA page 113: +20 records (2260 total)
+2026-06-29 22:26:47,035 [INFO] BGMEA page 114: +20 records (2280 total)
+2026-06-29 22:26:48,581 [INFO] BGMEA page 115: +20 records (2300 total)
+2026-06-29 22:26:49,967 [INFO] BGMEA page 116: +20 records (2320 total)
+2026-06-29 22:26:51,235 [INFO] BGMEA page 117: +20 records (2340 total)
+2026-06-29 22:26:52,999 [INFO] BGMEA page 118: +20 records (2360 total)
+2026-06-29 22:26:54,227 [INFO] BGMEA page 119: +20 records (2380 total)
+2026-06-29 22:26:55,793 [INFO] BGMEA page 120: +20 records (2400 total)
+2026-06-29 22:26:56,984 [INFO] BGMEA page 121: +20 records (2420 total)
+2026-06-29 22:26:58,574 [INFO] BGMEA page 122: +20 records (2440 total)
+2026-06-29 22:27:00,235 [INFO] BGMEA page 123: +20 records (2460 total)
+2026-06-29 22:27:01,734 [INFO] BGMEA page 124: +20 records (2480 total)
+2026-06-29 22:27:03,292 [INFO] BGMEA page 125: +20 records (2500 total)
+2026-06-29 22:27:04,761 [INFO] BGMEA page 126: +20 records (2520 total)
+2026-06-29 22:27:06,444 [INFO] BGMEA page 127: +20 records (2540 total)
+2026-06-29 22:27:07,721 [INFO] BGMEA page 128: +20 records (2560 total)
+2026-06-29 22:27:09,181 [INFO] BGMEA page 129: +20 records (2580 total)
+2026-06-29 22:27:10,551 [INFO] BGMEA page 130: +20 records (2600 total)
+2026-06-29 22:27:12,082 [INFO] BGMEA page 131: +20 records (2620 total)
+2026-06-29 22:27:13,442 [INFO] BGMEA page 132: +20 records (2640 total)
+2026-06-29 22:27:14,954 [INFO] BGMEA page 133: +20 records (2660 total)
+2026-06-29 22:27:16,535 [INFO] BGMEA page 134: +20 records (2680 total)
+2026-06-29 22:27:17,864 [INFO] BGMEA page 135: +20 records (2700 total)
+2026-06-29 22:27:19,324 [INFO] BGMEA page 136: +20 records (2720 total)
+2026-06-29 22:27:20,639 [INFO] BGMEA page 137: +20 records (2740 total)
+2026-06-29 22:27:21,829 [INFO] BGMEA page 138: +20 records (2760 total)
+2026-06-29 22:27:23,477 [INFO] BGMEA page 139: +20 records (2780 total)
+2026-06-29 22:27:25,249 [INFO] BGMEA page 140: +20 records (2800 total)
+2026-06-29 22:27:26,377 [INFO] BGMEA page 141: +20 records (2820 total)
+2026-06-29 22:27:27,937 [INFO] BGMEA page 142: +20 records (2840 total)
+2026-06-29 22:27:29,043 [INFO] BGMEA page 143: +20 records (2860 total)
+2026-06-29 22:27:30,434 [INFO] BGMEA page 144: +20 records (2880 total)
+2026-06-29 22:27:32,053 [INFO] BGMEA page 145: +20 records (2900 total)
+2026-06-29 22:27:33,537 [INFO] BGMEA page 146: +20 records (2920 total)
+2026-06-29 22:27:35,261 [INFO] BGMEA page 147: +20 records (2940 total)
+2026-06-29 22:27:36,524 [INFO] BGMEA page 148: +20 records (2960 total)
+2026-06-29 22:27:38,247 [INFO] BGMEA page 149: +20 records (2980 total)
+2026-06-29 22:27:39,983 [INFO] BGMEA page 150: +20 records (3000 total)
+2026-06-29 22:27:41,199 [INFO] BGMEA page 151: +20 records (3020 total)
+2026-06-29 22:27:42,330 [INFO] BGMEA page 152: +20 records (3040 total)
+2026-06-29 22:27:43,559 [INFO] BGMEA page 153: +20 records (3060 total)
+2026-06-29 22:27:45,248 [INFO] BGMEA page 154: +20 records (3080 total)
+2026-06-29 22:27:46,643 [INFO] BGMEA page 155: +20 records (3100 total)
+2026-06-29 22:27:47,948 [INFO] BGMEA page 156: +20 records (3120 total)
+2026-06-29 22:27:49,474 [INFO] BGMEA page 157: +20 records (3140 total)
+2026-06-29 22:27:50,605 [INFO] BGMEA page 158: +20 records (3160 total)
+2026-06-29 22:27:52,177 [INFO] BGMEA page 159: +20 records (3180 total)
+2026-06-29 22:27:53,595 [INFO] BGMEA page 160: +20 records (3200 total)
+2026-06-29 22:27:54,736 [INFO] BGMEA page 161: +20 records (3220 total)
+2026-06-29 22:27:56,083 [INFO] BGMEA page 162: +20 records (3240 total)
+2026-06-29 22:27:57,476 [INFO] BGMEA page 163: +20 records (3260 total)
+2026-06-29 22:27:59,055 [INFO] BGMEA page 164: +20 records (3280 total)
+2026-06-29 22:28:00,574 [INFO] BGMEA page 165: +20 records (3300 total)
+2026-06-29 22:28:02,209 [INFO] BGMEA page 166: +20 records (3320 total)
+2026-06-29 22:28:03,462 [INFO] BGMEA page 167: +20 records (3340 total)
+2026-06-29 22:28:04,617 [INFO] BGMEA page 168: +20 records (3360 total)
+2026-06-29 22:28:05,792 [INFO] BGMEA page 169: +20 records (3380 total)
+2026-06-29 22:28:07,331 [INFO] BGMEA page 170: +20 records (3400 total)
+2026-06-29 22:28:08,541 [INFO] BGMEA page 171: +20 records (3420 total)
+2026-06-29 22:28:10,336 [INFO] BGMEA page 172: +20 records (3440 total)
+2026-06-29 22:28:11,577 [INFO] BGMEA page 173: +20 records (3460 total)
+2026-06-29 22:28:12,725 [INFO] BGMEA page 174: +20 records (3480 total)
+2026-06-29 22:28:14,351 [INFO] BGMEA page 175: +20 records (3500 total)
+2026-06-29 22:28:15,906 [INFO] BGMEA page 176: +20 records (3520 total)
+2026-06-29 22:28:17,224 [INFO] BGMEA page 177: +20 records (3540 total)
+2026-06-29 22:28:18,465 [INFO] BGMEA page 178: +20 records (3560 total)
+2026-06-29 22:28:19,903 [INFO] BGMEA page 179: +20 records (3580 total)
+2026-06-29 22:28:21,375 [INFO] BGMEA page 180: +20 records (3600 total)
+2026-06-29 22:28:22,693 [INFO] BGMEA page 181: +20 records (3620 total)
+2026-06-29 22:28:23,950 [INFO] BGMEA page 182: +20 records (3640 total)
+2026-06-29 22:28:25,317 [INFO] BGMEA page 183: +20 records (3660 total)
+2026-06-29 22:28:26,917 [INFO] BGMEA page 184: +20 records (3680 total)
+2026-06-29 22:28:28,243 [INFO] BGMEA page 185: +20 records (3700 total)
+2026-06-29 22:28:29,561 [INFO] BGMEA page 186: +20 records (3720 total)
+2026-06-29 22:28:31,146 [INFO] BGMEA page 187: +20 records (3740 total)
+2026-06-29 22:28:32,878 [INFO] BGMEA page 188: +20 records (3760 total)
+2026-06-29 22:28:34,483 [INFO] BGMEA page 189: +20 records (3780 total)
+2026-06-29 22:28:35,597 [INFO] BGMEA page 190: +20 records (3800 total)
+2026-06-29 22:28:37,087 [INFO] BGMEA page 191: +20 records (3820 total)
+2026-06-29 22:28:38,677 [INFO] BGMEA page 192: +20 records (3840 total)
+2026-06-29 22:28:39,981 [INFO] BGMEA page 193: +20 records (3860 total)
+2026-06-29 22:28:41,226 [INFO] BGMEA page 194: +20 records (3880 total)
+2026-06-29 22:28:42,747 [INFO] BGMEA page 195: +20 records (3900 total)
+2026-06-29 22:28:44,041 [INFO] BGMEA page 196: +20 records (3920 total)
+2026-06-29 22:28:45,597 [INFO] BGMEA page 197: +20 records (3940 total)
+2026-06-29 22:28:47,079 [INFO] BGMEA page 198: +20 records (3960 total)
+2026-06-29 22:28:48,183 [INFO] BGMEA page 199: +20 records (3980 total)
+2026-06-29 22:28:49,746 [INFO] BGMEA page 200: +20 records (4000 total)
+2026-06-29 22:28:51,077 [INFO] BGMEA page 201: +20 records (4020 total)
+2026-06-29 22:28:52,707 [INFO] BGMEA page 202: +20 records (4040 total)
+2026-06-29 22:28:55,058 [INFO] BGMEA page 203: +20 records (4060 total)
+2026-06-29 22:28:56,850 [INFO] BGMEA page 204: +20 records (4080 total)
+2026-06-29 22:28:58,645 [INFO] BGMEA page 205: +20 records (4100 total)
+2026-06-29 22:29:00,347 [INFO] BGMEA page 206: +20 records (4120 total)
+2026-06-29 22:29:01,473 [INFO] BGMEA page 207: +20 records (4140 total)
+2026-06-29 22:29:03,261 [INFO] BGMEA page 208: +20 records (4160 total)
+2026-06-29 22:29:04,942 [INFO] BGMEA page 209: +20 records (4180 total)
+2026-06-29 22:29:06,459 [INFO] BGMEA page 210: +20 records (4200 total)
+2026-06-29 22:29:08,179 [INFO] BGMEA page 211: +20 records (4220 total)
+2026-06-29 22:29:09,546 [INFO] BGMEA page 212: +20 records (4240 total)
+2026-06-29 22:29:10,776 [INFO] BGMEA page 213: +20 records (4260 total)
+2026-06-29 22:29:12,337 [INFO] BGMEA page 214: +15 records (4275 total)
+2026-06-29 22:29:13,806 [INFO] BGMEA: no rows on page 215 — end of list.
+2026-06-29 22:29:13,806 [INFO] BGMEA list complete: 4275 records
+2026-06-29 22:29:13,834 [INFO] Fetching RSC factory list: https://rsc-bd.org/factories/
+2026-06-29 22:29:15,811 [WARNING] Connected to https://rsc-bd.org/factories/ with SSL verification disabled.
+2026-06-29 22:29:15,871 [INFO] RSC page 1: no rows — end of list.
+2026-06-29 22:29:15,871 [INFO] RSC: 0 records total
+2026-06-29 22:29:15,872 [INFO] Reference data: BGMEA=4275  RSC=0  GitHub=0
+2026-06-29 22:30:18,767 [INFO] Progress: 100/6175
+2026-06-29 22:31:16,435 [INFO] Progress: 200/6175
+2026-06-29 22:32:13,312 [INFO] Progress: 300/6175
+2026-06-29 22:33:13,994 [INFO] Progress: 400/6175
+2026-06-29 22:33:58,176 [INFO] Progress: 500/6175
+2026-06-29 22:34:41,065 [INFO] Progress: 600/6175
+2026-06-29 22:35:32,678 [INFO] Progress: 700/6175
+2026-06-29 22:36:23,242 [INFO] Progress: 800/6175
+2026-06-29 22:37:06,171 [INFO] Progress: 900/6175
+2026-06-29 22:37:53,878 [INFO] Progress: 1000/6175
+2026-06-29 22:38:45,226 [INFO] Progress: 1100/6175
+2026-06-29 22:39:34,565 [INFO] Progress: 1200/6175
+2026-06-29 22:40:21,148 [INFO] Progress: 1300/6175
+2026-06-29 22:40:59,952 [INFO] Progress: 1400/6175
+2026-06-29 22:41:48,694 [INFO] Progress: 1500/6175
+2026-06-29 22:42:28,726 [INFO] Progress: 1600/6175
+2026-06-29 22:43:12,672 [INFO] Progress: 1700/6175
+2026-06-29 22:43:46,157 [INFO] Progress: 1800/6175
+2026-06-29 22:44:23,998 [INFO] Progress: 1900/6175
+2026-06-29 22:45:03,432 [INFO] Progress: 2000/6175
+2026-06-29 22:45:36,859 [INFO] Progress: 2100/6175
+2026-06-29 22:46:14,603 [INFO] Progress: 2200/6175
+2026-06-29 22:46:39,842 [INFO] Progress: 2300/6175
+2026-06-29 22:47:21,390 [INFO] Progress: 2400/6175
+2026-06-29 22:47:56,723 [INFO] Progress: 2500/6175
+2026-06-29 22:48:39,063 [INFO] Progress: 2600/6175
+2026-06-29 22:49:11,941 [INFO] Progress: 2700/6175
+2026-06-29 22:49:46,990 [INFO] Progress: 2800/6175
+2026-06-29 22:50:28,717 [INFO] Progress: 2900/6175
+2026-06-29 22:50:48,800 [INFO] Progress: 3000/6175
+2026-06-29 22:51:21,824 [INFO] Progress: 3100/6175
+2026-06-29 22:51:50,281 [INFO] Progress: 3200/6175
+2026-06-29 22:52:16,884 [INFO] Progress: 3300/6175
+2026-06-29 22:52:38,024 [INFO] Progress: 3400/6175
+2026-06-29 22:53:07,388 [INFO] Progress: 3500/6175
+2026-06-29 22:53:35,921 [INFO] Progress: 3600/6175
+2026-06-29 22:54:00,393 [INFO] Progress: 3700/6175
+2026-06-29 22:54:29,277 [INFO] Progress: 3800/6175
+2026-06-29 22:54:55,452 [INFO] Progress: 3900/6175
+2026-06-29 22:55:16,104 [INFO] Progress: 4000/6175
+2026-06-29 22:55:42,905 [INFO] Progress: 4100/6175
+2026-06-29 22:56:18,871 [INFO] Progress: 4200/6175
+2026-06-29 22:56:51,680 [INFO] Progress: 4300/6175
+2026-06-29 22:57:14,189 [INFO] Progress: 4400/6175
+2026-06-29 22:57:30,010 [INFO] Progress: 4500/6175
+2026-06-29 22:57:54,875 [INFO] Progress: 4600/6175
+2026-06-29 22:58:25,467 [INFO] Progress: 4700/6175
+2026-06-29 22:58:49,316 [INFO] Progress: 4800/6175
+2026-06-29 22:59:12,097 [INFO] Progress: 4900/6175
+2026-06-29 22:59:35,213 [INFO] Progress: 5000/6175
+2026-06-29 23:00:04,024 [INFO] Progress: 5100/6175
+2026-06-29 23:00:19,125 [INFO] Progress: 5200/6175
+2026-06-29 23:00:34,315 [INFO] Progress: 5300/6175
+2026-06-29 23:00:52,120 [INFO] Progress: 5400/6175
+2026-06-29 23:01:10,935 [INFO] Progress: 5500/6175
+2026-06-29 23:01:31,956 [INFO] Progress: 5600/6175
+2026-06-29 23:01:50,171 [INFO] Progress: 5700/6175
+2026-06-29 23:02:05,594 [INFO] Progress: 5800/6175
+2026-06-29 23:02:17,043 [INFO] Progress: 5900/6175
+2026-06-29 23:02:36,255 [INFO] Progress: 6000/6175
+2026-06-29 23:02:48,983 [INFO] Progress: 6100/6175
+2026-06-29 23:02:53,529 [INFO] Enrichment complete. Output: /home/runner/work/Taiguo-boilar/Taiguo-boilar/scraper/rmg_enriched.csv
