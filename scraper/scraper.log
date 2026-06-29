@@ -14397,3 +14397,596 @@
 2026-06-27 04:11:32,120 [INFO] Stopped early (time limit). Resume with --resume.  found=13808  empty=26692  errors=0  total=40500
 2026-06-27 04:11:32,120 [INFO] CSV output : /home/runner/work/Taiguo-boilar/Taiguo-boilar/scraper/database_export.csv
 2026-06-27 04:11:32,120 [INFO] JSON output: /home/runner/work/Taiguo-boilar/Taiguo-boilar/scraper/records.json
+2026-06-28 21:24:22,211 [INFO] Starting scrape: 10 series × 15000 numbers = 150000 combinations  workers=3  time-limit=5.25h
+2026-06-28 21:24:22,211 [INFO] Series 'Ba: Bo:' already complete, skipping.
+2026-06-28 21:24:22,211 [INFO] Series 'EP:' already complete, skipping.
+2026-06-28 21:24:22,211 [INFO] Processing series 'BL:'  starting from #10651
+2026-06-28 21:24:26,649 [INFO] FOUND  BL:          #10658   Mohini Mills Ltd.  (expires 30-11--0001)
+2026-06-28 21:24:36,237 [INFO] FOUND  BL:          #10681   Sayed A-Jalil & Co.  (expires 30-11--0001)
+2026-06-28 21:24:45,848 [INFO] FOUND  BL:          #10702   Mirza Auto Rice Mills Ltd.  (expires 30-11--0001)
+2026-06-28 21:24:48,631 [INFO] FOUND  BL:          #10710   Dhakeswan Cotton Mill Ltd.  (expires 30-11--0001)
+2026-06-28 21:24:54,797 [INFO] FOUND  BL:          #10726   Deshbandhu Surar Mills Ltd.  (expires 30-11--0001)
+2026-06-28 21:25:05,281 [INFO] Progress: series='BL:'  num=10750/15000  found=5  empty=95  errors=0
+2026-06-28 21:25:16,991 [INFO] FOUND  BL:          #10773   Sayed A-Jalil & Co.  (expires 30-11--0001)
+2026-06-28 21:25:18,915 [INFO] FOUND  BL:          #10778   Shamsul Alamin Cotton Mills Ltd.  (expires 30-11--0001)
+2026-06-28 21:25:29,615 [INFO] FOUND  BL:          #10803   M/s.Reliance tanary Ltd.  (expires 30-11--0001)
+2026-06-28 21:25:49,681 [INFO] Progress: series='BL:'  num=10850/15000  found=8  empty=192  errors=0
+2026-06-28 21:26:21,253 [INFO] FOUND  BL:          #10922   Karim Rice Mill  (expires 30-11--0001)
+2026-06-28 21:26:34,040 [INFO] Progress: series='BL:'  num=10950/15000  found=9  empty=291  errors=0
+2026-06-28 21:27:17,820 [INFO] FOUND  BL:          #11049   Roshawa Knitwears Ltd.  (expires 30-11--0001)
+2026-06-28 21:27:18,289 [INFO] FOUND  BL:          #11050     (expires 30-11--0001)
+2026-06-28 21:27:18,370 [INFO] Progress: series='BL:'  num=11050/15000  found=11  empty=389  errors=0
+2026-06-28 21:27:40,017 [INFO] FOUND  BL:          #11100   Helicon ltd  (expires 23-06-2022)
+2026-06-28 21:27:57,472 [INFO] FOUND  BL:          #11140   Rahman Chemical Ltd.  (expires 30-11--0001)
+2026-06-28 21:28:00,866 [INFO] Progress: series='BL:'  num=11150/15000  found=13  empty=487  errors=0
+2026-06-28 21:28:14,147 [INFO] FOUND  BL:          #11181   Star Shipping Lines  (expires 30-11--0001)
+2026-06-28 21:28:15,820 [INFO] FOUND  BL:          #11185   Rahul & Azizur Rahman  (expires 30-11--0001)
+2026-06-28 21:28:45,640 [INFO] FOUND  BL:          #11249   Nice Delim Mills Ltd.  (expires 30-11--0001)
+2026-06-28 21:28:45,730 [INFO] Progress: series='BL:'  num=11250/15000  found=16  empty=584  errors=0
+2026-06-28 21:29:28,527 [INFO] Progress: series='BL:'  num=11350/15000  found=16  empty=684  errors=0
+2026-06-28 21:29:36,422 [INFO] FOUND  BL:          #11369   Kaliganj Sugar Mills  (expires 30-11--0001)
+2026-06-28 21:29:40,089 [INFO] FOUND  BL:          #11378   Bhawal Roy Estate  (expires 30-11--0001)
+2026-06-28 21:29:42,353 [INFO] FOUND  BL:          #11384   Bhawal Roy Estate  (expires 30-11--0001)
+2026-06-28 21:30:10,209 [INFO] Progress: series='BL:'  num=11450/15000  found=19  empty=781  errors=0
+2026-06-28 21:30:22,903 [INFO] FOUND  BL:          #11479   M. A. Latif Rice Mills  (expires 30-11--0001)
+2026-06-28 21:30:24,382 [INFO] FOUND  BL:          #11482   North Bengal Sugar MIlls Ltd.  (expires 30-11--0001)
+2026-06-28 21:30:53,763 [INFO] Progress: series='BL:'  num=11550/15000  found=21  empty=879  errors=0
+2026-06-28 21:31:18,941 [INFO] FOUND  BL:          #11601   Karnal Rice Mills  (expires 30-11--0001)
+2026-06-28 21:31:42,217 [INFO] FOUND  BL:          #11647   Khulna Textile Mills  (expires 30-11--0001)
+2026-06-28 21:31:44,045 [INFO] Progress: series='BL:'  num=11650/15000  found=23  empty=977  errors=0
+2026-06-28 21:31:48,586 [INFO] FOUND  BL:          #11658   Neont Labroratories Ltd.  (expires 30-11--0001)
+2026-06-28 21:32:07,204 [INFO] FOUND  BL:          #11704   Bashratullah Ch. Rice Mills  (expires 30-11--0001)
+2026-06-28 21:32:27,369 [INFO] Progress: series='BL:'  num=11750/15000  found=25  empty=1075  errors=0
+2026-06-28 21:32:28,687 [INFO] FOUND  BL:          #11751   Tejarat Feed Mills Ltd.  (expires 30-11--0001)
+2026-06-28 21:33:09,988 [INFO] Progress: series='BL:'  num=11850/15000  found=26  empty=1174  errors=0
+2026-06-28 21:33:53,525 [INFO] Progress: series='BL:'  num=11950/15000  found=26  empty=1274  errors=0
+2026-06-28 21:34:26,772 [INFO] FOUND  BL:          #12028   Minimax Ltd.  (expires 23-12-2022)
+2026-06-28 21:34:36,236 [INFO] FOUND  BL:          #12050   Uttara Industries  (expires 30-11--0001)
+2026-06-28 21:34:36,320 [INFO] Progress: series='BL:'  num=12050/15000  found=28  empty=1372  errors=0
+2026-06-28 21:35:18,137 [INFO] Progress: series='BL:'  num=12150/15000  found=28  empty=1472  errors=0
+2026-06-28 21:35:44,911 [WARNING] Request failed (attempt 1/4) series='BL:' num=12212: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-28 21:36:02,609 [INFO] Progress: series='BL:'  num=12250/15000  found=28  empty=1572  errors=0
+2026-06-28 21:36:43,373 [INFO] Progress: series='BL:'  num=12350/15000  found=28  empty=1672  errors=0
+2026-06-28 21:37:28,501 [INFO] Progress: series='BL:'  num=12450/15000  found=28  empty=1772  errors=0
+2026-06-28 21:38:09,171 [INFO] Progress: series='BL:'  num=12550/15000  found=28  empty=1872  errors=0
+2026-06-28 21:38:50,420 [INFO] Progress: series='BL:'  num=12650/15000  found=28  empty=1972  errors=0
+2026-06-28 21:39:32,249 [INFO] Progress: series='BL:'  num=12750/15000  found=28  empty=2072  errors=0
+2026-06-28 21:40:02,309 [INFO] FOUND  BL:          #12819   Mitali Fashions Ltd.  (expires 23-02-2023)
+2026-06-28 21:40:16,323 [INFO] Progress: series='BL:'  num=12850/15000  found=29  empty=2171  errors=0
+2026-06-28 21:41:01,032 [INFO] Progress: series='BL:'  num=12950/15000  found=29  empty=2271  errors=0
+2026-06-28 21:41:44,577 [INFO] Progress: series='BL:'  num=13050/15000  found=29  empty=2371  errors=0
+2026-06-28 21:42:26,655 [INFO] Progress: series='BL:'  num=13150/15000  found=29  empty=2471  errors=0
+2026-06-28 21:43:09,147 [INFO] Progress: series='BL:'  num=13250/15000  found=29  empty=2571  errors=0
+2026-06-28 21:43:51,456 [INFO] Progress: series='BL:'  num=13350/15000  found=29  empty=2671  errors=0
+2026-06-28 21:44:10,826 [WARNING] Request failed (attempt 1/4) series='BL:' num=13395: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-28 21:44:35,495 [INFO] Progress: series='BL:'  num=13450/15000  found=29  empty=2771  errors=0
+2026-06-28 21:45:19,223 [INFO] Progress: series='BL:'  num=13550/15000  found=29  empty=2871  errors=0
+2026-06-28 21:45:54,115 [WARNING] Request failed (attempt 1/4) series='BL:' num=13632: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-28 21:46:02,044 [INFO] Progress: series='BL:'  num=13650/15000  found=29  empty=2971  errors=0
+2026-06-28 21:46:43,862 [INFO] Progress: series='BL:'  num=13750/15000  found=29  empty=3071  errors=0
+2026-06-28 21:47:26,114 [INFO] Progress: series='BL:'  num=13850/15000  found=29  empty=3171  errors=0
+2026-06-28 21:48:08,237 [INFO] Progress: series='BL:'  num=13950/15000  found=29  empty=3271  errors=0
+2026-06-28 21:48:52,754 [INFO] Progress: series='BL:'  num=14050/15000  found=29  empty=3371  errors=0
+2026-06-28 21:49:34,259 [INFO] Progress: series='BL:'  num=14150/15000  found=29  empty=3471  errors=0
+2026-06-28 21:50:18,480 [INFO] Progress: series='BL:'  num=14250/15000  found=29  empty=3571  errors=0
+2026-06-28 21:51:01,438 [INFO] Progress: series='BL:'  num=14350/15000  found=29  empty=3671  errors=0
+2026-06-28 21:51:44,841 [INFO] Progress: series='BL:'  num=14450/15000  found=29  empty=3771  errors=0
+2026-06-28 21:52:29,291 [INFO] Progress: series='BL:'  num=14550/15000  found=29  empty=3871  errors=0
+2026-06-28 21:53:13,804 [INFO] Progress: series='BL:'  num=14650/15000  found=29  empty=3971  errors=0
+2026-06-28 21:53:56,522 [INFO] Progress: series='BL:'  num=14750/15000  found=29  empty=4071  errors=0
+2026-06-28 21:54:39,186 [INFO] Progress: series='BL:'  num=14850/15000  found=29  empty=4171  errors=0
+2026-06-28 21:55:21,814 [INFO] Progress: series='BL:'  num=14950/15000  found=29  empty=4271  errors=0
+2026-06-28 21:55:24,177 [WARNING] Request failed (attempt 1/4) series='BL:' num=14957: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-28 21:55:44,726 [INFO] Progress: series='BL:'  num=15000/15000  found=29  empty=4321  errors=0
+2026-06-28 21:55:44,727 [INFO] Series 'BL:' complete.
+2026-06-28 21:55:44,727 [INFO] Processing series 'EBL:'  starting from #51
+2026-06-28 21:55:45,887 [INFO] FOUND  EBL:         #53      Munni Chemical Ind.  (expires 08-06-2022)
+2026-06-28 21:55:46,000 [INFO] FOUND  EBL:         #51      Olympia Textile Mills Ltd.  (expires 19-03-2004)
+2026-06-28 21:55:46,185 [INFO] FOUND  EBL:         #52      Orient Jute Press Co. Ltd.  (expires 30-11--0001)
+2026-06-28 21:55:47,220 [INFO] FOUND  EBL:         #54      Ibrahim Cotton Mills  (expires 09-09-1999)
+2026-06-28 21:55:47,304 [INFO] FOUND  EBL:         #55      National Calendaring Mills  (expires 22-06-2001)
+2026-06-28 21:55:47,648 [INFO] FOUND  EBL:         #56      Moslin Cotton Mills Ltd.  (expires 04-07-1970)
+2026-06-28 21:55:48,553 [INFO] FOUND  EBL:         #59      Amin Jute Mills Ltd.  (expires 12-06-2018)
+2026-06-28 21:55:48,638 [INFO] FOUND  EBL:         #58      Adamjee Jute Mills Ltd.  (expires 10-10-2002)
+2026-06-28 21:55:49,060 [INFO] FOUND  EBL:         #57      Adamjee Jute Mills Ltd.  (expires 14-08-2002)
+2026-06-28 21:55:49,833 [INFO] FOUND  EBL:         #61      Talukdar Rice Mill  (expires 04-02-2004)
+2026-06-28 21:55:50,121 [INFO] FOUND  EBL:         #60      Jogipote Major Rice Mills  (expires 30-11--0001)
+2026-06-28 21:55:50,546 [INFO] FOUND  EBL:         #62      Ahmed Rice & Atta Mills  (expires 29-07-1984)
+2026-06-28 21:55:50,680 [INFO] FOUND  EBL:         #63      Dulichand Omraolal Oil Mills  (expires 30-11--0001)
+2026-06-28 21:55:51,758 [INFO] FOUND  EBL:         #65      Jamal Silicate Works  (expires 20-11-1993)
+2026-06-28 21:55:51,884 [INFO] FOUND  EBL:         #64      Mandol Auto Rice Mill  (expires 15-05-2022)
+2026-06-28 21:55:52,157 [INFO] FOUND  EBL:         #66      Latif Bawany Jute Mills Ltd.  (expires 06-08-2020)
+2026-06-28 21:55:52,711 [INFO] FOUND  EBL:         #67      BFIDC  (expires 23-01-2000)
+2026-06-28 21:55:53,420 [INFO] FOUND  EBL:         #68      Reedgco Industries Ltd.  (expires 07-07-1982)
+2026-06-28 21:55:53,809 [INFO] FOUND  EBL:         #69      S. R. Textile Mills Ltd.  (expires 21-05-1981)
+2026-06-28 21:55:54,149 [INFO] FOUND  EBL:         #70      M/S B.K Auto Rice Mill  (expires 27-04-2021)
+2026-06-28 21:55:54,291 [INFO] FOUND  EBL:         #71      Metal Packages Ltd.  (expires 16-11-1992)
+2026-06-28 21:55:54,998 [INFO] FOUND  EBL:         #73      M/S Karim Jute mills Ltd  (expires 04-05-2022)
+2026-06-28 21:55:55,116 [INFO] FOUND  EBL:         #72      M/S: G. A. Co.  (expires 06-07-2005)
+2026-06-28 21:55:56,079 [INFO] FOUND  EBL:         #76      Naj Auto Rice Mill  (expires 27-09-2007)
+2026-06-28 21:55:56,103 [INFO] FOUND  EBL:         #74      Karim Jute Mills Ltd.  (expires 27-07-2010)
+2026-06-28 21:55:56,326 [INFO] FOUND  EBL:         #75      Bangladesh Match Co. Ltd.  (expires 10-04-2004)
+2026-06-28 21:55:57,263 [INFO] FOUND  EBL:         #77      Rangpur Sugar Mills ltd  (expires 10-08-2022)
+2026-06-28 21:55:57,349 [INFO] FOUND  EBL:         #79      Rangpur Sugar Mills Ltd.  (expires 24-09-2021)
+2026-06-28 21:55:57,650 [INFO] FOUND  EBL:         #78      Rangpur Sugar Mills ltd  (expires 10-09-2022)
+2026-06-28 21:55:58,263 [INFO] FOUND  EBL:         #81      The Cresent Jute Mills Ltd.  (expires 13-09-2022)
+2026-06-28 21:55:58,933 [INFO] FOUND  EBL:         #80      A. K. Khan Match Co. Ltd.  (expires 24-01-2005)
+2026-06-28 21:55:59,103 [INFO] FOUND  EBL:         #82      Daulatpur Jute Mills Ltd.  (expires 18-12-2019)
+2026-06-28 21:55:59,248 [INFO] FOUND  EBL:         #83      Khalispur Jute Mills Ltd  (expires 16-02-2023)
+2026-06-28 21:56:00,432 [INFO] FOUND  EBL:         #86      M/S Sarkar Chemical Industries (Pvt.) Ltd.  (expires 14-04-2017)
+2026-06-28 21:56:00,663 [INFO] FOUND  EBL:         #84      Ishaque Industries  (expires 13-09-2022)
+2026-06-28 21:56:00,934 [INFO] FOUND  EBL:         #85      Jamil Soap Works  (expires 30-11-1984)
+2026-06-28 21:56:01,395 [INFO] FOUND  EBL:         #87      Rashidpur Tea Estate  (expires 29-07-2017)
+2026-06-28 21:56:02,251 [INFO] FOUND  EBL:         #88      Dudu Miah Rice Mills  (expires 18-02-1982)
+2026-06-28 21:56:02,419 [INFO] FOUND  EBL:         #89      G. K. Power Station  (expires 14-07-1980)
+2026-06-28 21:56:02,867 [INFO] FOUND  EBL:         #90      G. K. Power Station  (expires 21-07-1979)
+2026-06-28 21:56:03,380 [INFO] FOUND  EBL:         #92      G. K. Power Station  (expires 23-04-1982)
+2026-06-28 21:56:03,423 [INFO] FOUND  EBL:         #91      G. K. Power Station  (expires 23-04-1982)
+2026-06-28 21:56:04,642 [INFO] FOUND  EBL:         #93      Bangladesh Rubber Ind:  (expires 20-12-1983)
+2026-06-28 21:56:04,792 [INFO] FOUND  EBL:         #95      Commander Soap Co. Ltd.  (expires 06-04-1992)
+2026-06-28 21:56:04,955 [INFO] FOUND  EBL:         #94      N Amin Traders  (expires 16-11-2022)
+2026-06-28 21:56:05,598 [INFO] FOUND  EBL:         #96      E. Pak. Bone Mills Fertilizer Works  (expires 15-06-1974)
+2026-06-28 21:56:05,896 [INFO] FOUND  EBL:         #97      Sonali Tobacco Co. (P.) Ltd.  (expires 20-05-2004)
+2026-06-28 21:56:06,089 [INFO] FOUND  EBL:         #98      Khalispur Jute Mills Ltd  (expires 16-02-2023)
+2026-06-28 21:56:06,686 [INFO] FOUND  EBL:         #99      Karnaphully Paper Mills Ltd.  (expires 26-08-1990)
+2026-06-28 21:56:07,506 [INFO] FOUND  EBL:         #101     Crescent Jute Mills Ltd.  (expires 22-09-2021)
+2026-06-28 21:56:07,532 [INFO] FOUND  EBL:         #100     Star Jute Mills Ltd.  (expires 11-04-2023)
+2026-06-28 21:56:08,433 [INFO] FOUND  EBL:         #102     M/S: Tallu Spening Mills Ltd.  (expires 17-09-2007)
+2026-06-28 21:56:08,453 [INFO] FOUND  EBL:         #104     A. K. Leather & Synthetics  (expires 22-08-1981)
+2026-06-28 21:56:09,115 [INFO] FOUND  EBL:         #103     Noor Silk Mills (P:) Ltd.  (expires 30-11--0001)
+2026-06-28 21:56:09,412 [INFO] FOUND  EBL:         #105     Dacca Bevarage Co. Ltd.  (expires 30-11--0001)
+2026-06-28 21:56:09,713 [INFO] FOUND  EBL:         #106     The Commanding Officer Base Workshop  (expires 20-11-2004)
+2026-06-28 21:56:10,050 [INFO] FOUND  EBL:         #107     Bangladesh University of Engineering Technology  (expires 19-06-1996)
+2026-06-28 21:56:10,716 [INFO] FOUND  EBL:         #109     Standard Tobacco Co. Ltd.  (expires 22-12-1988)
+2026-06-28 21:56:11,117 [INFO] FOUND  EBL:         #110     Thakurgaon Sugar Mills Ltd  (expires 13-09-2022)
+2026-06-28 21:56:11,202 [INFO] FOUND  EBL:         #108     National Rubber Ind:  (expires 14-09-1996)
+2026-06-28 21:56:12,245 [INFO] FOUND  EBL:         #113     Zeal Bangla Sugar Mills  (expires 18-10-2020)
+2026-06-28 21:56:12,487 [INFO] FOUND  EBL:         #111     Thakurgaon Sugar Mills Ltd  (expires 13-10-2022)
+2026-06-28 21:56:12,822 [INFO] FOUND  EBL:         #112     Thakurgaon Sugar Mills Ltd  (expires 13-10-2022)
+2026-06-28 21:56:14,439 [INFO] FOUND  EBL:         #114     Jeal Bangla Sugar Mills  (expires 18-10-2020)
+2026-06-28 21:56:14,925 [INFO] FOUND  EBL:         #118     Sans Packaging & accessories Ltd.  (expires 30-11--0001)
+2026-06-28 21:56:28,772 [INFO] Progress: series='EBL:'  num=150/15000  found=94  empty=4356  errors=0
+2026-06-28 21:57:15,768 [INFO] Progress: series='EBL:'  num=250/15000  found=94  empty=4456  errors=0
+2026-06-28 21:57:59,823 [INFO] Progress: series='EBL:'  num=350/15000  found=94  empty=4556  errors=0
+2026-06-28 21:58:31,460 [INFO] FOUND  EBL:         #424     Sapphire Garments Ltd.  (expires 30-11--0001)
+2026-06-28 21:58:41,042 [INFO] FOUND  EBL:         #445     Al - Noor Steel Complex Ltd.  (expires 30-11--0001)
+2026-06-28 21:58:43,584 [INFO] Progress: series='EBL:'  num=450/15000  found=96  empty=4654  errors=0
+2026-06-28 21:59:26,190 [INFO] Progress: series='EBL:'  num=550/15000  found=96  empty=4754  errors=0
+2026-06-28 22:00:10,069 [INFO] Progress: series='EBL:'  num=650/15000  found=96  empty=4854  errors=0
+2026-06-28 22:00:51,647 [INFO] Progress: series='EBL:'  num=750/15000  found=96  empty=4954  errors=0
+2026-06-28 22:01:33,670 [INFO] Progress: series='EBL:'  num=850/15000  found=96  empty=5054  errors=0
+2026-06-28 22:02:15,195 [INFO] Progress: series='EBL:'  num=950/15000  found=96  empty=5154  errors=0
+2026-06-28 22:02:58,306 [INFO] Progress: series='EBL:'  num=1050/15000  found=96  empty=5254  errors=0
+2026-06-28 22:03:28,796 [WARNING] Request failed (attempt 1/4) series='EBL:' num=1119: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-28 22:03:42,238 [INFO] Progress: series='EBL:'  num=1150/15000  found=96  empty=5354  errors=0
+2026-06-28 22:04:27,650 [INFO] Progress: series='EBL:'  num=1250/15000  found=96  empty=5454  errors=0
+2026-06-28 22:05:10,875 [INFO] Progress: series='EBL:'  num=1350/15000  found=96  empty=5554  errors=0
+2026-06-28 22:05:56,218 [INFO] Progress: series='EBL:'  num=1450/15000  found=96  empty=5654  errors=0
+2026-06-28 22:06:10,275 [WARNING] Request failed (attempt 1/4) series='EBL:' num=1483: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-28 22:06:37,769 [INFO] Progress: series='EBL:'  num=1550/15000  found=96  empty=5754  errors=0
+2026-06-28 22:07:21,265 [INFO] Progress: series='EBL:'  num=1650/15000  found=96  empty=5854  errors=0
+2026-06-28 22:07:56,769 [INFO] FOUND  EBL:         #1736    Jaber & Jobayer Fabrics Ltd.  (expires 30-11--0001)
+2026-06-28 22:08:03,114 [INFO] Progress: series='EBL:'  num=1750/15000  found=97  empty=5953  errors=0
+2026-06-28 22:08:46,663 [INFO] Progress: series='EBL:'  num=1850/15000  found=97  empty=6053  errors=0
+2026-06-28 22:09:29,843 [INFO] Progress: series='EBL:'  num=1950/15000  found=97  empty=6153  errors=0
+2026-06-28 22:10:12,360 [INFO] Progress: series='EBL:'  num=2050/15000  found=97  empty=6253  errors=0
+2026-06-28 22:10:57,041 [INFO] Progress: series='EBL:'  num=2150/15000  found=97  empty=6353  errors=0
+2026-06-28 22:11:38,963 [INFO] Progress: series='EBL:'  num=2250/15000  found=97  empty=6453  errors=0
+2026-06-28 22:12:14,234 [WARNING] Request failed (attempt 1/4) series='EBL:' num=2332: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-28 22:12:23,748 [INFO] Progress: series='EBL:'  num=2350/15000  found=97  empty=6553  errors=0
+2026-06-28 22:13:08,110 [INFO] Progress: series='EBL:'  num=2450/15000  found=97  empty=6653  errors=0
+2026-06-28 22:13:52,379 [INFO] Progress: series='EBL:'  num=2550/15000  found=97  empty=6753  errors=0
+2026-06-28 22:14:35,398 [INFO] Progress: series='EBL:'  num=2650/15000  found=97  empty=6853  errors=0
+2026-06-28 22:15:17,424 [INFO] Progress: series='EBL:'  num=2750/15000  found=97  empty=6953  errors=0
+2026-06-28 22:16:00,366 [INFO] Progress: series='EBL:'  num=2850/15000  found=97  empty=7053  errors=0
+2026-06-28 22:16:42,959 [INFO] Progress: series='EBL:'  num=2950/15000  found=97  empty=7153  errors=0
+2026-06-28 22:17:27,682 [INFO] Progress: series='EBL:'  num=3050/15000  found=97  empty=7253  errors=0
+2026-06-28 22:18:12,494 [INFO] Progress: series='EBL:'  num=3150/15000  found=97  empty=7353  errors=0
+2026-06-28 22:18:56,152 [INFO] Progress: series='EBL:'  num=3250/15000  found=97  empty=7453  errors=0
+2026-06-28 22:19:38,808 [INFO] Progress: series='EBL:'  num=3350/15000  found=97  empty=7553  errors=0
+2026-06-28 22:20:22,439 [INFO] Progress: series='EBL:'  num=3450/15000  found=97  empty=7653  errors=0
+2026-06-28 22:21:08,979 [INFO] Progress: series='EBL:'  num=3550/15000  found=97  empty=7753  errors=0
+2026-06-28 22:21:52,746 [INFO] Progress: series='EBL:'  num=3650/15000  found=97  empty=7853  errors=0
+2026-06-28 22:22:12,503 [INFO] FOUND  EBL:         #3696    Alauddin Textile Mills (A,T,M) Pvt. Ltd.  (expires 30-11--0001)
+2026-06-28 22:22:36,270 [INFO] Progress: series='EBL:'  num=3750/15000  found=98  empty=7952  errors=0
+2026-06-28 22:23:18,554 [INFO] Progress: series='EBL:'  num=3850/15000  found=98  empty=8052  errors=0
+2026-06-28 22:24:02,109 [INFO] Progress: series='EBL:'  num=3950/15000  found=98  empty=8152  errors=0
+2026-06-28 22:24:45,876 [INFO] Progress: series='EBL:'  num=4050/15000  found=98  empty=8252  errors=0
+2026-06-28 22:25:29,247 [INFO] Progress: series='EBL:'  num=4150/15000  found=98  empty=8352  errors=0
+2026-06-28 22:26:11,166 [INFO] Progress: series='EBL:'  num=4250/15000  found=98  empty=8452  errors=0
+2026-06-28 22:26:54,972 [INFO] Progress: series='EBL:'  num=4350/15000  found=98  empty=8552  errors=0
+2026-06-28 22:27:37,331 [INFO] Progress: series='EBL:'  num=4450/15000  found=98  empty=8652  errors=0
+2026-06-28 22:28:20,566 [INFO] Progress: series='EBL:'  num=4550/15000  found=98  empty=8752  errors=0
+2026-06-28 22:29:03,629 [INFO] Progress: series='EBL:'  num=4650/15000  found=98  empty=8852  errors=0
+2026-06-28 22:29:46,411 [INFO] Progress: series='EBL:'  num=4750/15000  found=98  empty=8952  errors=0
+2026-06-28 22:30:29,294 [INFO] Progress: series='EBL:'  num=4850/15000  found=98  empty=9052  errors=0
+2026-06-28 22:31:12,420 [INFO] Progress: series='EBL:'  num=4950/15000  found=98  empty=9152  errors=0
+2026-06-28 22:31:54,917 [INFO] Progress: series='EBL:'  num=5050/15000  found=98  empty=9252  errors=0
+2026-06-28 22:32:38,207 [INFO] Progress: series='EBL:'  num=5150/15000  found=98  empty=9352  errors=0
+2026-06-28 22:33:21,895 [INFO] Progress: series='EBL:'  num=5250/15000  found=98  empty=9452  errors=0
+2026-06-28 22:34:04,421 [INFO] Progress: series='EBL:'  num=5350/15000  found=98  empty=9552  errors=0
+2026-06-28 22:34:48,031 [INFO] Progress: series='EBL:'  num=5450/15000  found=98  empty=9652  errors=0
+2026-06-28 22:35:31,531 [INFO] Progress: series='EBL:'  num=5550/15000  found=98  empty=9752  errors=0
+2026-06-28 22:36:12,214 [INFO] Progress: series='EBL:'  num=5650/15000  found=98  empty=9852  errors=0
+2026-06-28 22:36:55,873 [INFO] Progress: series='EBL:'  num=5750/15000  found=98  empty=9952  errors=0
+2026-06-28 22:37:38,517 [INFO] Progress: series='EBL:'  num=5850/15000  found=98  empty=10052  errors=0
+2026-06-28 22:38:20,443 [INFO] Progress: series='EBL:'  num=5950/15000  found=98  empty=10152  errors=0
+2026-06-28 22:39:04,754 [INFO] Progress: series='EBL:'  num=6050/15000  found=98  empty=10252  errors=0
+2026-06-28 22:39:48,002 [INFO] Progress: series='EBL:'  num=6150/15000  found=98  empty=10352  errors=0
+2026-06-28 22:40:31,257 [INFO] Progress: series='EBL:'  num=6250/15000  found=98  empty=10452  errors=0
+2026-06-28 22:41:15,653 [INFO] Progress: series='EBL:'  num=6350/15000  found=98  empty=10552  errors=0
+2026-06-28 22:41:59,754 [INFO] Progress: series='EBL:'  num=6450/15000  found=98  empty=10652  errors=0
+2026-06-28 22:42:42,364 [INFO] Progress: series='EBL:'  num=6550/15000  found=98  empty=10752  errors=0
+2026-06-28 22:42:43,313 [WARNING] Request failed (attempt 1/4) series='EBL:' num=6552: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-28 22:43:24,225 [INFO] Progress: series='EBL:'  num=6650/15000  found=98  empty=10852  errors=0
+2026-06-28 22:44:09,599 [INFO] Progress: series='EBL:'  num=6750/15000  found=98  empty=10952  errors=0
+2026-06-28 22:44:52,706 [INFO] Progress: series='EBL:'  num=6850/15000  found=98  empty=11052  errors=0
+2026-06-28 22:45:35,233 [INFO] Progress: series='EBL:'  num=6950/15000  found=98  empty=11152  errors=0
+2026-06-28 22:46:18,780 [INFO] Progress: series='EBL:'  num=7050/15000  found=98  empty=11252  errors=0
+2026-06-28 22:47:00,374 [INFO] Progress: series='EBL:'  num=7150/15000  found=98  empty=11352  errors=0
+2026-06-28 22:47:46,773 [INFO] Progress: series='EBL:'  num=7250/15000  found=98  empty=11452  errors=0
+2026-06-28 22:47:47,757 [WARNING] Request failed (attempt 1/4) series='EBL:' num=7251: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-28 22:48:29,410 [INFO] Progress: series='EBL:'  num=7350/15000  found=98  empty=11552  errors=0
+2026-06-28 22:49:12,647 [INFO] Progress: series='EBL:'  num=7450/15000  found=98  empty=11652  errors=0
+2026-06-28 22:49:54,561 [INFO] Progress: series='EBL:'  num=7550/15000  found=98  empty=11752  errors=0
+2026-06-28 22:50:34,578 [INFO] Progress: series='EBL:'  num=7650/15000  found=98  empty=11852  errors=0
+2026-06-28 22:51:17,325 [INFO] Progress: series='EBL:'  num=7750/15000  found=98  empty=11952  errors=0
+2026-06-28 22:52:02,595 [INFO] Progress: series='EBL:'  num=7850/15000  found=98  empty=12052  errors=0
+2026-06-28 22:52:46,073 [INFO] Progress: series='EBL:'  num=7950/15000  found=98  empty=12152  errors=0
+2026-06-28 22:53:29,050 [INFO] Progress: series='EBL:'  num=8050/15000  found=98  empty=12252  errors=0
+2026-06-28 22:54:12,787 [INFO] Progress: series='EBL:'  num=8150/15000  found=98  empty=12352  errors=0
+2026-06-28 22:54:55,796 [INFO] Progress: series='EBL:'  num=8250/15000  found=98  empty=12452  errors=0
+2026-06-28 22:55:39,949 [INFO] Progress: series='EBL:'  num=8350/15000  found=98  empty=12552  errors=0
+2026-06-28 22:56:23,311 [INFO] Progress: series='EBL:'  num=8450/15000  found=98  empty=12652  errors=0
+2026-06-28 22:57:07,621 [INFO] Progress: series='EBL:'  num=8550/15000  found=98  empty=12752  errors=0
+2026-06-28 22:57:51,765 [INFO] Progress: series='EBL:'  num=8650/15000  found=98  empty=12852  errors=0
+2026-06-28 22:58:34,836 [INFO] Progress: series='EBL:'  num=8750/15000  found=98  empty=12952  errors=0
+2026-06-28 22:59:15,454 [INFO] Progress: series='EBL:'  num=8850/15000  found=98  empty=13052  errors=0
+2026-06-28 22:59:58,064 [INFO] Progress: series='EBL:'  num=8950/15000  found=98  empty=13152  errors=0
+2026-06-28 23:00:41,140 [INFO] Progress: series='EBL:'  num=9050/15000  found=98  empty=13252  errors=0
+2026-06-28 23:01:23,116 [INFO] Progress: series='EBL:'  num=9150/15000  found=98  empty=13352  errors=0
+2026-06-28 23:02:05,261 [INFO] Progress: series='EBL:'  num=9250/15000  found=98  empty=13452  errors=0
+2026-06-28 23:02:49,052 [INFO] Progress: series='EBL:'  num=9350/15000  found=98  empty=13552  errors=0
+2026-06-28 23:03:31,275 [INFO] Progress: series='EBL:'  num=9450/15000  found=98  empty=13652  errors=0
+2026-06-28 23:04:12,667 [INFO] Progress: series='EBL:'  num=9550/15000  found=98  empty=13752  errors=0
+2026-06-28 23:04:54,502 [INFO] Progress: series='EBL:'  num=9650/15000  found=98  empty=13852  errors=0
+2026-06-28 23:05:38,820 [INFO] Progress: series='EBL:'  num=9750/15000  found=98  empty=13952  errors=0
+2026-06-28 23:06:22,442 [INFO] Progress: series='EBL:'  num=9850/15000  found=98  empty=14052  errors=0
+2026-06-28 23:07:05,548 [INFO] Progress: series='EBL:'  num=9950/15000  found=98  empty=14152  errors=0
+2026-06-28 23:07:49,363 [INFO] Progress: series='EBL:'  num=10050/15000  found=98  empty=14252  errors=0
+2026-06-28 23:08:16,454 [WARNING] Request failed (attempt 1/4) series='EBL:' num=10115: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-28 23:08:33,543 [INFO] Progress: series='EBL:'  num=10150/15000  found=98  empty=14352  errors=0
+2026-06-28 23:09:16,937 [INFO] Progress: series='EBL:'  num=10250/15000  found=98  empty=14452  errors=0
+2026-06-28 23:10:00,390 [INFO] Progress: series='EBL:'  num=10350/15000  found=98  empty=14552  errors=0
+2026-06-28 23:10:43,018 [INFO] Progress: series='EBL:'  num=10450/15000  found=98  empty=14652  errors=0
+2026-06-28 23:11:19,639 [WARNING] Request failed (attempt 1/4) series='EBL:' num=10536: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-28 23:11:26,624 [INFO] Progress: series='EBL:'  num=10550/15000  found=98  empty=14752  errors=0
+2026-06-28 23:12:09,663 [INFO] Progress: series='EBL:'  num=10650/15000  found=98  empty=14852  errors=0
+2026-06-28 23:12:52,409 [INFO] Progress: series='EBL:'  num=10750/15000  found=98  empty=14952  errors=0
+2026-06-28 23:13:37,058 [INFO] Progress: series='EBL:'  num=10850/15000  found=98  empty=15052  errors=0
+2026-06-28 23:14:20,176 [INFO] Progress: series='EBL:'  num=10950/15000  found=98  empty=15152  errors=0
+2026-06-28 23:15:03,287 [INFO] Progress: series='EBL:'  num=11050/15000  found=98  empty=15252  errors=0
+2026-06-28 23:15:45,685 [INFO] Progress: series='EBL:'  num=11150/15000  found=98  empty=15352  errors=0
+2026-06-28 23:16:30,965 [INFO] Progress: series='EBL:'  num=11250/15000  found=98  empty=15452  errors=0
+2026-06-28 23:17:15,094 [INFO] Progress: series='EBL:'  num=11350/15000  found=98  empty=15552  errors=0
+2026-06-28 23:17:57,420 [INFO] Progress: series='EBL:'  num=11450/15000  found=98  empty=15652  errors=0
+2026-06-28 23:18:40,460 [INFO] Progress: series='EBL:'  num=11550/15000  found=98  empty=15752  errors=0
+2026-06-28 23:19:25,018 [INFO] Progress: series='EBL:'  num=11650/15000  found=98  empty=15852  errors=0
+2026-06-28 23:20:07,943 [INFO] Progress: series='EBL:'  num=11750/15000  found=98  empty=15952  errors=0
+2026-06-28 23:20:50,987 [INFO] Progress: series='EBL:'  num=11850/15000  found=98  empty=16052  errors=0
+2026-06-28 23:21:33,100 [INFO] Progress: series='EBL:'  num=11950/15000  found=98  empty=16152  errors=0
+2026-06-28 23:22:02,627 [WARNING] Request failed (attempt 1/4) series='EBL:' num=12015: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-28 23:22:24,474 [INFO] Progress: series='EBL:'  num=12050/15000  found=98  empty=16252  errors=0
+2026-06-28 23:23:08,795 [INFO] Progress: series='EBL:'  num=12150/15000  found=98  empty=16352  errors=0
+2026-06-28 23:23:52,430 [INFO] Progress: series='EBL:'  num=12250/15000  found=98  empty=16452  errors=0
+2026-06-28 23:24:35,297 [INFO] Progress: series='EBL:'  num=12350/15000  found=98  empty=16552  errors=0
+2026-06-28 23:25:21,256 [INFO] Progress: series='EBL:'  num=12450/15000  found=98  empty=16652  errors=0
+2026-06-28 23:26:01,318 [INFO] Progress: series='EBL:'  num=12550/15000  found=98  empty=16752  errors=0
+2026-06-28 23:26:44,102 [INFO] Progress: series='EBL:'  num=12650/15000  found=98  empty=16852  errors=0
+2026-06-28 23:27:27,282 [INFO] Progress: series='EBL:'  num=12750/15000  found=98  empty=16952  errors=0
+2026-06-28 23:28:11,590 [INFO] Progress: series='EBL:'  num=12850/15000  found=98  empty=17052  errors=0
+2026-06-28 23:28:54,558 [INFO] Progress: series='EBL:'  num=12950/15000  found=98  empty=17152  errors=0
+2026-06-28 23:29:37,867 [INFO] Progress: series='EBL:'  num=13050/15000  found=98  empty=17252  errors=0
+2026-06-28 23:30:21,355 [INFO] Progress: series='EBL:'  num=13150/15000  found=98  empty=17352  errors=0
+2026-06-28 23:31:04,072 [INFO] Progress: series='EBL:'  num=13250/15000  found=98  empty=17452  errors=0
+2026-06-28 23:31:47,826 [INFO] Progress: series='EBL:'  num=13350/15000  found=98  empty=17552  errors=0
+2026-06-28 23:32:31,827 [INFO] Progress: series='EBL:'  num=13450/15000  found=98  empty=17652  errors=0
+2026-06-28 23:33:15,120 [INFO] Progress: series='EBL:'  num=13550/15000  found=98  empty=17752  errors=0
+2026-06-28 23:33:22,399 [WARNING] Request failed (attempt 1/4) series='EBL:' num=13567: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-28 23:33:59,198 [INFO] Progress: series='EBL:'  num=13650/15000  found=98  empty=17852  errors=0
+2026-06-28 23:34:42,673 [INFO] Progress: series='EBL:'  num=13750/15000  found=98  empty=17952  errors=0
+2026-06-28 23:35:28,105 [INFO] Progress: series='EBL:'  num=13850/15000  found=98  empty=18052  errors=0
+2026-06-28 23:36:10,897 [INFO] Progress: series='EBL:'  num=13950/15000  found=98  empty=18152  errors=0
+2026-06-28 23:36:52,365 [INFO] Progress: series='EBL:'  num=14050/15000  found=98  empty=18252  errors=0
+2026-06-28 23:37:35,687 [INFO] Progress: series='EBL:'  num=14150/15000  found=98  empty=18352  errors=0
+2026-06-28 23:38:19,174 [INFO] Progress: series='EBL:'  num=14250/15000  found=98  empty=18452  errors=0
+2026-06-28 23:39:01,800 [INFO] Progress: series='EBL:'  num=14350/15000  found=98  empty=18552  errors=0
+2026-06-28 23:39:43,873 [INFO] Progress: series='EBL:'  num=14450/15000  found=98  empty=18652  errors=0
+2026-06-28 23:39:57,348 [WARNING] Request failed (attempt 1/4) series='EBL:' num=14479: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-28 23:40:29,291 [INFO] Progress: series='EBL:'  num=14550/15000  found=98  empty=18752  errors=0
+2026-06-28 23:41:11,923 [INFO] Progress: series='EBL:'  num=14650/15000  found=98  empty=18852  errors=0
+2026-06-28 23:41:54,337 [INFO] Progress: series='EBL:'  num=14750/15000  found=98  empty=18952  errors=0
+2026-06-28 23:42:38,086 [INFO] Progress: series='EBL:'  num=14850/15000  found=98  empty=19052  errors=0
+2026-06-28 23:43:19,418 [INFO] Progress: series='EBL:'  num=14950/15000  found=98  empty=19152  errors=0
+2026-06-28 23:43:41,310 [INFO] Progress: series='EBL:'  num=15000/15000  found=98  empty=19202  errors=0
+2026-06-28 23:43:41,310 [INFO] Series 'EBL:' complete.
+2026-06-28 23:43:41,310 [INFO] Processing series 'CP:'  starting from #51
+2026-06-28 23:44:06,942 [WARNING] Request failed (attempt 1/4) series='CP:' num=109: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-28 23:44:24,552 [INFO] Progress: series='CP:'  num=150/15000  found=98  empty=19302  errors=0
+2026-06-28 23:45:07,583 [INFO] Progress: series='CP:'  num=250/15000  found=98  empty=19402  errors=0
+2026-06-28 23:45:51,567 [INFO] Progress: series='CP:'  num=350/15000  found=98  empty=19502  errors=0
+2026-06-28 23:46:35,803 [INFO] Progress: series='CP:'  num=450/15000  found=98  empty=19602  errors=0
+2026-06-28 23:47:18,024 [INFO] Progress: series='CP:'  num=550/15000  found=98  empty=19702  errors=0
+2026-06-28 23:47:34,026 [WARNING] Request failed (attempt 1/4) series='CP:' num=585: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-28 23:47:46,056 [INFO] FOUND  CP:          #613     Sohagpur Textile Mills Ltd.  (expires 11-06-1998)
+2026-06-28 23:48:02,270 [INFO] Progress: series='CP:'  num=650/15000  found=99  empty=19801  errors=0
+2026-06-28 23:48:44,547 [INFO] Progress: series='CP:'  num=750/15000  found=99  empty=19901  errors=0
+2026-06-28 23:49:27,920 [INFO] Progress: series='CP:'  num=850/15000  found=99  empty=20001  errors=0
+2026-06-28 23:50:09,468 [INFO] Progress: series='CP:'  num=950/15000  found=99  empty=20101  errors=0
+2026-06-28 23:50:54,625 [INFO] Progress: series='CP:'  num=1050/15000  found=99  empty=20201  errors=0
+2026-06-28 23:51:38,226 [INFO] Progress: series='CP:'  num=1150/15000  found=99  empty=20301  errors=0
+2026-06-28 23:51:40,409 [INFO] FOUND  CP:          #1155    C. A. Said & Co.  (expires 03-08-1999)
+2026-06-28 23:51:49,590 [INFO] FOUND  CP:          #1177    Live Mono Fishing Net Ind: (P:) Ltd.  (expires 28-09-2001)
+2026-06-28 23:52:05,841 [WARNING] Request failed (attempt 1/4) series='CP:' num=1213: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-28 23:52:21,021 [INFO] Progress: series='CP:'  num=1250/15000  found=101  empty=20399  errors=0
+2026-06-28 23:52:52,572 [INFO] FOUND  CP:          #1323    Sabuj Auto Rice Mills  (expires 15-03-2006)
+2026-06-28 23:53:03,604 [INFO] Progress: series='CP:'  num=1350/15000  found=102  empty=20498  errors=0
+2026-06-28 23:53:46,559 [INFO] Progress: series='CP:'  num=1450/15000  found=102  empty=20598  errors=0
+2026-06-28 23:54:29,532 [INFO] Progress: series='CP:'  num=1550/15000  found=102  empty=20698  errors=0
+2026-06-28 23:55:12,942 [INFO] Progress: series='CP:'  num=1650/15000  found=102  empty=20798  errors=0
+2026-06-28 23:55:56,921 [INFO] Progress: series='CP:'  num=1750/15000  found=102  empty=20898  errors=0
+2026-06-28 23:55:58,329 [WARNING] Request failed (attempt 1/4) series='CP:' num=1751: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-28 23:56:40,485 [INFO] Progress: series='CP:'  num=1850/15000  found=102  empty=20998  errors=0
+2026-06-28 23:57:21,622 [INFO] Progress: series='CP:'  num=1950/15000  found=102  empty=21098  errors=0
+2026-06-28 23:58:04,160 [INFO] Progress: series='CP:'  num=2050/15000  found=102  empty=21198  errors=0
+2026-06-28 23:58:45,487 [INFO] Progress: series='CP:'  num=2150/15000  found=102  empty=21298  errors=0
+2026-06-28 23:59:30,246 [INFO] Progress: series='CP:'  num=2250/15000  found=102  empty=21398  errors=0
+2026-06-29 00:00:14,035 [INFO] Progress: series='CP:'  num=2350/15000  found=102  empty=21498  errors=0
+2026-06-29 00:00:58,180 [INFO] Progress: series='CP:'  num=2450/15000  found=102  empty=21598  errors=0
+2026-06-29 00:01:41,364 [INFO] Progress: series='CP:'  num=2550/15000  found=102  empty=21698  errors=0
+2026-06-29 00:02:00,354 [WARNING] Request failed (attempt 1/4) series='CP:' num=2596: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 00:02:23,938 [INFO] Progress: series='CP:'  num=2650/15000  found=102  empty=21798  errors=0
+2026-06-29 00:03:07,532 [INFO] Progress: series='CP:'  num=2750/15000  found=102  empty=21898  errors=0
+2026-06-29 00:03:50,414 [INFO] Progress: series='CP:'  num=2850/15000  found=102  empty=21998  errors=0
+2026-06-29 00:04:32,590 [INFO] Progress: series='CP:'  num=2950/15000  found=102  empty=22098  errors=0
+2026-06-29 00:05:13,973 [INFO] Progress: series='CP:'  num=3050/15000  found=102  empty=22198  errors=0
+2026-06-29 00:05:58,177 [INFO] Progress: series='CP:'  num=3150/15000  found=102  empty=22298  errors=0
+2026-06-29 00:06:44,200 [INFO] Progress: series='CP:'  num=3250/15000  found=102  empty=22398  errors=0
+2026-06-29 00:07:28,671 [INFO] Progress: series='CP:'  num=3350/15000  found=102  empty=22498  errors=0
+2026-06-29 00:08:12,477 [INFO] Progress: series='CP:'  num=3450/15000  found=102  empty=22598  errors=0
+2026-06-29 00:08:57,290 [INFO] Progress: series='CP:'  num=3550/15000  found=102  empty=22698  errors=0
+2026-06-29 00:09:41,170 [INFO] Progress: series='CP:'  num=3650/15000  found=102  empty=22798  errors=0
+2026-06-29 00:10:25,153 [INFO] Progress: series='CP:'  num=3750/15000  found=102  empty=22898  errors=0
+2026-06-29 00:11:08,600 [INFO] Progress: series='CP:'  num=3850/15000  found=102  empty=22998  errors=0
+2026-06-29 00:11:51,269 [INFO] Progress: series='CP:'  num=3950/15000  found=102  empty=23098  errors=0
+2026-06-29 00:12:35,304 [INFO] Progress: series='CP:'  num=4050/15000  found=102  empty=23198  errors=0
+2026-06-29 00:13:18,890 [INFO] Progress: series='CP:'  num=4150/15000  found=102  empty=23298  errors=0
+2026-06-29 00:14:02,438 [INFO] Progress: series='CP:'  num=4250/15000  found=102  empty=23398  errors=0
+2026-06-29 00:14:46,292 [INFO] Progress: series='CP:'  num=4350/15000  found=102  empty=23498  errors=0
+2026-06-29 00:15:29,269 [INFO] Progress: series='CP:'  num=4450/15000  found=102  empty=23598  errors=0
+2026-06-29 00:16:13,842 [INFO] Progress: series='CP:'  num=4550/15000  found=102  empty=23698  errors=0
+2026-06-29 00:16:55,378 [INFO] Progress: series='CP:'  num=4650/15000  found=102  empty=23798  errors=0
+2026-06-29 00:17:37,890 [INFO] Progress: series='CP:'  num=4750/15000  found=102  empty=23898  errors=0
+2026-06-29 00:18:23,648 [INFO] Progress: series='CP:'  num=4850/15000  found=102  empty=23998  errors=0
+2026-06-29 00:19:10,804 [INFO] Progress: series='CP:'  num=4950/15000  found=102  empty=24098  errors=0
+2026-06-29 00:19:52,965 [INFO] Progress: series='CP:'  num=5050/15000  found=102  empty=24198  errors=0
+2026-06-29 00:20:34,448 [INFO] Progress: series='CP:'  num=5150/15000  found=102  empty=24298  errors=0
+2026-06-29 00:21:14,612 [INFO] Progress: series='CP:'  num=5250/15000  found=102  empty=24398  errors=0
+2026-06-29 00:21:57,802 [INFO] Progress: series='CP:'  num=5350/15000  found=102  empty=24498  errors=0
+2026-06-29 00:22:41,131 [INFO] Progress: series='CP:'  num=5450/15000  found=102  empty=24598  errors=0
+2026-06-29 00:23:24,167 [INFO] Progress: series='CP:'  num=5550/15000  found=102  empty=24698  errors=0
+2026-06-29 00:23:37,340 [WARNING] Request failed (attempt 1/4) series='CP:' num=5581: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 00:24:09,080 [INFO] Progress: series='CP:'  num=5650/15000  found=102  empty=24798  errors=0
+2026-06-29 00:24:52,752 [INFO] Progress: series='CP:'  num=5750/15000  found=102  empty=24898  errors=0
+2026-06-29 00:25:36,637 [INFO] Progress: series='CP:'  num=5850/15000  found=102  empty=24998  errors=0
+2026-06-29 00:26:20,541 [INFO] Progress: series='CP:'  num=5950/15000  found=102  empty=25098  errors=0
+2026-06-29 00:27:01,165 [INFO] Progress: series='CP:'  num=6050/15000  found=102  empty=25198  errors=0
+2026-06-29 00:27:43,861 [INFO] Progress: series='CP:'  num=6150/15000  found=102  empty=25298  errors=0
+2026-06-29 00:28:26,997 [INFO] Progress: series='CP:'  num=6250/15000  found=102  empty=25398  errors=0
+2026-06-29 00:29:12,815 [INFO] Progress: series='CP:'  num=6350/15000  found=102  empty=25498  errors=0
+2026-06-29 00:29:56,120 [INFO] Progress: series='CP:'  num=6450/15000  found=102  empty=25598  errors=0
+2026-06-29 00:30:39,327 [WARNING] Request failed (attempt 1/4) series='CP:' num=6493: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2026-06-29 00:30:47,216 [INFO] Progress: series='CP:'  num=6550/15000  found=102  empty=25698  errors=0
+2026-06-29 00:31:30,687 [INFO] Progress: series='CP:'  num=6650/15000  found=102  empty=25798  errors=0
+2026-06-29 00:32:14,797 [INFO] Progress: series='CP:'  num=6750/15000  found=102  empty=25898  errors=0
+2026-06-29 00:32:59,364 [INFO] Progress: series='CP:'  num=6850/15000  found=102  empty=25998  errors=0
+2026-06-29 00:33:40,831 [INFO] Progress: series='CP:'  num=6950/15000  found=102  empty=26098  errors=0
+2026-06-29 00:34:24,793 [INFO] Progress: series='CP:'  num=7050/15000  found=102  empty=26198  errors=0
+2026-06-29 00:35:08,183 [INFO] Progress: series='CP:'  num=7150/15000  found=102  empty=26298  errors=0
+2026-06-29 00:35:50,285 [INFO] Progress: series='CP:'  num=7250/15000  found=102  empty=26398  errors=0
+2026-06-29 00:36:31,706 [INFO] Progress: series='CP:'  num=7350/15000  found=102  empty=26498  errors=0
+2026-06-29 00:37:14,116 [INFO] Progress: series='CP:'  num=7450/15000  found=102  empty=26598  errors=0
+2026-06-29 00:37:55,369 [INFO] Progress: series='CP:'  num=7550/15000  found=102  empty=26698  errors=0
+2026-06-29 00:38:38,010 [INFO] Progress: series='CP:'  num=7650/15000  found=102  empty=26798  errors=0
+2026-06-29 00:39:20,665 [INFO] Progress: series='CP:'  num=7750/15000  found=102  empty=26898  errors=0
+2026-06-29 00:40:03,485 [INFO] Progress: series='CP:'  num=7850/15000  found=102  empty=26998  errors=0
+2026-06-29 00:40:46,819 [INFO] Progress: series='CP:'  num=7950/15000  found=102  empty=27098  errors=0
+2026-06-29 00:41:28,382 [INFO] Progress: series='CP:'  num=8050/15000  found=102  empty=27198  errors=0
+2026-06-29 00:42:12,217 [INFO] Progress: series='CP:'  num=8150/15000  found=102  empty=27298  errors=0
+2026-06-29 00:42:54,219 [INFO] Progress: series='CP:'  num=8250/15000  found=102  empty=27398  errors=0
+2026-06-29 00:43:35,415 [INFO] Progress: series='CP:'  num=8350/15000  found=102  empty=27498  errors=0
+2026-06-29 00:44:19,367 [INFO] Progress: series='CP:'  num=8450/15000  found=102  empty=27598  errors=0
+2026-06-29 00:44:59,884 [INFO] Progress: series='CP:'  num=8550/15000  found=102  empty=27698  errors=0
+2026-06-29 00:45:42,318 [INFO] Progress: series='CP:'  num=8650/15000  found=102  empty=27798  errors=0
+2026-06-29 00:46:25,594 [INFO] Progress: series='CP:'  num=8750/15000  found=102  empty=27898  errors=0
+2026-06-29 00:47:08,361 [INFO] Progress: series='CP:'  num=8850/15000  found=102  empty=27998  errors=0
+2026-06-29 00:47:51,706 [INFO] Progress: series='CP:'  num=8950/15000  found=102  empty=28098  errors=0
+2026-06-29 00:48:34,400 [INFO] Progress: series='CP:'  num=9050/15000  found=102  empty=28198  errors=0
+2026-06-29 00:49:17,363 [INFO] Progress: series='CP:'  num=9150/15000  found=102  empty=28298  errors=0
+2026-06-29 00:49:58,781 [INFO] Progress: series='CP:'  num=9250/15000  found=102  empty=28398  errors=0
+2026-06-29 00:50:42,124 [INFO] Progress: series='CP:'  num=9350/15000  found=102  empty=28498  errors=0
+2026-06-29 00:51:24,528 [INFO] Progress: series='CP:'  num=9450/15000  found=102  empty=28598  errors=0
+2026-06-29 00:52:08,033 [INFO] Progress: series='CP:'  num=9550/15000  found=102  empty=28698  errors=0
+2026-06-29 00:52:50,915 [INFO] Progress: series='CP:'  num=9650/15000  found=102  empty=28798  errors=0
+2026-06-29 00:53:33,361 [INFO] Progress: series='CP:'  num=9750/15000  found=102  empty=28898  errors=0
+2026-06-29 00:54:16,041 [INFO] Progress: series='CP:'  num=9850/15000  found=102  empty=28998  errors=0
+2026-06-29 00:54:59,734 [INFO] Progress: series='CP:'  num=9950/15000  found=102  empty=29098  errors=0
+2026-06-29 00:55:46,165 [INFO] Progress: series='CP:'  num=10050/15000  found=102  empty=29198  errors=0
+2026-06-29 00:56:29,948 [INFO] Progress: series='CP:'  num=10150/15000  found=102  empty=29298  errors=0
+2026-06-29 00:57:13,870 [INFO] Progress: series='CP:'  num=10250/15000  found=102  empty=29398  errors=0
+2026-06-29 00:57:55,279 [INFO] Progress: series='CP:'  num=10350/15000  found=102  empty=29498  errors=0
+2026-06-29 00:58:39,121 [INFO] Progress: series='CP:'  num=10450/15000  found=102  empty=29598  errors=0
+2026-06-29 00:59:22,389 [INFO] Progress: series='CP:'  num=10550/15000  found=102  empty=29698  errors=0
+2026-06-29 00:59:23,803 [WARNING] Request failed (attempt 1/4) series='CP:' num=10552: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 01:00:05,603 [INFO] Progress: series='CP:'  num=10650/15000  found=102  empty=29798  errors=0
+2026-06-29 01:00:49,389 [INFO] Progress: series='CP:'  num=10750/15000  found=102  empty=29898  errors=0
+2026-06-29 01:01:33,712 [INFO] Progress: series='CP:'  num=10850/15000  found=102  empty=29998  errors=0
+2026-06-29 01:02:17,230 [INFO] Progress: series='CP:'  num=10950/15000  found=102  empty=30098  errors=0
+2026-06-29 01:03:00,968 [INFO] Progress: series='CP:'  num=11050/15000  found=102  empty=30198  errors=0
+2026-06-29 01:03:44,719 [INFO] Progress: series='CP:'  num=11150/15000  found=102  empty=30298  errors=0
+2026-06-29 01:04:30,341 [INFO] Progress: series='CP:'  num=11250/15000  found=102  empty=30398  errors=0
+2026-06-29 01:05:13,956 [INFO] Progress: series='CP:'  num=11350/15000  found=102  empty=30498  errors=0
+2026-06-29 01:05:55,723 [INFO] Progress: series='CP:'  num=11450/15000  found=102  empty=30598  errors=0
+2026-06-29 01:06:39,610 [INFO] Progress: series='CP:'  num=11550/15000  found=102  empty=30698  errors=0
+2026-06-29 01:07:24,340 [INFO] Progress: series='CP:'  num=11650/15000  found=102  empty=30798  errors=0
+2026-06-29 01:08:08,221 [INFO] Progress: series='CP:'  num=11750/15000  found=102  empty=30898  errors=0
+2026-06-29 01:08:43,211 [WARNING] Request failed (attempt 1/4) series='CP:' num=11832: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 01:08:51,686 [INFO] Progress: series='CP:'  num=11850/15000  found=102  empty=30998  errors=0
+2026-06-29 01:09:31,325 [INFO] Progress: series='CP:'  num=11950/15000  found=102  empty=31098  errors=0
+2026-06-29 01:10:15,296 [INFO] Progress: series='CP:'  num=12050/15000  found=102  empty=31198  errors=0
+2026-06-29 01:10:58,032 [INFO] Progress: series='CP:'  num=12150/15000  found=102  empty=31298  errors=0
+2026-06-29 01:11:40,069 [INFO] Progress: series='CP:'  num=12250/15000  found=102  empty=31398  errors=0
+2026-06-29 01:12:22,953 [INFO] Progress: series='CP:'  num=12350/15000  found=102  empty=31498  errors=0
+2026-06-29 01:13:07,697 [INFO] Progress: series='CP:'  num=12450/15000  found=102  empty=31598  errors=0
+2026-06-29 01:13:48,963 [INFO] Progress: series='CP:'  num=12550/15000  found=102  empty=31698  errors=0
+2026-06-29 01:14:33,923 [INFO] Progress: series='CP:'  num=12650/15000  found=102  empty=31798  errors=0
+2026-06-29 01:15:17,511 [INFO] Progress: series='CP:'  num=12750/15000  found=102  empty=31898  errors=0
+2026-06-29 01:16:00,766 [INFO] Progress: series='CP:'  num=12850/15000  found=102  empty=31998  errors=0
+2026-06-29 01:16:45,492 [INFO] Progress: series='CP:'  num=12950/15000  found=102  empty=32098  errors=0
+2026-06-29 01:17:30,047 [INFO] Progress: series='CP:'  num=13050/15000  found=102  empty=32198  errors=0
+2026-06-29 01:18:12,656 [INFO] Progress: series='CP:'  num=13150/15000  found=102  empty=32298  errors=0
+2026-06-29 01:18:55,492 [INFO] Progress: series='CP:'  num=13250/15000  found=102  empty=32398  errors=0
+2026-06-29 01:19:39,328 [INFO] Progress: series='CP:'  num=13350/15000  found=102  empty=32498  errors=0
+2026-06-29 01:20:21,942 [INFO] Progress: series='CP:'  num=13450/15000  found=102  empty=32598  errors=0
+2026-06-29 01:21:04,144 [INFO] Progress: series='CP:'  num=13550/15000  found=102  empty=32698  errors=0
+2026-06-29 01:21:46,236 [INFO] Progress: series='CP:'  num=13650/15000  found=102  empty=32798  errors=0
+2026-06-29 01:22:28,173 [INFO] Progress: series='CP:'  num=13750/15000  found=102  empty=32898  errors=0
+2026-06-29 01:23:10,423 [INFO] Progress: series='CP:'  num=13850/15000  found=102  empty=32998  errors=0
+2026-06-29 01:23:51,347 [INFO] Progress: series='CP:'  num=13950/15000  found=102  empty=33098  errors=0
+2026-06-29 01:24:35,277 [INFO] Progress: series='CP:'  num=14050/15000  found=102  empty=33198  errors=0
+2026-06-29 01:25:20,111 [INFO] Progress: series='CP:'  num=14150/15000  found=102  empty=33298  errors=0
+2026-06-29 01:26:05,083 [INFO] Progress: series='CP:'  num=14250/15000  found=102  empty=33398  errors=0
+2026-06-29 01:26:46,770 [INFO] Progress: series='CP:'  num=14350/15000  found=102  empty=33498  errors=0
+2026-06-29 01:27:29,568 [INFO] Progress: series='CP:'  num=14450/15000  found=102  empty=33598  errors=0
+2026-06-29 01:28:13,534 [INFO] Progress: series='CP:'  num=14550/15000  found=102  empty=33698  errors=0
+2026-06-29 01:28:57,777 [INFO] Progress: series='CP:'  num=14650/15000  found=102  empty=33798  errors=0
+2026-06-29 01:29:43,728 [INFO] Progress: series='CP:'  num=14750/15000  found=102  empty=33898  errors=0
+2026-06-29 01:30:25,947 [INFO] Progress: series='CP:'  num=14850/15000  found=102  empty=33998  errors=0
+2026-06-29 01:30:38,650 [WARNING] Request failed (attempt 1/4) series='CP:' num=14882: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 01:31:09,589 [INFO] Progress: series='CP:'  num=14950/15000  found=102  empty=34098  errors=0
+2026-06-29 01:31:31,164 [INFO] Progress: series='CP:'  num=15000/15000  found=102  empty=34148  errors=0
+2026-06-29 01:31:31,165 [INFO] Series 'CP:' complete.
+2026-06-29 01:31:31,165 [INFO] Processing series 'UP:'  starting from #51
+2026-06-29 01:32:12,688 [INFO] Progress: series='UP:'  num=150/15000  found=102  empty=34248  errors=0
+2026-06-29 01:32:56,688 [INFO] Progress: series='UP:'  num=250/15000  found=102  empty=34348  errors=0
+2026-06-29 01:33:14,099 [INFO] FOUND  UP:          #288     Maheswan Rice Mills  (expires 30-11--0001)
+2026-06-29 01:33:41,165 [INFO] Progress: series='UP:'  num=350/15000  found=103  empty=34447  errors=0
+2026-06-29 01:34:24,899 [INFO] Progress: series='UP:'  num=450/15000  found=103  empty=34547  errors=0
+2026-06-29 01:35:03,000 [INFO] FOUND  UP:          #541     Sree-Krishnomukhi Rice Mills  (expires 15-06-2005)
+2026-06-29 01:35:07,283 [INFO] Progress: series='UP:'  num=550/15000  found=104  empty=34646  errors=0
+2026-06-29 01:35:49,921 [INFO] Progress: series='UP:'  num=650/15000  found=104  empty=34746  errors=0
+2026-06-29 01:36:13,082 [WARNING] Request failed (attempt 1/4) series='UP:' num=706: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 01:36:14,352 [INFO] FOUND  UP:          #707     Carew & Co. (Bd) Ltd.  (expires 10-11-1957)
+2026-06-29 01:36:32,473 [INFO] Progress: series='UP:'  num=750/15000  found=105  empty=34845  errors=0
+2026-06-29 01:37:17,025 [INFO] Progress: series='UP:'  num=850/15000  found=105  empty=34945  errors=0
+2026-06-29 01:37:23,711 [INFO] FOUND  UP:          #865     Allahu Akbar Industries  (expires 26-04-2004)
+2026-06-29 01:37:59,164 [INFO] Progress: series='UP:'  num=950/15000  found=106  empty=35044  errors=0
+2026-06-29 01:38:10,224 [INFO] FOUND  UP:          #973     Ahad Automatic Rice Mills  (expires 29-06-2005)
+2026-06-29 01:38:43,178 [INFO] Progress: series='UP:'  num=1050/15000  found=107  empty=35143  errors=0
+2026-06-29 01:39:26,972 [INFO] Progress: series='UP:'  num=1150/15000  found=107  empty=35243  errors=0
+2026-06-29 01:39:30,321 [INFO] FOUND  UP:          #1157    Olympya Rice Mills  (expires 31-10-2005)
+2026-06-29 01:40:09,141 [INFO] Progress: series='UP:'  num=1250/15000  found=108  empty=35342  errors=0
+2026-06-29 01:40:23,537 [INFO] FOUND  UP:          #1283    SK. Kasimuddin Rice & Oil Mills  (expires 07-08-1956)
+2026-06-29 01:40:52,151 [INFO] Progress: series='UP:'  num=1350/15000  found=109  empty=35441  errors=0
+2026-06-29 01:41:35,660 [INFO] Progress: series='UP:'  num=1450/15000  found=109  empty=35541  errors=0
+2026-06-29 01:41:44,095 [INFO] FOUND  UP:          #1468    Paunchbibi Rice Mills  (expires 07-11-1960)
+2026-06-29 01:42:17,718 [INFO] Progress: series='UP:'  num=1550/15000  found=110  empty=35640  errors=0
+2026-06-29 01:42:58,869 [INFO] Progress: series='UP:'  num=1650/15000  found=110  empty=35740  errors=0
+2026-06-29 01:43:26,540 [INFO] FOUND  UP:          #1707    Munshi Md. Hashan  (expires 29-10-1986)
+2026-06-29 01:43:43,678 [INFO] Progress: series='UP:'  num=1750/15000  found=111  empty=35839  errors=0
+2026-06-29 01:44:26,060 [INFO] Progress: series='UP:'  num=1850/15000  found=111  empty=35939  errors=0
+2026-06-29 01:44:54,281 [INFO] FOUND  UP:          #1910    Azad Rice & Flour Mills  (expires 27-03-2006)
+2026-06-29 01:45:04,857 [INFO] FOUND  UP:          #1934    m/s gafur Auto Rice Mill  (expires 14-02-2023)
+2026-06-29 01:45:12,203 [INFO] Progress: series='UP:'  num=1950/15000  found=113  empty=36037  errors=0
+2026-06-29 01:45:55,519 [INFO] Progress: series='UP:'  num=2050/15000  found=113  empty=36137  errors=0
+2026-06-29 01:46:39,617 [INFO] Progress: series='UP:'  num=2150/15000  found=113  empty=36237  errors=0
+2026-06-29 01:47:23,099 [INFO] Progress: series='UP:'  num=2250/15000  found=113  empty=36337  errors=0
+2026-06-29 01:48:01,385 [WARNING] Request failed (attempt 1/4) series='UP:' num=2341: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 01:48:06,393 [INFO] Progress: series='UP:'  num=2350/15000  found=113  empty=36437  errors=0
+2026-06-29 01:48:07,811 [WARNING] Request failed (attempt 1/4) series='UP:' num=2353: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 01:48:50,522 [INFO] Progress: series='UP:'  num=2450/15000  found=113  empty=36537  errors=0
+2026-06-29 01:49:10,123 [WARNING] Request failed (attempt 1/4) series='UP:' num=2496: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 01:49:34,886 [INFO] Progress: series='UP:'  num=2550/15000  found=113  empty=36637  errors=0
+2026-06-29 01:50:18,679 [INFO] Progress: series='UP:'  num=2650/15000  found=113  empty=36737  errors=0
+2026-06-29 01:51:01,119 [INFO] Progress: series='UP:'  num=2750/15000  found=113  empty=36837  errors=0
+2026-06-29 01:51:43,857 [INFO] Progress: series='UP:'  num=2850/15000  found=113  empty=36937  errors=0
+2026-06-29 01:51:50,541 [WARNING] Request failed (attempt 1/4) series='UP:' num=2863: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 01:52:26,443 [INFO] Progress: series='UP:'  num=2950/15000  found=113  empty=37037  errors=0
+2026-06-29 01:53:08,706 [INFO] Progress: series='UP:'  num=3050/15000  found=113  empty=37137  errors=0
+2026-06-29 01:53:14,706 [WARNING] Request failed (attempt 1/4) series='UP:' num=3064: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 01:53:50,870 [INFO] Progress: series='UP:'  num=3150/15000  found=113  empty=37237  errors=0
+2026-06-29 01:54:32,157 [INFO] Progress: series='UP:'  num=3250/15000  found=113  empty=37337  errors=0
+2026-06-29 01:55:14,259 [INFO] Progress: series='UP:'  num=3350/15000  found=113  empty=37437  errors=0
+2026-06-29 01:55:56,422 [INFO] Progress: series='UP:'  num=3450/15000  found=113  empty=37537  errors=0
+2026-06-29 01:56:39,205 [INFO] Progress: series='UP:'  num=3550/15000  found=113  empty=37637  errors=0
+2026-06-29 01:56:55,162 [WARNING] Request failed (attempt 1/4) series='UP:' num=3589: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 01:57:22,757 [INFO] Progress: series='UP:'  num=3650/15000  found=113  empty=37737  errors=0
+2026-06-29 01:58:06,338 [INFO] Progress: series='UP:'  num=3750/15000  found=113  empty=37837  errors=0
+2026-06-29 01:58:49,096 [INFO] Progress: series='UP:'  num=3850/15000  found=113  empty=37937  errors=0
+2026-06-29 01:59:23,707 [WARNING] Request failed (attempt 1/4) series='UP:' num=3934: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 01:59:31,414 [INFO] Progress: series='UP:'  num=3950/15000  found=113  empty=38037  errors=0
+2026-06-29 02:00:14,101 [INFO] Progress: series='UP:'  num=4050/15000  found=113  empty=38137  errors=0
+2026-06-29 02:00:57,443 [INFO] Progress: series='UP:'  num=4150/15000  found=113  empty=38237  errors=0
+2026-06-29 02:01:38,370 [INFO] Progress: series='UP:'  num=4250/15000  found=113  empty=38337  errors=0
+2026-06-29 02:02:22,156 [INFO] Progress: series='UP:'  num=4350/15000  found=113  empty=38437  errors=0
+2026-06-29 02:03:04,166 [INFO] Progress: series='UP:'  num=4450/15000  found=113  empty=38537  errors=0
+2026-06-29 02:03:48,667 [INFO] Progress: series='UP:'  num=4550/15000  found=113  empty=38637  errors=0
+2026-06-29 02:04:30,486 [INFO] Progress: series='UP:'  num=4650/15000  found=113  empty=38737  errors=0
+2026-06-29 02:05:13,301 [INFO] Progress: series='UP:'  num=4750/15000  found=113  empty=38837  errors=0
+2026-06-29 02:05:54,925 [INFO] Progress: series='UP:'  num=4850/15000  found=113  empty=38937  errors=0
+2026-06-29 02:06:37,267 [INFO] Progress: series='UP:'  num=4950/15000  found=113  empty=39037  errors=0
+2026-06-29 02:07:20,071 [INFO] Progress: series='UP:'  num=5050/15000  found=113  empty=39137  errors=0
+2026-06-29 02:08:04,008 [INFO] Progress: series='UP:'  num=5150/15000  found=113  empty=39237  errors=0
+2026-06-29 02:08:47,440 [INFO] Progress: series='UP:'  num=5250/15000  found=113  empty=39337  errors=0
+2026-06-29 02:09:30,962 [INFO] Progress: series='UP:'  num=5350/15000  found=113  empty=39437  errors=0
+2026-06-29 02:09:44,223 [WARNING] Request failed (attempt 1/4) series='UP:' num=5381: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-29 02:10:14,478 [INFO] Progress: series='UP:'  num=5450/15000  found=113  empty=39537  errors=0
+2026-06-29 02:10:56,708 [INFO] Progress: series='UP:'  num=5550/15000  found=113  empty=39637  errors=0
+2026-06-29 02:11:42,254 [INFO] Progress: series='UP:'  num=5650/15000  found=113  empty=39737  errors=0
+2026-06-29 02:12:25,069 [INFO] Progress: series='UP:'  num=5750/15000  found=113  empty=39837  errors=0
+2026-06-29 02:13:07,679 [INFO] Progress: series='UP:'  num=5850/15000  found=113  empty=39937  errors=0
+2026-06-29 02:13:49,990 [INFO] Progress: series='UP:'  num=5950/15000  found=113  empty=40037  errors=0
+2026-06-29 02:14:32,410 [INFO] Progress: series='UP:'  num=6050/15000  found=113  empty=40137  errors=0
+2026-06-29 02:15:15,304 [INFO] Progress: series='UP:'  num=6150/15000  found=113  empty=40237  errors=0
+2026-06-29 02:15:58,245 [INFO] Progress: series='UP:'  num=6250/15000  found=113  empty=40337  errors=0
+2026-06-29 02:16:41,403 [INFO] Progress: series='UP:'  num=6350/15000  found=113  empty=40437  errors=0
+2026-06-29 02:17:24,354 [INFO] Progress: series='UP:'  num=6450/15000  found=113  empty=40537  errors=0
+2026-06-29 02:18:07,115 [INFO] Progress: series='UP:'  num=6550/15000  found=113  empty=40637  errors=0
+2026-06-29 02:18:51,354 [INFO] Progress: series='UP:'  num=6650/15000  found=113  empty=40737  errors=0
+2026-06-29 02:19:33,240 [INFO] Progress: series='UP:'  num=6750/15000  found=113  empty=40837  errors=0
+2026-06-29 02:20:16,978 [INFO] Progress: series='UP:'  num=6850/15000  found=113  empty=40937  errors=0
+2026-06-29 02:21:01,193 [INFO] Progress: series='UP:'  num=6950/15000  found=113  empty=41037  errors=0
+2026-06-29 02:21:43,253 [INFO] Progress: series='UP:'  num=7050/15000  found=113  empty=41137  errors=0
+2026-06-29 02:22:27,837 [INFO] Progress: series='UP:'  num=7150/15000  found=113  empty=41237  errors=0
+2026-06-29 02:23:09,418 [INFO] Progress: series='UP:'  num=7250/15000  found=113  empty=41337  errors=0
+2026-06-29 02:23:50,748 [INFO] Progress: series='UP:'  num=7350/15000  found=113  empty=41437  errors=0
+2026-06-29 02:24:33,404 [INFO] Progress: series='UP:'  num=7450/15000  found=113  empty=41537  errors=0
+2026-06-29 02:25:15,980 [INFO] Progress: series='UP:'  num=7550/15000  found=113  empty=41637  errors=0
+2026-06-29 02:25:58,963 [INFO] Progress: series='UP:'  num=7650/15000  found=113  empty=41737  errors=0
+2026-06-29 02:26:41,436 [INFO] Progress: series='UP:'  num=7750/15000  found=113  empty=41837  errors=0
+2026-06-29 02:27:24,999 [INFO] Progress: series='UP:'  num=7850/15000  found=113  empty=41937  errors=0
+2026-06-29 02:28:07,541 [INFO] Progress: series='UP:'  num=7950/15000  found=113  empty=42037  errors=0
+2026-06-29 02:28:50,260 [INFO] Progress: series='UP:'  num=8050/15000  found=113  empty=42137  errors=0
+2026-06-29 02:28:56,228 [INFO] FOUND  UP:          #8063    Dewan Textile Mills Ltd.  (expires 30-11--0001)
+2026-06-29 02:29:31,910 [INFO] Progress: series='UP:'  num=8150/15000  found=114  empty=42236  errors=0
+2026-06-29 02:30:17,090 [INFO] Progress: series='UP:'  num=8250/15000  found=114  empty=42336  errors=0
+2026-06-29 02:30:58,278 [INFO] Progress: series='UP:'  num=8350/15000  found=114  empty=42436  errors=0
+2026-06-29 02:31:42,783 [INFO] Progress: series='UP:'  num=8450/15000  found=114  empty=42536  errors=0
+2026-06-29 02:32:25,680 [INFO] Progress: series='UP:'  num=8550/15000  found=114  empty=42636  errors=0
+2026-06-29 02:33:08,692 [INFO] Progress: series='UP:'  num=8650/15000  found=114  empty=42736  errors=0
+2026-06-29 02:33:51,460 [INFO] Progress: series='UP:'  num=8750/15000  found=114  empty=42836  errors=0
+2026-06-29 02:34:33,959 [INFO] Progress: series='UP:'  num=8850/15000  found=114  empty=42936  errors=0
+2026-06-29 02:34:33,959 [INFO] Time limit reached — checkpoint saved at series='UP:' #8850.
+2026-06-29 02:34:33,960 [INFO] Stopped early (time limit). Resume with --resume.  found=114  empty=42936  errors=0  total=43050
+2026-06-29 02:34:33,960 [INFO] CSV output : /home/runner/work/Taiguo-boilar/Taiguo-boilar/scraper/database_export.csv
+2026-06-29 02:34:33,960 [INFO] JSON output: /home/runner/work/Taiguo-boilar/Taiguo-boilar/scraper/records.json
