@@ -42,11 +42,19 @@ BGMEA_CACHE   = os.path.join(_SCRIPT_DIR, "bgmea_cache.json")
 RSC_CACHE     = os.path.join(_SCRIPT_DIR, "rsc_cache.json")
 GITHUB_CACHE  = os.path.join(_SCRIPT_DIR, "github_datasets_cache.json")
 
-BGMEA_BASE_URL = "https://bgmea.com.bd/member-list"
-RSC_BASE_URL   = "https://rsc-bd.org/factory-list"
+RSC_BASE_URL = "https://rsc-bd.org/factory-list"
 
+# Try multiple known URL patterns for BGMEA member directory
+BGMEA_CANDIDATE_URLS = [
+    "https://bgmea.com.bd/members",
+    "https://bgmea.com.bd/member",
+    "https://bgmea.com.bd/member-list",
+    "https://bgmea.com.bd/memberlist",
+    "https://bgmea.com.bd/factory-list",
+]
+
+# Add raw GitHub CSV/JSON URLs here:
 GITHUB_DATASETS = [
-    # Add raw GitHub CSV/JSON URLs here:
     # "https://raw.githubusercontent.com/org/repo/main/factories/bangladesh.csv",
 ]
 
@@ -81,25 +89,48 @@ log = logging.getLogger(__name__)
 
 def _get(url, session, retries=3):
     for attempt in range(1, retries + 1):
-        try:
-            resp = session.get(url, headers=REQUEST_HEADERS, timeout=REQUEST_TIMEOUT)
-            resp.raise_for_status()
-            return resp.text
-        except requests.RequestException as exc:
-            log.warning("GET %s attempt %d/%d failed: %s", url, attempt, retries, exc)
-            if attempt < retries:
-                time.sleep(2 ** attempt)
+        for verify in (True, False):  # fall back to no SSL verify on cert failure
+            try:
+                resp = session.get(url, headers=REQUEST_HEADERS, timeout=REQUEST_TIMEOUT, verify=verify)
+                resp.raise_for_status()
+                if not verify:
+                    log.warning("Connected to %s with SSL verification disabled.", url)
+                return resp.text
+            except requests.exceptions.SSLError:
+                if verify:
+                    continue  # retry without SSL verify
+                log.warning("GET %s attempt %d/%d SSL error even without verify", url, attempt, retries)
+                break
+            except requests.RequestException as exc:
+                log.warning("GET %s attempt %d/%d failed: %s", url, attempt, retries, exc)
+                break
+        if attempt < retries:
+            time.sleep(2 ** attempt)
     log.error("Giving up on %s", url)
     return None
 
 
 def _scrape_bgmea(session):
+    working_base = None
+    for candidate in BGMEA_CANDIDATE_URLS:
+        html = _get(candidate, session)
+        if html and len(html) > 500:
+            soup_test = BeautifulSoup(html, "lxml")
+            if soup_test.select("table tr, .member-item, .factory-item") or \
+               any(kw in html.lower() for kw in ["member", "factory", "garment"]):
+                working_base = candidate
+                log.info("BGMEA URL found: %s", working_base)
+                break
+    if not working_base:
+        log.warning("Could not find working BGMEA member directory URL. Skipping.")
+        return []
+
     records = []
     page = 1
     seen_pages = set()
     log.info("Fetching BGMEA member directory...")
     while True:
-        url = f"{BGMEA_BASE_URL}?page={page}" if page > 1 else BGMEA_BASE_URL
+        url = f"{working_base}?page={page}" if page > 1 else working_base
         html = _get(url, session)
         if not html:
             break
