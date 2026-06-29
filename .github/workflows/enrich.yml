@@ -39,10 +39,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add --ignore-missing \
-            scraper/rmg_companies.csv scraper/rmg_enriched.csv \
-            scraper/bgmea_cache.json scraper/rsc_cache.json \
-            scraper/github_datasets_cache.json scraper/enricher.log
+          for f in scraper/rmg_companies.csv scraper/rmg_enriched.csv \
+                   scraper/bgmea_cache.json scraper/rsc_cache.json \
+                   scraper/github_datasets_cache.json scraper/enricher.log \
+                   scraper/rmg_progress.json; do
+            [ -f "$f" ] && git add "$f" || true
+          done
           git diff --staged --quiet && echo "No new data." || \
             git commit -m "enrichment: RMG lead list $(date -u '+%Y-%m-%d %H:%M UTC')"
           git pull --rebase origin main
