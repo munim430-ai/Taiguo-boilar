@@ -1,0 +1,48 @@
+name: RMG Enrichment
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: rmg-enricher
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: "scraper/requirements.txt"
+
+      - name: Install dependencies
+        run: pip install -r scraper/requirements.txt
+
+      - name: Filter RMG companies
+        run: python scraper/rmg_filter.py
+
+      - name: Enrich with contacts and buyer data
+        run: python scraper/rmg_enricher.py
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add scraper/rmg_companies.csv scraper/rmg_enriched.csv \
+                  scraper/bgmea_cache.json scraper/rsc_cache.json \
+                  scraper/github_datasets_cache.json scraper/enricher.log
+          git diff --staged --quiet && echo "No new data." || \
+            git commit -m "enrichment: RMG lead list $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git pull --rebase origin main
+          git push origin main
