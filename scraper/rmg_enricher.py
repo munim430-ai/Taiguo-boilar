@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 """
 RMG Company Enricher
-Enriches rmg_companies.csv with contact details and foreign buyer relationships
-using free, public data sources.
+Enriches rmg_companies.csv with contact details and foreign buyer relationships.
 
 Sources:
-  1. BGMEA member directory (bgmea.com.bd)     -> phone, address
-  2. RSC factory list (rsc-bd.org)             -> buyer brands
-  3. GitHub open-source supply chain datasets  -> additional buyer/factory data
+  1. BGMEA member directory (bgmea.com.bd/page/member-list)  -> phone, address, email
+  2. RSC factory list (rsc-bd.org/factories/)               -> buyer brands
+  3. GitHub open-source supply chain datasets               -> additional buyer/factory data
 
 Add GitHub dataset URLs to GITHUB_DATASETS below as you find them.
 Each URL must point to a raw CSV or JSON file on GitHub.
@@ -15,11 +14,12 @@ Each URL must point to a raw CSV or JSON file on GitHub.
 Usage:
     python rmg_enricher.py               # Full run
     python rmg_enricher.py --resume      # Resume from checkpoint
-    python rmg_enricher.py --limit 100   # Process only first N companies (for testing)
+    python rmg_enricher.py --limit 100   # Process only first N companies (testing)
 """
 
 import argparse
 import csv
+import io
 import json
 import logging
 import os
@@ -38,29 +38,25 @@ OUTPUT_FILE   = os.path.join(_SCRIPT_DIR, "rmg_enriched.csv")
 PROGRESS_FILE = os.path.join(_SCRIPT_DIR, "rmg_progress.json")
 LOG_FILE      = os.path.join(_SCRIPT_DIR, "enricher.log")
 
-BGMEA_CACHE   = os.path.join(_SCRIPT_DIR, "bgmea_cache.json")
-RSC_CACHE     = os.path.join(_SCRIPT_DIR, "rsc_cache.json")
-GITHUB_CACHE  = os.path.join(_SCRIPT_DIR, "github_datasets_cache.json")
+BGMEA_CACHE  = os.path.join(_SCRIPT_DIR, "bgmea_cache.json")
+RSC_CACHE    = os.path.join(_SCRIPT_DIR, "rsc_cache.json")
+GITHUB_CACHE = os.path.join(_SCRIPT_DIR, "github_datasets_cache.json")
 
-RSC_BASE_URL = "https://rsc-bd.org/factory-list"
+# Correct BGMEA member directory URL (with /page/ prefix)
+BGMEA_LIST_URL   = "https://bgmea.com.bd/page/member-list"
+BGMEA_DETAIL_URL = "https://bgmea.com.bd/member/{}"
 
-# Try multiple known URL patterns for BGMEA member directory
-BGMEA_CANDIDATE_URLS = [
-    "https://bgmea.com.bd/members",
-    "https://bgmea.com.bd/member",
-    "https://bgmea.com.bd/member-list",
-    "https://bgmea.com.bd/memberlist",
-    "https://bgmea.com.bd/factory-list",
-]
+# Correct RSC factory list URL
+RSC_URL = "https://rsc-bd.org/factories/"
 
-# Add raw GitHub CSV/JSON URLs here:
+# Add raw GitHub CSV/JSON dataset URLs here:
 GITHUB_DATASETS = [
     # "https://raw.githubusercontent.com/org/repo/main/factories/bangladesh.csv",
 ]
 
 MATCH_CONFIRMED = 80
 MATCH_LOW       = 60
-REQUEST_TIMEOUT = 20
+REQUEST_TIMEOUT = 25
 REQUEST_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,*/*;q=0.8",
@@ -70,7 +66,7 @@ REQUEST_HEADERS = {
 OUTPUT_FIELDNAMES = [
     "registration_series", "registration_number", "organization_name",
     "expiry_date", "fee_amount",
-    "bgmea_id", "bgmea_address", "bgmea_phone",
+    "bgmea_reg_no", "bgmea_address", "bgmea_phone", "bgmea_email",
     "rsc_factory_id", "rsc_address", "rsc_buyers",
     "github_buyers", "github_source",
     "match_score", "match_confidence",
@@ -88,8 +84,9 @@ log = logging.getLogger(__name__)
 
 
 def _get(url, session, retries=3):
+    """GET with SSL fallback and exponential backoff."""
     for attempt in range(1, retries + 1):
-        for verify in (True, False):  # fall back to no SSL verify on cert failure
+        for verify in (True, False):
             try:
                 resp = session.get(url, headers=REQUEST_HEADERS, timeout=REQUEST_TIMEOUT, verify=verify)
                 resp.raise_for_status()
@@ -98,8 +95,7 @@ def _get(url, session, retries=3):
                 return resp.text
             except requests.exceptions.SSLError:
                 if verify:
-                    continue  # retry without SSL verify
-                log.warning("GET %s attempt %d/%d SSL error even without verify", url, attempt, retries)
+                    continue
                 break
             except requests.RequestException as exc:
                 log.warning("GET %s attempt %d/%d failed: %s", url, attempt, retries, exc)
@@ -110,62 +106,95 @@ def _get(url, session, retries=3):
     return None
 
 
-def _scrape_bgmea(session):
-    working_base = None
-    for candidate in BGMEA_CANDIDATE_URLS:
-        html = _get(candidate, session)
-        if html and len(html) > 500:
-            soup_test = BeautifulSoup(html, "lxml")
-            if soup_test.select("table tr, .member-item, .factory-item") or \
-               any(kw in html.lower() for kw in ["member", "factory", "garment"]):
-                working_base = candidate
-                log.info("BGMEA URL found: %s", working_base)
-                break
-    if not working_base:
-        log.warning("Could not find working BGMEA member directory URL. Skipping.")
-        return []
+# ---------------------------------------------------------------------------
+# BGMEA
+# ---------------------------------------------------------------------------
 
+def _scrape_bgmea_list(session):
+    """
+    Scrape all BGMEA member list pages.
+    Table columns: Company Name | BGMEA Reg No | Contact Person | Email | Details
+    Returns list of dicts with keys: name, reg_no, contact, email, member_id, phone, address, detail_fetched.
+    """
     records = []
-    page = 1
-    seen_pages = set()
-    log.info("Fetching BGMEA member directory...")
-    while True:
-        url = f"{working_base}?page={page}" if page > 1 else working_base
+    log.info("Fetching BGMEA member directory: %s", BGMEA_LIST_URL)
+    for page in range(1, 250):  # 214 pages as of 2026, cap at 250 for safety
+        url = f"{BGMEA_LIST_URL}?page={page}"
         html = _get(url, session)
         if not html:
+            log.warning("BGMEA: failed to fetch page %d, stopping.", page)
             break
         soup = BeautifulSoup(html, "lxml")
-        rows = soup.select("table tbody tr") or soup.select(".member-item") or soup.select(".factory-item")
+        # Primary selector: tbody rows with >=3 cells
+        rows = soup.select("table tbody tr") or [
+            r for r in soup.select("tr") if len(r.select("td")) >= 3
+        ]
         if not rows:
-            rows = [r for r in soup.select("tr") if len(r.select("td")) >= 3]
-        if not rows:
-            log.warning("BGMEA page %d: no member rows found.", page)
+            log.info("BGMEA: no rows on page %d — end of list.", page)
             break
-        page_key = len(rows)
-        if page_key in seen_pages and page > 1:
-            break
-        seen_pages.add(page_key)
+        page_count = 0
         for row in rows:
             cells = row.select("td")
             if len(cells) < 3:
                 continue
-            texts = [c.get_text(" ", strip=True) for c in cells]
-            rec = {
-                "bgmea_id": texts[0] if texts else "",
-                "name":     texts[1] if len(texts) > 1 else "",
-                "address":  texts[2] if len(texts) > 2 else "",
-                "phone":    texts[3] if len(texts) > 3 else "",
-            }
-            if rec["name"]:
-                records.append(rec)
-        log.info("BGMEA page %d: %d records so far", page, len(records))
-        next_link = soup.find("a", string=lambda t: t and ("next" in t.lower() or "»" in t))
-        if not next_link or page > 200:
+            detail_a = row.select_one("a[href*='/member/']")
+            member_id = ""
+            if detail_a:
+                href = detail_a.get("href", "")
+                member_id = href.rstrip("/").split("/")[-1]
+            name    = cells[0].get_text(strip=True)
+            reg_no  = cells[1].get_text(strip=True) if len(cells) > 1 else ""
+            contact = cells[2].get_text(strip=True) if len(cells) > 2 else ""
+            email   = cells[3].get_text(strip=True) if len(cells) > 3 else ""
+            if name:
+                records.append({
+                    "name":           name,
+                    "reg_no":         reg_no,
+                    "contact":        contact,
+                    "email":          email,
+                    "member_id":      member_id,
+                    "phone":          "",
+                    "address":        "",
+                    "detail_fetched": False,
+                })
+                page_count += 1
+        log.info("BGMEA page %d: +%d records (%d total)", page, page_count, len(records))
+        if page_count == 0:
             break
-        page += 1
-        time.sleep(random.uniform(1.0, 2.0))
-    log.info("BGMEA: %d records total", len(records))
+        time.sleep(random.uniform(0.8, 1.5))
+    log.info("BGMEA list complete: %d records", len(records))
     return records
+
+
+def _fetch_bgmea_detail(rec, session):
+    """Fetch the BGMEA member detail page and fill in phone + address in-place."""
+    member_id = rec.get("member_id", "")
+    if not member_id or rec.get("detail_fetched"):
+        return
+    url = BGMEA_DETAIL_URL.format(member_id)
+    html = _get(url, session)
+    if not html:
+        rec["detail_fetched"] = True
+        return
+    soup = BeautifulSoup(html, "lxml")
+    fields = {}
+    for row in soup.select("tr"):
+        cells = row.select("td")
+        if len(cells) >= 2:
+            label = cells[0].get_text(strip=True).lower().rstrip(":").strip()
+            value = cells[1].get_text(strip=True)
+            if label:
+                fields[label] = value
+    rec["phone"] = (
+        fields.get("mobile number") or fields.get("mobile") or
+        fields.get("phone") or fields.get("contact no") or ""
+    )
+    rec["address"] = (
+        fields.get("mailing address") or fields.get("address") or
+        fields.get("factory address") or ""
+    )
+    rec["detail_fetched"] = True
+    time.sleep(random.uniform(0.5, 1.0))
 
 
 def _load_bgmea(session):
@@ -174,55 +203,65 @@ def _load_bgmea(session):
             data = json.load(f)
         log.info("BGMEA cache: %d records", len(data))
         return data
-    data = _scrape_bgmea(session)
+    data = _scrape_bgmea_list(session)
     if data:
         with open(BGMEA_CACHE, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
     return data
 
 
+# ---------------------------------------------------------------------------
+# RSC
+# ---------------------------------------------------------------------------
+
 def _scrape_rsc(session):
+    """Scrape RSC factory list from rsc-bd.org/factories/"""
     records = []
-    page = 1
-    log.info("Fetching RSC factory list...")
-    while True:
-        url = f"{RSC_BASE_URL}?page={page}" if page > 1 else RSC_BASE_URL
+    log.info("Fetching RSC factory list: %s", RSC_URL)
+    for page in range(1, 100):
+        url = RSC_URL if page == 1 else f"{RSC_URL}?page={page}"
         html = _get(url, session)
         if not html:
             break
         soup = BeautifulSoup(html, "lxml")
-        rows = soup.select("table tbody tr") or soup.select(".factory-row") or soup.select(".factory-card")
+        rows = (
+            soup.select("table tbody tr") or
+            soup.select(".factory-row") or
+            soup.select(".factory-card") or
+            [r for r in soup.select("tr") if len(r.select("td")) >= 2]
+        )
         if not rows:
-            rows = [r for r in soup.select("tr") if len(r.select("td")) >= 2]
-        if not rows:
-            log.warning("RSC page %d: no rows found.", page)
+            log.info("RSC page %d: no rows — end of list.", page)
             break
+        page_count = 0
         for row in rows:
             cells = row.select("td")
             if len(cells) < 2:
                 continue
             texts = [c.get_text(" ", strip=True) for c in cells]
-            buyers_cell = ""
+            buyers_parts = []
             for c in cells:
-                links = c.select("a, img")
-                if links:
-                    names = [l.get("alt") or l.get("title") or l.get_text(strip=True) for l in links]
-                    candidate = ", ".join(b for b in names if b)
-                    if len(candidate) > len(buyers_cell):
-                        buyers_cell = candidate
+                for tag in c.select("a, img"):
+                    b = tag.get("alt") or tag.get("title") or tag.get_text(strip=True)
+                    if b and len(b) > 1:
+                        buyers_parts.append(b)
             rec = {
                 "rsc_factory_id": texts[0] if texts else "",
-                "name":           texts[1] if len(texts) > 1 else texts[0] if texts else "",
+                "name":           texts[1] if len(texts) > 1 else texts[0],
                 "address":        texts[2] if len(texts) > 2 else "",
-                "buyers":         buyers_cell,
+                "buyers":         ", ".join(buyers_parts),
             }
             if rec["name"]:
                 records.append(rec)
-        log.info("RSC page %d: %d records so far", page, len(records))
-        next_link = soup.find("a", string=lambda t: t and ("next" in t.lower() or "»" in t))
-        if not next_link or page > 200:
+                page_count += 1
+        log.info("RSC page %d: +%d records (%d total)", page, page_count, len(records))
+        if page_count == 0:
             break
-        page += 1
+        next_a = soup.select_one("a[rel='next']") or soup.find(
+            "a", string=lambda t: t and ("next" in t.lower() or t.strip() == "»")
+        )
+        if not next_a:
+            break
         time.sleep(random.uniform(1.0, 2.0))
     log.info("RSC: %d records total", len(records))
     return records
@@ -241,6 +280,10 @@ def _load_rsc(session):
     return data
 
 
+# ---------------------------------------------------------------------------
+# GitHub datasets
+# ---------------------------------------------------------------------------
+
 def _load_github_datasets(session):
     if not GITHUB_DATASETS:
         return []
@@ -257,26 +300,33 @@ def _load_github_datasets(session):
             continue
         records = []
         if url.endswith(".csv"):
-            import io
             reader = csv.DictReader(io.StringIO(content))
             for row in reader:
                 norm = {k.lower().strip(): v.strip() for k, v in row.items()}
                 name = (norm.get("name") or norm.get("factory_name") or
                         norm.get("facility_name") or norm.get("organization_name") or "")
                 if name:
-                    records.append({"name": name, "address": norm.get("address", ""),
-                                    "buyers": norm.get("buyers", norm.get("contributors", norm.get("brands", ""))),
-                                    "source": url})
+                    records.append({
+                        "name":    name,
+                        "address": norm.get("address", ""),
+                        "buyers":  norm.get("buyers", norm.get("contributors", norm.get("brands", ""))),
+                        "source":  url,
+                    })
         elif url.endswith(".json"):
             try:
-                data = json.loads(content)
-                items = data if isinstance(data, list) else data.get("features", data.get("facilities", data.get("results", [])))
+                parsed = json.loads(content)
+                items = (parsed if isinstance(parsed, list)
+                         else parsed.get("features", parsed.get("facilities", parsed.get("results", []))))
                 for item in items:
                     if isinstance(item, dict):
-                        name = item.get("name") or item.get("factory_name") or item.get("facility_name") or ""
+                        name = (item.get("name") or item.get("factory_name")
+                                or item.get("facility_name") or "")
                         if name:
-                            buyers = ", ".join(item["contributors"]) if isinstance(item.get("contributors"), list) else item.get("buyers", "")
-                            records.append({"name": name, "address": item.get("address", ""), "buyers": buyers, "source": url})
+                            buyers = (", ".join(item["contributors"])
+                                      if isinstance(item.get("contributors"), list)
+                                      else item.get("buyers", ""))
+                            records.append({"name": name, "address": item.get("address", ""),
+                                            "buyers": buyers, "source": url})
             except json.JSONDecodeError:
                 log.warning("Could not parse JSON from %s", url)
         log.info("GitHub %s: %d records", url, len(records))
@@ -286,6 +336,10 @@ def _load_github_datasets(session):
             json.dump(all_records, f, indent=2, ensure_ascii=False)
     return all_records
 
+
+# ---------------------------------------------------------------------------
+# Fuzzy matching
+# ---------------------------------------------------------------------------
 
 def _best_match(query, candidates, threshold=MATCH_LOW):
     if not candidates:
@@ -304,6 +358,10 @@ def _confidence(score):
     return "none"
 
 
+# ---------------------------------------------------------------------------
+# Checkpoint
+# ---------------------------------------------------------------------------
+
 def _load_progress():
     if os.path.isfile(PROGRESS_FILE):
         with open(PROGRESS_FILE, encoding="utf-8") as f:
@@ -316,6 +374,10 @@ def _save_progress(progress):
         json.dump(progress, f, indent=2)
 
 
+# ---------------------------------------------------------------------------
+# Main enrichment loop
+# ---------------------------------------------------------------------------
+
 def run(resume, limit):
     if not os.path.isfile(INPUT_FILE):
         log.error("Input file not found: %s — run rmg_filter.py first.", INPUT_FILE)
@@ -323,10 +385,8 @@ def run(resume, limit):
 
     with open(INPUT_FILE, newline="", encoding="utf-8") as f:
         companies = list(csv.DictReader(f))
-
     if limit:
         companies = companies[:limit]
-
     log.info("Loaded %d RMG companies to enrich.", len(companies))
 
     session = requests.Session()
@@ -338,7 +398,8 @@ def run(resume, limit):
     rsc_names    = [r["name"] for r in rsc_records]
     github_names = [r["name"] for r in github_records]
 
-    log.info("Reference data: BGMEA=%d  RSC=%d  GitHub=%d", len(bgmea_records), len(rsc_records), len(github_records))
+    log.info("Reference data: BGMEA=%d  RSC=%d  GitHub=%d",
+             len(bgmea_records), len(rsc_records), len(github_records))
 
     progress    = _load_progress() if resume else {"last_index": -1}
     start_index = progress["last_index"] + 1
@@ -364,32 +425,39 @@ def run(resume, limit):
                 "organization_name":   name,
                 "expiry_date":         company.get("expiry_date", ""),
                 "fee_amount":          company.get("fee_amount", ""),
-                "bgmea_id": "", "bgmea_address": "", "bgmea_phone": "",
+                "bgmea_reg_no": "", "bgmea_address": "", "bgmea_phone": "", "bgmea_email": "",
                 "rsc_factory_id": "", "rsc_address": "", "rsc_buyers": "",
                 "github_buyers": "", "github_source": "",
                 "match_score": 0, "match_confidence": "none",
             }
-
             best_score = 0
 
+            # BGMEA match
             matched, score = _best_match(name, bgmea_names)
             if matched:
-                rec = bgmea_records[bgmea_names.index(matched)]
-                row["bgmea_id"] = rec.get("bgmea_id", "")
+                idx = bgmea_names.index(matched)
+                rec = bgmea_records[idx]
+                if not rec.get("detail_fetched"):
+                    _fetch_bgmea_detail(rec, session)
+                    # Save updated cache every 100 enriched records
+                row["bgmea_reg_no"]  = rec.get("reg_no", "")
+                row["bgmea_email"]   = rec.get("email", "")
+                row["bgmea_phone"]   = rec.get("phone", "")
                 row["bgmea_address"] = rec.get("address", "")
-                row["bgmea_phone"] = rec.get("phone", "")
                 if score > best_score:
                     best_score = score
 
+            # RSC match
             matched, score = _best_match(name, rsc_names)
             if matched:
                 rec = rsc_records[rsc_names.index(matched)]
                 row["rsc_factory_id"] = rec.get("rsc_factory_id", "")
-                row["rsc_address"] = rec.get("address", "")
-                row["rsc_buyers"] = rec.get("buyers", "")
+                row["rsc_address"]    = rec.get("address", "")
+                row["rsc_buyers"]     = rec.get("buyers", "")
                 if score > best_score:
                     best_score = score
 
+            # GitHub match
             matched, score = _best_match(name, github_names)
             if matched:
                 rec = github_records[github_names.index(matched)]
@@ -403,10 +471,17 @@ def run(resume, limit):
             writer.writerow(row)
 
             if (i + 1) % 100 == 0:
+                if bgmea_records:
+                    with open(BGMEA_CACHE, "w", encoding="utf-8") as f:
+                        json.dump(bgmea_records, f, indent=2, ensure_ascii=False)
                 progress["last_index"] = i
                 _save_progress(progress)
                 log.info("Progress: %d/%d", i + 1, len(companies))
 
+        # Final cache save with all fetched details
+        if bgmea_records:
+            with open(BGMEA_CACHE, "w", encoding="utf-8") as f:
+                json.dump(bgmea_records, f, indent=2, ensure_ascii=False)
         progress["last_index"] = len(companies) - 1
         _save_progress(progress)
 
