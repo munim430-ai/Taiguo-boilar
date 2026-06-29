@@ -1,0 +1,87 @@
+2026-06-29 22:15:26,839 [INFO] Loaded 6175 RMG companies to enrich.
+2026-06-29 22:15:28,049 [WARNING] GET https://bgmea.com.bd/member attempt 1/3 failed: 404 Client Error: Not Found for url: https://bgmea.com.bd/member
+2026-06-29 22:15:30,281 [WARNING] GET https://bgmea.com.bd/member attempt 2/3 failed: 404 Client Error: Not Found for url: https://bgmea.com.bd/member
+2026-06-29 22:15:34,512 [WARNING] GET https://bgmea.com.bd/member attempt 3/3 failed: 404 Client Error: Not Found for url: https://bgmea.com.bd/member
+2026-06-29 22:15:34,512 [ERROR] Giving up on https://bgmea.com.bd/member
+2026-06-29 22:15:34,740 [WARNING] GET https://bgmea.com.bd/member-list attempt 1/3 failed: 404 Client Error: Not Found for url: https://bgmea.com.bd/member-list
+2026-06-29 22:15:36,970 [WARNING] GET https://bgmea.com.bd/member-list attempt 2/3 failed: 404 Client Error: Not Found for url: https://bgmea.com.bd/member-list
+2026-06-29 22:15:41,201 [WARNING] GET https://bgmea.com.bd/member-list attempt 3/3 failed: 404 Client Error: Not Found for url: https://bgmea.com.bd/member-list
+2026-06-29 22:15:41,201 [ERROR] Giving up on https://bgmea.com.bd/member-list
+2026-06-29 22:15:41,430 [WARNING] GET https://bgmea.com.bd/memberlist attempt 1/3 failed: 404 Client Error: Not Found for url: https://bgmea.com.bd/memberlist
+2026-06-29 22:15:43,661 [WARNING] GET https://bgmea.com.bd/memberlist attempt 2/3 failed: 404 Client Error: Not Found for url: https://bgmea.com.bd/memberlist
+2026-06-29 22:15:47,892 [WARNING] GET https://bgmea.com.bd/memberlist attempt 3/3 failed: 404 Client Error: Not Found for url: https://bgmea.com.bd/memberlist
+2026-06-29 22:15:47,892 [ERROR] Giving up on https://bgmea.com.bd/memberlist
+2026-06-29 22:15:48,120 [WARNING] GET https://bgmea.com.bd/factory-list attempt 1/3 failed: 404 Client Error: Not Found for url: https://bgmea.com.bd/factory-list
+2026-06-29 22:15:50,353 [WARNING] GET https://bgmea.com.bd/factory-list attempt 2/3 failed: 404 Client Error: Not Found for url: https://bgmea.com.bd/factory-list
+2026-06-29 22:15:54,585 [WARNING] GET https://bgmea.com.bd/factory-list attempt 3/3 failed: 404 Client Error: Not Found for url: https://bgmea.com.bd/factory-list
+2026-06-29 22:15:54,585 [ERROR] Giving up on https://bgmea.com.bd/factory-list
+2026-06-29 22:15:54,585 [WARNING] Could not find working BGMEA member directory URL. Skipping.
+2026-06-29 22:15:54,585 [INFO] Fetching RSC factory list...
+2026-06-29 22:15:57,686 [WARNING] GET https://rsc-bd.org/factory-list attempt 1/3 failed: 404 Client Error: Not Found for url: https://rsc-bd.org/factory-list
+2026-06-29 22:16:01,724 [WARNING] GET https://rsc-bd.org/factory-list attempt 2/3 failed: 404 Client Error: Not Found for url: https://rsc-bd.org/factory-list
+2026-06-29 22:16:08,688 [WARNING] GET https://rsc-bd.org/factory-list attempt 3/3 failed: 404 Client Error: Not Found for url: https://rsc-bd.org/factory-list
+2026-06-29 22:16:08,689 [ERROR] Giving up on https://rsc-bd.org/factory-list
+2026-06-29 22:16:08,689 [INFO] RSC: 0 records total
+2026-06-29 22:16:08,689 [INFO] Reference data: BGMEA=0  RSC=0  GitHub=0
+2026-06-29 22:16:08,690 [INFO] Progress: 100/6175
+2026-06-29 22:16:08,691 [INFO] Progress: 200/6175
+2026-06-29 22:16:08,691 [INFO] Progress: 300/6175
+2026-06-29 22:16:08,692 [INFO] Progress: 400/6175
+2026-06-29 22:16:08,693 [INFO] Progress: 500/6175
+2026-06-29 22:16:08,693 [INFO] Progress: 600/6175
+2026-06-29 22:16:08,697 [INFO] Progress: 700/6175
+2026-06-29 22:16:08,697 [INFO] Progress: 800/6175
+2026-06-29 22:16:08,698 [INFO] Progress: 900/6175
+2026-06-29 22:16:08,699 [INFO] Progress: 1000/6175
+2026-06-29 22:16:08,699 [INFO] Progress: 1100/6175
+2026-06-29 22:16:08,700 [INFO] Progress: 1200/6175
+2026-06-29 22:16:08,700 [INFO] Progress: 1300/6175
+2026-06-29 22:16:08,701 [INFO] Progress: 1400/6175
+2026-06-29 22:16:08,701 [INFO] Progress: 1500/6175
+2026-06-29 22:16:08,702 [INFO] Progress: 1600/6175
+2026-06-29 22:16:08,703 [INFO] Progress: 1700/6175
+2026-06-29 22:16:08,703 [INFO] Progress: 1800/6175
+2026-06-29 22:16:08,704 [INFO] Progress: 1900/6175
+2026-06-29 22:16:08,704 [INFO] Progress: 2000/6175
+2026-06-29 22:16:08,705 [INFO] Progress: 2100/6175
+2026-06-29 22:16:08,706 [INFO] Progress: 2200/6175
+2026-06-29 22:16:08,706 [INFO] Progress: 2300/6175
+2026-06-29 22:16:08,707 [INFO] Progress: 2400/6175
+2026-06-29 22:16:08,708 [INFO] Progress: 2500/6175
+2026-06-29 22:16:08,708 [INFO] Progress: 2600/6175
+2026-06-29 22:16:08,709 [INFO] Progress: 2700/6175
+2026-06-29 22:16:08,710 [INFO] Progress: 2800/6175
+2026-06-29 22:16:08,710 [INFO] Progress: 2900/6175
+2026-06-29 22:16:08,711 [INFO] Progress: 3000/6175
+2026-06-29 22:16:08,712 [INFO] Progress: 3100/6175
+2026-06-29 22:16:08,712 [INFO] Progress: 3200/6175
+2026-06-29 22:16:08,713 [INFO] Progress: 3300/6175
+2026-06-29 22:16:08,714 [INFO] Progress: 3400/6175
+2026-06-29 22:16:08,715 [INFO] Progress: 3500/6175
+2026-06-29 22:16:08,716 [INFO] Progress: 3600/6175
+2026-06-29 22:16:08,716 [INFO] Progress: 3700/6175
+2026-06-29 22:16:08,717 [INFO] Progress: 3800/6175
+2026-06-29 22:16:08,718 [INFO] Progress: 3900/6175
+2026-06-29 22:16:08,718 [INFO] Progress: 4000/6175
+2026-06-29 22:16:08,719 [INFO] Progress: 4100/6175
+2026-06-29 22:16:08,720 [INFO] Progress: 4200/6175
+2026-06-29 22:16:08,720 [INFO] Progress: 4300/6175
+2026-06-29 22:16:08,721 [INFO] Progress: 4400/6175
+2026-06-29 22:16:08,722 [INFO] Progress: 4500/6175
+2026-06-29 22:16:08,723 [INFO] Progress: 4600/6175
+2026-06-29 22:16:08,724 [INFO] Progress: 4700/6175
+2026-06-29 22:16:08,724 [INFO] Progress: 4800/6175
+2026-06-29 22:16:08,725 [INFO] Progress: 4900/6175
+2026-06-29 22:16:08,726 [INFO] Progress: 5000/6175
+2026-06-29 22:16:08,726 [INFO] Progress: 5100/6175
+2026-06-29 22:16:08,727 [INFO] Progress: 5200/6175
+2026-06-29 22:16:08,728 [INFO] Progress: 5300/6175
+2026-06-29 22:16:08,728 [INFO] Progress: 5400/6175
+2026-06-29 22:16:08,729 [INFO] Progress: 5500/6175
+2026-06-29 22:16:08,730 [INFO] Progress: 5600/6175
+2026-06-29 22:16:08,730 [INFO] Progress: 5700/6175
+2026-06-29 22:16:08,731 [INFO] Progress: 5800/6175
+2026-06-29 22:16:08,732 [INFO] Progress: 5900/6175
+2026-06-29 22:16:08,732 [INFO] Progress: 6000/6175
+2026-06-29 22:16:08,733 [INFO] Progress: 6100/6175
+2026-06-29 22:16:08,733 [INFO] Enrichment complete. Output: /home/runner/work/Taiguo-boilar/Taiguo-boilar/scraper/rmg_enriched.csv
