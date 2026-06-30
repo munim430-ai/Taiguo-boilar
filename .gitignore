@@ -1,6 +1,4 @@
-# EPB export data — binary files re-downloadable via scraper/epb_downloader.py
-scraper/epb_data/FY_*/
-
+# EPB export data manifest is tracked; binary data committed in chunks
 # Python
 __pycache__/
 *.pyc
