@@ -16303,3 +16303,17 @@
 2026-07-21 22:51:23,637 [INFO] Scrape finished.  found=0  empty=0  errors=0  total=0
 2026-07-21 22:51:23,638 [INFO] CSV output : /home/runner/work/Taiguo-boilar/Taiguo-boilar/scraper/database_export.csv
 2026-07-21 22:51:23,638 [INFO] JSON output: /home/runner/work/Taiguo-boilar/Taiguo-boilar/scraper/records.json
+2026-07-22 22:57:21,928 [INFO] Starting scrape: 10 series × 15000 numbers = 150000 combinations  workers=3  time-limit=5.25h
+2026-07-22 22:57:21,929 [INFO] Series 'Ba: Bo:' already complete, skipping.
+2026-07-22 22:57:21,929 [INFO] Series 'EP:' already complete, skipping.
+2026-07-22 22:57:21,929 [INFO] Series 'BL:' already complete, skipping.
+2026-07-22 22:57:21,929 [INFO] Series 'EBL:' already complete, skipping.
+2026-07-22 22:57:21,929 [INFO] Series 'CP:' already complete, skipping.
+2026-07-22 22:57:21,929 [INFO] Series 'UP:' already complete, skipping.
+2026-07-22 22:57:21,929 [INFO] Series 'K:' already complete, skipping.
+2026-07-22 22:57:21,929 [INFO] Series 'NL:' already complete, skipping.
+2026-07-22 22:57:21,929 [INFO] Series 'A:' already complete, skipping.
+2026-07-22 22:57:21,929 [INFO] Series 'PB:' already complete, skipping.
+2026-07-22 22:57:21,929 [INFO] Scrape finished.  found=0  empty=0  errors=0  total=0
+2026-07-22 22:57:21,929 [INFO] CSV output : /home/runner/work/Taiguo-boilar/Taiguo-boilar/scraper/database_export.csv
+2026-07-22 22:57:21,929 [INFO] JSON output: /home/runner/work/Taiguo-boilar/Taiguo-boilar/scraper/records.json
